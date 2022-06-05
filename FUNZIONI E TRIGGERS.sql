@@ -39,7 +39,22 @@ EXCEPTION
 when overNum then
 raise_application_error(-20001,'Esiste già un direttore in azienda');
 end;
-
+-- CHECK SE L'OFFICINA HA NELLO STESSO PERIODO HA DUE VEICOLI NON PUO INSERIRE IL TERZO
+CREATE OR REPLACE TRIGGER checknumVei
+before insert on manutenzione
+for each row
+DECLARE
+overNum EXCEPTION;
+contatore NUMBER;
+BEGIN
+select count(*) into contatore from manutenzione where p_iva_meccanico = :new.p_iva_meccanico AND (:new.data_inizio_man between data_inizio_man and data_fine_man);
+if (contatore > 2) then
+  raise overNum;
+end if;
+EXCEPTION
+when overNum then 
+raise_application_error(-20001,'Officina troppo piena');
+END;
 --DIPENDENTE TROPPO ANZIANO (OVER 60)
 CREATE OR REPLACE TRIGGER checkAnziano
 before insert or update on dipendente
