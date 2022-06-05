@@ -107,10 +107,11 @@ CONSTRAINT cf_contratto_mask CHECK(
 
 
 CREATE TABLE stipendio (
-data_stipendio DATE PRIMARY KEY NOT NULL,
+data_stipendio DATE NOT NULL,
 contratto_stipendio VARCHAR2(10) NOT NULL,
-importo NUMBER(4,2) NOT NULL,
-trattenute NUMBER(3,2) NOT NULL,
+importo NUMBER(4) NOT NULL,
+trattenute NUMBER(3) NOT NULL,
+PRIMARY KEY(data_stipendio, contratto_stipendio),
 FOREIGN KEY(contratto_stipendio) REFERENCES contratto(codice_contratto),
 
 CONSTRAINT cod_contratto_stipendio CHECK(
@@ -144,10 +145,11 @@ CONSTRAINT num_patente_mask CHECK (
 
 
 CREATE TABLE presenza (
-Data_presenza DATE NOT NULL PRIMARY KEY,
+Data_presenza DATE NOT NULL,
 cf_presenza VARCHAR2(16) NOT NULL,
 ora_entrata DATE,
 ora_uscita DATE,
+PRIMARY KEY(Data_presenza, cf_presenza),
 FOREIGN KEY(cf_presenza) REFERENCES impiegato(cf_impiegato),
 
 CONSTRAINT cf_presenza_mask CHECK(
