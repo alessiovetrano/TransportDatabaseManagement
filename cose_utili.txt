@@ -1,0 +1,3 @@
+NEL CASO DI QUERY IN CUI SI CERCA UN VALORE NULLO SI UTILIZZA "IS NULL" E NON " = NULL"
+ES. impiegato assente il giorno 4 Aprile
+select * from impiegato im join presenza pr on im.cf_impiegato = pr.cf_presenza where Data_presenza = DATE '2022-04-04' AND ora_entrata IS NULL
