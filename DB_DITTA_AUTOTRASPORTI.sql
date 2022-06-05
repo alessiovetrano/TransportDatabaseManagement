@@ -70,6 +70,19 @@ cap VARCHAR2(5) NOT NULL,
 tipo_prodotto VARCHAR2(30) NOT NULL
 );
 
+
+CREATE TABLE ferie (
+data_inizio_ferie DATE,
+Cod_fiscale_ferie VARCHAR(16),
+data_fine DATE NOT NULL,
+Retribuzione INT,
+tipo_ferie VARCHAR(30),
+PRIMARY KEY(data_inizio_ferie,Cod_fiscale_ferie),
+FOREIGN KEY(Cod_fiscale_ferie) REFERENCES dipendente(cf)
+ON DELETE CASCADE
+);
+
+
 --OK
 CREATE TABLE impiegato (
 cf_impiegato VARCHAR2(16) PRIMARY KEY,
@@ -95,7 +108,8 @@ codice_contratto VARCHAR2(10) NOT NULL PRIMARY KEY,
 cf_contratto VARCHAR2(16) NOT NULL,
 durata_contratto NUMBER,
 tipo_contratto VARCHAR2(25) NOT NULL,
-FOREIGN KEY(cf_contratto) REFERENCES dipendente(cf),
+FOREIGN KEY(cf_contratto) REFERENCES dipendente(cf)
+ON DELETE CASCADE,
 
 CONSTRAINT cod_contratto CHECK(
 	REGEXP_LIKE(codice_contratto,'[A-Z]{3}[0-9]{7}')),
@@ -107,12 +121,13 @@ CONSTRAINT cf_contratto_mask CHECK(
 
 
 CREATE TABLE stipendio (
-data_stipendio DATE NOT NULL,
+data_stipendio,
 contratto_stipendio VARCHAR2(10) NOT NULL,
 importo NUMBER(4) NOT NULL,
 trattenute NUMBER(3) NOT NULL,
-PRIMARY KEY(data_stipendio, contratto_stipendio),
-FOREIGN KEY(contratto_stipendio) REFERENCES contratto(codice_contratto),
+FOREIGN KEY(contratto_stipendio) REFERENCES contratto(codice_contratto)
+ON DELETE CASCADE,
+PRIMARY KEY(data_stipendio,contratto_stipendio)
 
 CONSTRAINT cod_contratto_stipendio CHECK(
 	REGEXP_LIKE(contratto_stipendio,'[A-Z]{3}[0-9]{7}'))
@@ -145,12 +160,13 @@ CONSTRAINT num_patente_mask CHECK (
 
 
 CREATE TABLE presenza (
-Data_presenza DATE NOT NULL,
-cf_presenza VARCHAR2(16) NOT NULL,
+Data_presenza DATE,
+cf_presenza VARCHAR2(16),
 ora_entrata DATE,
 ora_uscita DATE,
-PRIMARY KEY(Data_presenza, cf_presenza),
-FOREIGN KEY(cf_presenza) REFERENCES impiegato(cf_impiegato),
+FOREIGN KEY(cf_presenza) REFERENCES impiegato(cf_impiegato)
+ON DELETE CASCADE,
+PRIMARY KEY(data_presenza,cf_presenza)
 
 CONSTRAINT cf_presenza_mask CHECK(
 	REGEXP_LIKE(cf_presenza,'[A-Z]{6}[0-9]{2}[A-Z][0-9]{2}[A-Z][0-9]{3}[A-Z]')),
@@ -171,7 +187,8 @@ p_iva_meccanico VARCHAR2(11) NOT NULL,
 costo_manutenzione NUMBER(4) NOT NULL,
 data_inizio_man DATE NOT NULL,
 data_fine_man DATE NOT NULL,
-FOREIGN KEY(targa_manutenzione) REFERENCES veicolo(targa),
+FOREIGN KEY(targa_manutenzione) REFERENCES veicolo(targa)
+ON DELETE CASCADE,
 FOREIGN KEY(p_iva_meccanico) REFERENCES officina(p_iva_officina),
 
 CONSTRAINT targa_manutenzione_mask CHECK(
@@ -180,15 +197,15 @@ CONSTRAINT targa_manutenzione_mask CHECK(
 
 
 CREATE TABLE viaggio (
-Data_viaggio DATE,
-cf_viaggio VARCHAR2(16),
+Data_viaggio DATE PRIMARY KEY,
+cf_viaggio VARCHAR2(16) NOT NULL,
 p_iva_forn VARCHAR2(11) NOT NULL,
 km_totali NUMBER(4) NOT NULL,
-num_soste NUMBER(1) NOT NULL,
-Durata INT NOT NULL,
+num_soste INT NOT NULL,
+Durata NUMBER(1) NOT NULL,
 Ora_carico DATE NOT NULL,
-PRIMARY KEY(Data_viaggio, cf_viaggio),
-FOREIGN KEY(cf_viaggio) REFERENCES autista(cf_autista),
+FOREIGN KEY(cf_viaggio) REFERENCES autista(cf_autista)
+ON DELETE CASCADE,
 FOREIGN KEY(p_iva_forn) REFERENCES fornitore(p_iva_fornitore),
 
 CONSTRAINT cf_viaggio_mask CHECK(
@@ -205,7 +222,7 @@ cap VARCHAR2(5) NOT NULL,
 email VARCHAR(30) NOT NULL UNIQUE,
 
 CONSTRAINT email_mask CHECK (
-	REGEXP_LIKE(email,'^\w+.*@{1}\w+.*$')) --nome@posta.it
+	REGEXP_LIKE(email,'^\w+.@{1}\w+.$')) --nome@posta.it
 );
 
 
@@ -222,7 +239,8 @@ CREATE TABLE lotto (
 bolla_trasporto VARCHAR(10) PRIMARY KEY,
 tracciamento_lotto VARCHAR2(10) NOT NULL,
 peso_lotto NUMBER(2) NOT NULL,
-FOREIGN KEY(tracciamento_lotto) REFERENCES spedizione(num_tracciamento),
+FOREIGN KEY(tracciamento_lotto) REFERENCES spedizione(num_tracciamento)
+ON DELETE CASCADE,
 CONSTRAINT bolla_ammessa CHECK (
 	REGEXP_LIKE(bolla_trasporto,'[A-Z]{4}[0-9]{6}'))
 );
