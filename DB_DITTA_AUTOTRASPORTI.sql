@@ -180,13 +180,14 @@ CONSTRAINT targa_manutenzione_mask CHECK(
 
 
 CREATE TABLE viaggio (
-Data_viaggio DATE PRIMARY KEY,
-cf_viaggio VARCHAR2(16) NOT NULL,
+Data_viaggio DATE,
+cf_viaggio VARCHAR2(16),
 p_iva_forn VARCHAR2(11) NOT NULL,
 km_totali NUMBER(4) NOT NULL,
 num_soste NUMBER(1) NOT NULL,
 Durata NUMBER(1) NOT NULL,
 Ora_carico DATE NOT NULL,
+PRIMARY KEY(Data_viaggio, cf_viaggio),
 FOREIGN KEY(cf_viaggio) REFERENCES autista(cf_autista),
 FOREIGN KEY(p_iva_forn) REFERENCES fornitore(p_iva_fornitore),
 
