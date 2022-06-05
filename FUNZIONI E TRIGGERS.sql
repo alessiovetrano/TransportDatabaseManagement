@@ -71,19 +71,20 @@ raise_application_error(-20001,'Il dipendente è troppo anziano per gli standard
 END;
 
 --CONTROLLA SE IL PESO DEL LOTTO PUO ESSERE PRESO DAL CAMION
+||| DA FINIRE (AGGIUNGERE CHIAVE ESTERNA ALL AZIENDA ARRIVO |||
+
+ 
 CREATE OR REPLACE TRIGGER checkPeso
 before insert or update on lotto
 for each row
 DECLARE
 overPeso EXCEPTION;
 BEGIN
+select * from lotto lt join spedizione sp on lt.tracciamento_lotto = sp.num_tracciamento join azienda_esterna ae on sp.p_iva_aziendaArrivo = ae.p_iva_azienda_esterna join 
 EXCEPTION
 when overPeso then
 raise_application_error(-20001,'Il camion non puo contenere questo lotto');
 END;
-
-
-
 
 
 
