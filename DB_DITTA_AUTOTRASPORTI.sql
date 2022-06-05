@@ -127,7 +127,7 @@ importo NUMBER(4) NOT NULL,
 trattenute NUMBER(3) NOT NULL,
 FOREIGN KEY(contratto_stipendio) REFERENCES contratto(codice_contratto)
 ON DELETE CASCADE,
-PRIMARY KEY(data_stipendio,contratto_stipendio)
+PRIMARY KEY(data_stipendio,contratto_stipendio),
 
 CONSTRAINT cod_contratto_stipendio CHECK(
 	REGEXP_LIKE(contratto_stipendio,'[A-Z]{3}[0-9]{7}'))
@@ -166,7 +166,7 @@ ora_entrata DATE,
 ora_uscita DATE,
 FOREIGN KEY(cf_presenza) REFERENCES impiegato(cf_impiegato)
 ON DELETE CASCADE,
-PRIMARY KEY(data_presenza,cf_presenza)
+PRIMARY KEY(data_presenza,cf_presenza),
 
 CONSTRAINT cf_presenza_mask CHECK(
 	REGEXP_LIKE(cf_presenza,'[A-Z]{6}[0-9]{2}[A-Z][0-9]{2}[A-Z][0-9]{3}[A-Z]')),
