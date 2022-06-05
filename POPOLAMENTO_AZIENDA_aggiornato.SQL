@@ -2,7 +2,7 @@
 
 
 
-----DIPENDENTI POPOLAZIONE -- 20 DIPENDENTI
+----DIPENDENTI POPOLAZIONE -- 30 DIPENDENTI
 Insert all
 	into dipendente (cf,nome,cognome,data_nascita,data_assunzione) values('CLMGLC85L02I926V','Gianluca','Colombarini',DATE '1985-07-02',DATE '2004-01-01')
 	into dipendente (cf,nome,cognome,data_nascita,data_assunzione) values('MRTPLN65L69G577R','Apollonia','Mortari',DATE '1965-07-29',DATE '2004-09-01')
