@@ -71,7 +71,7 @@ raise_application_error(-20001,'Il dipendente è troppo anziano per gli standard
 END;
 
 --CONTROLLA SE IL PESO DEL LOTTO PUO ESSERE PRESO DAL CAMION
-||| DA FINIRE (AGGIUNGERE CHIAVE ESTERNA ALL AZIENDA ARRIVO |||
+||| PER FARLA FUNZIONARE SI DOVREBBE AGGIUNGERE UNA CHIAVE ESTERNA CHE COLLEGA L'AZIENDA ESTERNA AL VIAGGIO CON IL NOME p_iva_az_esterna |||
 
  
 CREATE OR REPLACE TRIGGER checkPeso
@@ -80,7 +80,9 @@ for each row
 DECLARE
 overPeso EXCEPTION;
 BEGIN
-select * from lotto lt join spedizione sp on lt.tracciamento_lotto = sp.num_tracciamento join azienda_esterna ae on sp.p_iva_aziendaArrivo = ae.p_iva_azienda_esterna join 
+if(select peso_massimo from lotto lt join spedizione sp on lt.tracciamento_lotto = sp.num_tracciamento join azienda_esterna ae on sp.p_iva_aziendaArrivo = ae.p_iva_azienda_esterna join viaggio vg on ar.p_iva_azeinda_esterna = vg.p_iva_az_esterna join autista au on vg.cf_viaggio = au.cf_autista join veicolo vc on au.targa_autista = vc.targa) < :new.peso_lotto then
+reise overPeso;
+end if;
 EXCEPTION
 when overPeso then
 raise_application_error(-20001,'Il camion non puo contenere questo lotto');
