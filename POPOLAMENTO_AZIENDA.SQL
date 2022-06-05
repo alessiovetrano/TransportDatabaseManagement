@@ -341,23 +341,22 @@ select 1 from dual;
 !!!	MANCA ORA ARRIVO 	!!!
 
 insert all
-	into azienda_esterna(p_iva_azienda_esterna, nome, via, citta, cap, ora_arrivo, email) values ('28392680808','Euronics', 'Via San Secondo, 98Bis','Torino','10128','euro@euronicsitalia.it')
-	into azienda_esterna(p_iva_azienda_esterna, nome, via, citta, cap, ora_arrivo, email) values ('49862681001','MediaWorld', 'Via Ottavio Munerati, 5','Rovigo','45100','mediaworld@gmail.com')
-	into azienda_esterna(p_iva_azienda_esterna, nome, via, citta, cap, ora_arrivo, email) values ('29263440975','Conad', 'Via Matteotti, 7','Casaletto Ceredano','26010','conadcity@conadita.it')
-	into azienda_esterna(p_iva_azienda_esterna, nome, via, citta, cap, ora_arrivo, email) values ('26680280919','Ikea', 'Via Beirut, 5','Cropani','88050','ikea@libero.it')
-	into azienda_esterna(p_iva_azienda_esterna, nome, via, citta, cap, ora_arrivo, email) values ('29130410664','GameStop', 'Via Di Matteo, 128','Piedimonte Matese','81016','giochi@gamestop.it')
-	into azienda_esterna(p_iva_azienda_esterna, nome, via, citta, cap, ora_arrivo, email) values ('77267030599','AKinformatica', 'Via Della Mattonara, 9','Viterbo','01100','akinformatica@info.com')
-	into azienda_esterna(p_iva_azienda_esterna, nome, via, citta, cap, ora_arrivo, email) values ('25375100150','Coop', 'Via Monsignor Pignedoli, 6','Albinea','42020','viamons@coopitalia.it')
-	into azienda_esterna(p_iva_azienda_esterna, nome, via, citta, cap, ora_arrivo, email) values ('53980110695','Decathlon', 'Via Savoca, 13','Bisacquino','90032','decathlon@italia.com')
-	into azienda_esterna(p_iva_azienda_esterna, nome, via, citta, cap, ora_arrivo, email) values ('26195380519','Mr. Risparmio', 'Via Trento, 21','Parma','43122','mrrisparmio@libero.it')
-	into azienda_esterna(p_iva_azienda_esterna, nome, via, citta, cap, ora_arrivo, email) values ('35462500436','Centro Convenienza', 'Via Pozzobonelli, 16','Rho','20017','centroconv@gmail.com')
-	into azienda_esterna(p_iva_azienda_esterna, nome, via, citta, cap, ora_arrivo, email) values ('64635253636','Mondo Convenienza','Via Roma, 10','Trieste','34121','mondoconv@libero.it')
-	into azienda_esterna(p_iva_azienda_esterna, nome, via, citta, cap, ora_arrivo, email) values ('56363534242','Uffici Arredo','Corso Italia, 89','Roma','00100','roma@ufficiarredo.it')
-	into azienda_esterna(p_iva_azienda_esterna, nome, via, citta, cap, ora_arrivo, email) values ('13145424211','Coop','Via Argine, 90','Napoli','80147','viaargine@coopitalia.it')
-	into azienda_esterna(p_iva_azienda_esterna, nome, via, citta, cap, ora_arrivo, email) values ('46433524545','Caseificio De Martino','Piazza Carlo III, 30','Napoli','80137','demartino@gmail.com')
-  into azienda_esterna(p_iva_azienda_esterna, nome, via, citta, cap, ora_arrivo, email) values ('87435362313','Zara','Via Scarlatti, 129','Napoli','80129','viascarlatti@zara.com')
-
-	SELECT 1 FROM DUAL;
+	into azienda_esterna(p_iva_azienda_esterna, nome, via, citta, cap, email) values ('28392680808','Euronics', 'Via San Secondo, 98Bis','Torino','10128','euro@euronicsitalia.it')
+	into azienda_esterna(p_iva_azienda_esterna, nome, via, citta, cap, email) values ('49862681001','MediaWorld', 'Via Ottavio Munerati, 5','Rovigo','45100','mediaworld@gmail.com')
+	into azienda_esterna(p_iva_azienda_esterna, nome, via, citta, cap, email) values ('29263440975','Conad', 'Via Matteotti, 7','Casaletto Ceredano','26010','conadcity@conadita.it')
+	into azienda_esterna(p_iva_azienda_esterna, nome, via, citta, cap, email) values ('26680280919','Ikea', 'Via Beirut, 5','Cropani','88050','ikea@libero.it')
+	into azienda_esterna(p_iva_azienda_esterna, nome, via, citta, cap, email) values ('29130410664','GameStop', 'Via Di Matteo, 128','Piedimonte Matese','81016','giochi@gamestop.it')
+	into azienda_esterna(p_iva_azienda_esterna, nome, via, citta, cap, email) values ('77267030599','AKinformatica', 'Via Della Mattonara, 9','Viterbo','01100','akinformatica@info.com')
+	into azienda_esterna(p_iva_azienda_esterna, nome, via, citta, cap, email) values ('25375100150','Coop', 'Via Monsignor Pignedoli, 6','Albinea','42020','viamons@coopitalia.it')
+	into azienda_esterna(p_iva_azienda_esterna, nome, via, citta, cap, email) values ('53980110695','Decathlon', 'Via Savoca, 13','Bisacquino','90032','decathlon@italia.com')
+	into azienda_esterna(p_iva_azienda_esterna, nome, via, citta, cap, email) values ('26195380519','Mr. Risparmio', 'Via Trento, 21','Parma','43122','mrrisparmio@libero.it')
+	into azienda_esterna(p_iva_azienda_esterna, nome, via, citta, cap, email) values ('35462500436','Centro Convenienza', 'Via Pozzobonelli, 16','Rho','20017','centroconv@gmail.com')
+	into azienda_esterna(p_iva_azienda_esterna, nome, via, citta, cap, email) values ('64635253636','Mondo Convenienza','Via Roma, 10','Trieste','34121','mondoconv@libero.it')
+	into azienda_esterna(p_iva_azienda_esterna, nome, via, citta, cap, email) values ('56363534242','Uffici Arredo','Corso Italia, 89','Roma','00100','roma@ufficiarredo.it')
+	into azienda_esterna(p_iva_azienda_esterna, nome, via, citta, cap, email) values ('13145424211','Coop','Via Argine, 90','Napoli','80147','viaargine@coopitalia.it')
+	into azienda_esterna(p_iva_azienda_esterna, nome, via, citta, cap, email) values ('46433524545','Caseificio De Martino','Piazza Carlo III, 30','Napoli','80137','demartino@gmail.com')
+ 	into azienda_esterna(p_iva_azienda_esterna, nome, via, citta, cap, email) values ('87435362313','Zara','Via Scarlatti, 129','Napoli','80129','viascarlatti@zara.com')
+SELECT 1 FROM DUAL;
 
 
 
