@@ -519,15 +519,3 @@ insert all
 	
 	select 1 from dual;
 
-
-
-
-	/*
-
-
-insert all
-	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('GPPFNZ63A17G455X','06','68576','Segretario') --ok
-
-
-
-	*/
