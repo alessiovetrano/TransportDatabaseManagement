@@ -70,6 +70,24 @@ when troppoAnziano then
 raise_application_error(-20001,'Il dipendente è troppo anziano per gli standard aziendali');
 END;
 
+--CONTROLLA SE IL PESO DEL LOTTO PUO ESSERE PRESO DAL CAMION
+CREATE OR REPLACE TRIGGER checkPeso
+before insert or update on lotto
+for each row
+DECLARE
+overPeso EXCEPTION;
+BEGIN
+EXCEPTION
+when overPeso then
+raise_application_error(-20001,'Il camion non puo contenere questo lotto');
+END;
+
+
+
+
+
+
+
 -- CHECK MASSIMO NUMERO DI DIPENDENTI
 CREATE OR REPLACE TRIGGER checkNumDip
 before insert or update on dipendente
