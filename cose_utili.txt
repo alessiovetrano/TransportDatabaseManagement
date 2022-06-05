@@ -1,3 +1,8 @@
-NEL CASO DI QUERY IN CUI SI CERCA UN VALORE NULLO SI UTILIZZA "IS NULL" E NON " = NULL"
+-NEL CASO DI QUERY IN CUI SI CERCA UN VALORE NULLO SI UTILIZZA "IS NULL" E NON " = NULL"
 ES. impiegato assente il giorno 4 Aprile
 select * from impiegato im join presenza pr on im.cf_impiegato = pr.cf_presenza where Data_presenza = DATE '2022-04-04' AND ora_entrata IS NULL
+
+
+-NEL CASO DI QUERY IN CUI ABBIAMO BISOGNO DI VEDERE NELLA TABELLA GLI ORARI UTILIZZIAMO IL TO_CHAR con la seguente sintassi:
+select cf_impiegato, TO_CHAR(ora_entrata,'HH24:MI') as "Ora_entrata",TO_CHAR(ora_uscita,'HH24:MI') as "Ora_uscita"
+from impiegato im join presenza pr on im.cf_impiegato = pr.cf_presenza where Data_presenza = DATE '2022-04-04' 
