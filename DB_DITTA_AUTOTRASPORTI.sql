@@ -230,8 +230,9 @@ CONSTRAINT email_mask CHECK (
 CREATE TABLE spedizione (
 num_tracciamento VARCHAR2(10) PRIMARY KEY,
 data_spedizione DATE NOT NULL,
+cf_spedizione VARCHAR(16),
 p_iva_aziendaArrivo VARCHAR2(11) NOT NULL,
-FOREIGN KEY(data_spedizione) REFERENCES viaggio(data_viaggio),
+FOREIGN KEY(data_spedizione,cf_spedizione) REFERENCES viaggio(data_viaggio,cf_viaggio),
 FOREIGN KEY(p_iva_aziendaArrivo) REFERENCES azienda_esterna(p_iva_azienda_esterna)
 );
 
