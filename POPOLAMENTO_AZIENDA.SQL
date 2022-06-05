@@ -259,7 +259,7 @@ insert all
 		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','DHG9240965',2097,103)--ANALISTA
 		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','DHG9240965',2180,20)
 		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','DHG9240965',2113,87)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','DHG9240965',2128,72)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','DHG9240965',2128,72)
 		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','SWW2346345',1220,80)--SEGRETARIO APPRENDISTATO
 		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','SWW2346345',1227,74)
 		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','SWW2346345',1275,25)
@@ -337,6 +337,9 @@ select 1 from dual;
 
 
 --AZIENDA ESTERNA
+
+!!!	MANCA ORA ARRIVO 	!!!
+
 insert all
 	into azienda_esterna(p_iva_azienda_esterna, nome, via, citta, cap, ora_arrivo, email) values ('28392680808','Euronics', 'Via San Secondo, 98Bis','Torino','10128','euro@euronicsitalia.it')
 	into azienda_esterna(p_iva_azienda_esterna, nome, via, citta, cap, ora_arrivo, email) values ('49862681001','MediaWorld', 'Via Ottavio Munerati, 5','Rovigo','45100','mediaworld@gmail.com')
@@ -416,24 +419,24 @@ select 1 from dual;
 insert all
 
 	--IMPIEGATO MANCATO UN GIORNO LEVARE NOT NULL PER DATA ENTRRATA EUSCITA
-	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-04 08:00:01','yyyy/mm/dd hh24:mi:ss'),'MRTPLN65L69G577R',to_date('2022-04-04 08:00:01','yyyy/mm/dd hh24:mi:ss'),to_date('2022-04-04 17:00:04','yyyy/mm/dd hh24:mi:ss'))
-	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-05 08:12:59','yyyy/mm/dd hh24:mi:ss'),'MRTPLN65L69G577R',to_date('2022-04-05 08:12:59','yyyy/mm/dd hh24:mi:ss'),to_date('2022-04-04 17:12:16','yyyy/mm/dd hh24:mi:ss'))
-	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-06 08:07:00','yyyy/mm/dd hh24:mi:ss'),'MRTPLN65L69G577R',to_date('2022-04-06 08:07:00','yyyy/mm/dd hh24:mi:ss'),to_date('2022-04-04 17:07:11','yyyy/mm/dd hh24:mi:ss'))
-	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-07 08:00:02','yyyy/mm/dd hh24:mi:ss'),'MRTPLN65L69G577R',to_date('2022-04-07 08:00:02','yyyy/mm/dd hh24:mi:ss'),to_date('2022-04-04 17:00:23','yyyy/mm/dd hh24:mi:ss'))
-	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(NULL,'MRTPLN65L69G577R',NULL,NULL)
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-04','yyyy-mm-dd'),'MRTPLN65L69G577R',to_date('2022-04-04 08:00','yyyy-mm-dd hh24:mi'),to_date('2022-04-04 17:00','yyyy-mm-dd hh24:mi'))
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-05','yyyy-mm-dd'),'MRTPLN65L69G577R',to_date('2022-04-05 08:12','yyyy-mm-dd hh24:mi'),to_date('2022-04-04 17:12','yyyy-mm-dd hh24:mi'))
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-06','yyyy-mm-dd'),'MRTPLN65L69G577R',to_date('2022-04-06 08:07','yyyy-mm-dd hh24:mi'),to_date('2022-04-04 17:07','yyyy-mm-dd hh24:mi'))
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-07','yyyy-mm-dd'),'MRTPLN65L69G577R',to_date('2022-04-07 08:00','yyyy-mm-dd hh24:mi'),to_date('2022-04-04 17:00','yyyy-mm-dd hh24:mi'))
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-08','yyyy-mm-dd'),'MRTPLN65L69G577R',NULL,NULL)
 
-	--IMPIEGATO 1 ORE DI PERMESSO
-	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-04 08:22:03','yyyy/mm/dd hh24:mi:ss'),'SRCLND77S27G601O',to_date('2022-04-04 08:22:03','yyyy/mm/dd hh24:mi:ss'),to_date('2022-04-04 17:22:09','yyyy/mm/dd hh24:mi:ss'))
-	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-05 09:15:05','yyyy/mm/dd hh24:mi:ss'),'SRCLND77S27G601O',to_date('2022-04-05 09:15:05','yyyy/mm/dd hh24:mi:ss'),to_date('2022-04-04 17:15:14','yyyy/mm/dd hh24:mi:ss'))--ORA PERMESSO
-	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-06 08:13:34','yyyy/mm/dd hh24:mi:ss'),'SRCLND77S27G601O',to_date('2022-04-06 08:13:34','yyyy/mm/dd hh24:mi:ss'),to_date('2022-04-04 17:13:07','yyyy/mm/dd hh24:mi:ss'))
-	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-07 08:00:04','yyyy/mm/dd hh24:mi:ss'),'SRCLND77S27G601O',to_date('2022-04-07 08:00:04','yyyy/mm/dd hh24:mi:ss'),to_date('2022-04-04 17:00:45','yyyy/mm/dd hh24:mi:ss'))
-	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-08 08:00:00','yyyy/mm/dd hh24:mi:ss'),'SRCLND77S27G601O',to_date('2022-04-08 08:00:00','yyyy/mm/dd hh24:mi:ss'),to_date('2022-04-04 17:00:08','yyyy/mm/dd hh24:mi:ss'))
+	--IMPIEGATO 1 ORE DI PERMESSO --SRCLND77S27G601O
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-04','yyyy-mm-dd'),'SRCLND77S27G601O',to_date('2022-04-04 08:22','yyyy-mm-dd hh24:mi'),to_date('2022-04-04 17:22','yyyy-mm-dd hh24:mi'))
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-05','yyyy-mm-dd'),'SRCLND77S27G601O',to_date('2022-04-05 09:15','yyyy-mm-dd hh24:mi'),to_date('2022-04-04 17:15','yyyy-mm-dd hh24:mi'))--ORA PERMESSO
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-06','yyyy-mm-dd'),'SRCLND77S27G601O',to_date('2022-04-06 08:13','yyyy-mm-dd hh24:mi'),to_date('2022-04-04 17:13','yyyy-mm-dd hh24:mi'))
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-07','yyyy-mm-dd'),'SRCLND77S27G601O',to_date('2022-04-07 08:00','yyyy-mm-dd hh24:mi'),to_date('2022-04-04 17:00','yyyy-mm-dd hh24:mi'))
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-08','yyyy-mm-dd'),'SRCLND77S27G601O',to_date('2022-04-08 08:00','yyyy-mm-dd hh24:mi'),to_date('2022-04-04 17:00','yyyy-mm-dd hh24:mi'))
 
-	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-04 08:20:02','yyyy/mm/dd hh24:mi:ss'),'SPNRSR76H05F578I',to_date('2022-04-04 08:20:02','yyyy/mm/dd hh24:mi:ss'),to_date('2022-04-04 17:20:00','yyyy/mm/dd hh24:mi:ss'))
-	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-05 08:03:00','yyyy/mm/dd hh24:mi:ss'),'SPNRSR76H05F578I',to_date('2022-04-05 08:03:00','yyyy/mm/dd hh24:mi:ss'),to_date('2022-04-04 17:10:01','yyyy/mm/dd hh24:mi:ss'))
-	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-06 08:05:34','yyyy/mm/dd hh24:mi:ss'),'SPNRSR76H05F578I',to_date('2022-04-06 08:05:34','yyyy/mm/dd hh24:mi:ss'),to_date('2022-04-04 17:03:43','yyyy/mm/dd hh24:mi:ss'))
-	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-07 08:10:31','yyyy/mm/dd hh24:mi:ss'),'SPNRSR76H05F578I',to_date('2022-04-07 08:10:31','yyyy/mm/dd hh24:mi:ss'),to_date('2022-04-04 16:14:22','yyyy/mm/dd hh24:mi:ss'))--ORA PERMESSO
-	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-08 08:09:00','yyyy/mm/dd hh24:mi:ss'),'SPNRSR76H05F578I',to_date('2022-04-08 08:09:00','yyyy/mm/dd hh24:mi:ss'),to_date('2022-04-04 17:00:09','yyyy/mm/dd hh24:mi:ss'))
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-04','yyyy-mm-dd'),'SPNRSR76H05F578I',to_date('2022-04-04 08:20','yyyy-mm-dd hh24:mi'),to_date('2022-04-04 17:20','yyyy-mm-dd hh24:mi'))
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-05','yyyy-mm-dd' ),'SPNRSR76H05F578I',to_date('2022-04-05 08:03','yyyy-mm-dd hh24:mi'),to_date('2022-04-04 17:10','yyyy-mm-dd hh24:mi'))
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-06','yyyy-mm-dd'),'SPNRSR76H05F578I',to_date('2022-04-06 08:05','yyyy-mm-dd hh24:mi'),to_date('2022-04-04 17:03','yyyy-mm-dd hh24:mi'))
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-07','yyyy-mm-dd'),'SPNRSR76H05F578I',to_date('2022-04-07 08:10','yyyy-mm-dd hh24:mi'),to_date('2022-04-04 16:14','yyyy-mm-dd hh24:mi'))--ORA PERMESSO
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-08','yyyy-mm-dd'),'SPNRSR76H05F578I',to_date('2022-04-08 08:09','yyyy-mm-dd hh24:mi'),to_date('2022-04-04 17:00','yyyy-mm-dd hh24:mi'))
 
 	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(date'2022-04-04','LNNGST70B20D443N',DATE'2022-04-04 08:02',date'2022-04-04 17:02')
 	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(date'2022-04-05','LNNGST70B20D443N',DATE'2022-04-05 08:00',date'2022-04-04 17:00')
@@ -473,8 +476,53 @@ insert all
 	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(date'2022-04-06','DOXSST85E28B869H',DATE'2022-04-06 08:12',date'2022-04-04 17:12')
 	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(date'2022-04-07','DOXSST85E28B869H',DATE'2022-04-07 08:23',date'2022-04-04 17:23')
 	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(date'2022-04-08','DOXSST85E28B869H',DATE'2022-04-08 08:03',date'2022-04-04 17:03')
-
-
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(date'2022-04-04','RMNGDI92S47F048Q',DATE'2022-04-04 08:12',date'2022-04-04 17:12')
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(date'2022-04-05','RMNGDI92S47F048Q',DATE'2022-04-05 08:16',date'2022-04-04 17:16')
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(date'2022-04-06','RMNGDI92S47F048Q',DATE'2022-04-06 08:02',date'2022-04-04 17:02')
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(date'2022-04-07','RMNGDI92S47F048Q',DATE'2022-04-07 08:15',date'2022-04-04 17:15')
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(date'2022-04-08','RMNGDI92S47F048Q',DATE'2022-04-08 08:20',date'2022-04-04 17:20')
+	
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(date'2022-04-04','RPSLNZ87E52I963W',NULL,NULL)
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(date'2022-04-05','RPSLNZ87E52I963W',to_date('2022-04-05 08:04','yyyy-mm-dd hh24:mi'),to_date('2022-04-05 17:04','yyyy-mm-dd hh24:mi'))
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(date'2022-04-06','RPSLNZ87E52I963W',to_date('2022-04-06 08:12','yyyy-mm-dd hh24:mi'),to_date('2022-04-06 17:12','yyyy-mm-dd hh24:mi'))
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(date'2022-04-07','RPSLNZ87E52I963W',to_date('2022-04-07 08:01','yyyy-mm-dd hh24:mi'),to_date('2022-04-07 17:01','yyyy-mm-dd hh24:mi'))
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(date'2022-04-08','RPSLNZ87E52I963W',to_date('2022-04-08 08:09','yyyy-mm-dd hh24:mi'),to_date('2022-04-08 17:09','yyyy-mm-dd hh24:mi'))
+	
+	
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(date'2022-04-04','SMCRLD67H20B617Z',to_date('2022-04-04 08:02','yyyy-mm-dd hh24:mi'),to_date('2022-04-04 17:02','yyyy-mm-dd hh24:mi'))
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(date'2022-04-05','SMCRLD67H20B617Z',to_date('2022-04-05 08:04','yyyy-mm-dd hh24:mi'),to_date('2022-04-05 16:04','yyyy-mm-dd hh24:mi'))
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(date'2022-04-06','SMCRLD67H20B617Z',to_date('2022-04-06 08:16','yyyy-mm-dd hh24:mi'),to_date('2022-04-06 17:16','yyyy-mm-dd hh24:mi'))
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(date'2022-04-07','SMCRLD67H20B617Z',to_date('2022-04-07 08:01','yyyy-mm-dd hh24:mi'),to_date('2022-04-07 17:01','yyyy-mm-dd hh24:mi'))
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(date'2022-04-08','SMCRLD67H20B617Z',to_date('2022-04-08 08:17','yyyy-mm-dd hh24:mi'),to_date('2022-04-08 17:17','yyyy-mm-dd hh24:mi'))
+	
+	
+	
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(date'2022-04-04','NCRCRD70D14D315A',to_date('2022-04-04 08:12','yyyy-mm-dd hh24:mi'),to_date('2022-04-04 17:12','yyyy-mm-dd hh24:mi'))
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(date'2022-04-05','NCRCRD70D14D315A',to_date('2022-04-05 08:02','yyyy-mm-dd hh24:mi'),to_date('2022-04-05 16:02','yyyy-mm-dd hh24:mi'))
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(date'2022-04-06','NCRCRD70D14D315A',to_date('2022-04-06 08:23','yyyy-mm-dd hh24:mi'),to_date('2022-04-06 17:23','yyyy-mm-dd hh24:mi'))
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(date'2022-04-07','NCRCRD70D14D315A',to_date('2022-04-07 08:11','yyyy-mm-dd hh24:mi'),to_date('2022-04-07 17:11','yyyy-mm-dd hh24:mi'))
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(date'2022-04-08','NCRCRD70D14D315A',to_date('2022-04-08 08:13','yyyy-mm-dd hh24:mi'),to_date('2022-04-08 17:13','yyyy-mm-dd hh24:mi'))
+	
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(date'2022-04-04','DSSSSN84R30C649B',to_date('2022-04-04 08:09','yyyy-mm-dd hh24:mi'),to_date('2022-04-04 17:09','yyyy-mm-dd hh24:mi'))
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(date'2022-04-05','DSSSSN84R30C649B',NULL,NULL)
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(date'2022-04-06','DSSSSN84R30C649B',to_date('2022-04-06 08:11','yyyy-mm-dd hh24:mi'),to_date('2022-04-06 17:11','yyyy-mm-dd hh24:mi'))
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(date'2022-04-07','DSSSSN84R30C649B',to_date('2022-04-07 08:04','yyyy-mm-dd hh24:mi'),to_date('2022-04-07 17:04','yyyy-mm-dd hh24:mi'))
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(date'2022-04-08','DSSSSN84R30C649B',to_date('2022-04-08 08:09','yyyy-mm-dd hh24:mi'),to_date('2022-04-08 17:09','yyyy-mm-dd hh24:mi'))
+	
+	
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(date'2022-04-04','CNGRDT64S13E866D',to_date('2022-04-04 08:10','yyyy-mm-dd hh24:mi'),to_date('2022-04-04 17:10','yyyy-mm-dd hh24:mi'))
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(date'2022-04-05','CNGRDT64S13E866D',to_date('2022-04-05 08:01','yyyy-mm-dd hh24:mi'),to_date('2022-04-05 17:01','yyyy-mm-dd hh24:mi'))
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(date'2022-04-06','CNGRDT64S13E866D',to_date('2022-04-06 08:03','yyyy-mm-dd hh24:mi'),to_date('2022-04-06 17:03','yyyy-mm-dd hh24:mi'))
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(date'2022-04-07','CNGRDT64S13E866D',NULL,NULL)
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(date'2022-04-08','CNGRDT64S13E866D',to_date('2022-04-08 08:12','yyyy-mm-dd hh24:mi'),to_date('2022-04-08 17:12','yyyy-mm-dd hh24:mi'))
+	
+	
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(date'2022-04-04','GPPFNZ63A17G455X',to_date('2022-04-04 08:07','yyyy-mm-dd hh24:mi'),to_date('2022-04-04 17:07','yyyy-mm-dd hh24:mi'))
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(date'2022-04-05','GPPFNZ63A17G455X',to_date('2022-04-05 08:01','yyyy-mm-dd hh24:mi'),to_date('2022-04-05 15:01','yyyy-mm-dd hh24:mi'))
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(date'2022-04-06','GPPFNZ63A17G455X',to_date('2022-04-06 08:12','yyyy-mm-dd hh24:mi'),to_date('2022-04-06 17:12','yyyy-mm-dd hh24:mi'))
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(date'2022-04-07','GPPFNZ63A17G455X',to_date('2022-04-07 08:21','yyyy-mm-dd hh24:mi'),to_date('2022-04-07 17:21','yyyy-mm-dd hh24:mi'))
+	into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(date'2022-04-08','GPPFNZ63A17G455X',to_date('2022-04-08 08:06','yyyy-mm-dd hh24:mi'),to_date('2022-04-08 17:06','yyyy-mm-dd hh24:mi'))
+	
 	select 1 from dual;
 
 
@@ -484,12 +532,6 @@ insert all
 
 
 insert all
-	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('RMNGDI92S47F048Q','09','80093','Segretario') --OK
-	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('RPSLNZ87E52I963W','08','45211','Analista') --OK
-	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('SMCRLD67H20B617Z','07','35311','Manager') --OK
-	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('NCRCRD70D14D315A','08','41131','Manager') --OK
-	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('DSSSSN84R30C649B','08','01312','Manager') --OK
-	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('CNGRDT64S13E866D','06','41252','Analista') --OK
 	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('GPPFNZ63A17G455X','06','68576','Segretario') --ok
 
 
