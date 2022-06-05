@@ -121,7 +121,7 @@ CONSTRAINT cf_contratto_mask CHECK(
 
 
 CREATE TABLE stipendio (
-data_stipendio,
+data_stipendio DATE,
 contratto_stipendio VARCHAR2(10) NOT NULL,
 importo NUMBER(4) NOT NULL,
 trattenute NUMBER(3) NOT NULL,
