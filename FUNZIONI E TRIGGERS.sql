@@ -19,7 +19,7 @@ raise check_maggiorenne;
 end if;
 EXCEPTION
 when check_maggiorenne then
-raise_application_error(-20001,'DIPENDENTE MINORENNE');
+DBMS_OUTPUT.PUT_LINE('DIPENDENTE MINORENNE');
 end;
 
 --CHECK SINGOLO DIRETTORE AZIENDALE
@@ -37,7 +37,7 @@ raise overNum;
 end if;
 EXCEPTION
 when overNum then
-raise_application_error(-20001,'Esiste già un direttore in azienda');
+DBMS_OUTPUT.PUT_LINE('ESISTE GIA UN DIRETTORE IN AZIENDA');
 end;
 
 
@@ -56,7 +56,7 @@ if (contatore > 2) then
 end if;
 EXCEPTION
 when overNum then 
-raise_application_error(-20001,'Officina troppo piena');
+DBMS_OUTPUT.PUT_LINE('OFFICINA TROPPO PIENA');
 END;
 
 
@@ -72,7 +72,7 @@ raise troppoAnziano;
 end if;
 EXCEPTION
 when troppoAnziano then
-raise_application_error(-20001,'Il dipendente è troppo anziano per gli standard aziendali');
+DBMS_OUTPUT.PUT_LINE('DIPENDENTE TROPPO ANZIANO PER GLI STANDARD AZIENDALI');
 END;
 
 --PESO RISPETTO AL VEICOLO
@@ -96,7 +96,7 @@ raise overPeso;
 end if;
 EXCEPTION
 when overPeso then
-raise_application_error(-20001,'Il camion non può contenere questo lotto');
+DBMS_OUTPUT.PUT_LINE('IL VEICOLO NON PUO CONTENERE QUESTO LOTTO');
 END;
 
 
@@ -117,14 +117,39 @@ raise MaxNumDip;
 end if;
 EXCEPTION
 when MaxNumDip then
-raise_application_error(-20001,'Raggiunto massimo numero di dipendenti');
+DBMS_OUTPUT.PUT_LINE('RAGGIUNTO MASSIMO NUMERO DI DIPENDENTI');
 END;
 
 ----------------------------------PROCEDURE----------------------------------
+
 
 --LICENZIAMENTO DIPENDENTE (IMPIEGATO/AUTISTA)
 CREATE OR REPLACE PROCEDURE licenziamento(codFiscale varchar)
 IS
 BEGIN
 delete from dipendente where cf = codFiscale;
+DBMS_OUTPUT.PUT_LINE('ELIMINAZIONE DAL DATA-BASE ANDATA A BUON FINE');
 END;
+
+
+CREATE OR REPLACE PROCEDURE nuovoDirettore (CodFiscale varchar)
+IS
+error1 EXCEPTION;
+BEGIN
+for ind in 
+(select cf_impiegato from dipendente join impiegato on cf=cf_impiegato join contratto on cf_impiegato = cf_contratto 
+    where mansione = 'Segretario' OR tipo_contratto != 'Indeterminato' OR TO_CHAR(data_assunzione) > '2012-01-01')
+loop
+    if ind.cf_impiegato = CodFiscale then
+        raise error1;
+    else
+         update impiegato set mansione = 'Manager' where mansione = 'Direttore';
+         update impiegato set mansione = 'Direttore' where cf_impiegato = CodFiscale;
+    end if;
+end loop;
+
+EXCEPTION
+when error1 then
+dbms_output.put_line('QUESTA PERSONA NON PUO ESSERE NOMINATA DIRETTORE');
+
+END; 
