@@ -201,7 +201,6 @@ CREATE TABLE viaggio (
 Data_viaggio DATE,
 cf_viaggio VARCHAR2(16),
 p_iva_forn VARCHAR2(11) NOT NULL,
---p_iva_az_esterna VARCHAR2(11) NOT NULLL
 km_totali NUMBER(4) NOT NULL,
 num_soste INT NOT NULL,
 Durata INT NOT NULL,
@@ -210,7 +209,7 @@ PRIMARY KEY(data_viaggio,cf_viaggio),
 FOREIGN KEY(cf_viaggio) REFERENCES autista(cf_autista)
 ON DELETE CASCADE,
 FOREIGN KEY(p_iva_forn) REFERENCES fornitore(p_iva_fornitore),
---FOREIGN KEY(p_iva_az_esterna) REFERENCES azienda_esterna(p_iva_azienda_esterna),
+
 
 CONSTRAINT cf_viaggio_mask CHECK(
 	REGEXP_LIKE(cf_viaggio,'[A-Z]{6}[0-9]{2}[A-Z][0-9]{2}[A-Z][0-9]{3}[A-Z]'))
