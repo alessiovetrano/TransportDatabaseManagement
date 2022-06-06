@@ -8,7 +8,7 @@ cognome VARCHAR2(20) NOT NULL,
 data_nascita DATE NOT NULL,
 data_assunzione DATE NOT NULL,
 	
-CONSTAINT check_cf CHECK(
+CONSTRAINT check_cf CHECK(
 	REGEXP_LIKE(cf,'[A-Z]{6}[0-9]{2}[A-Z][0-9]{2}[A-Z][0-9]{3}[A-Z]')),
 	
 CONSTRAINT data_assunzione_check CHECK(
