@@ -189,7 +189,8 @@ data_inizio_man DATE NOT NULL,
 data_fine_man DATE NOT NULL,
 FOREIGN KEY(targa_manutenzione) REFERENCES veicolo(targa)
 ON DELETE CASCADE,
-FOREIGN KEY(p_iva_meccanico) REFERENCES officina(p_iva_officina),
+FOREIGN KEY(p_iva_meccanico) REFERENCES officina(p_iva_officina)
+ON DELETE CASCADE,
 
 CONSTRAINT targa_manutenzione_mask CHECK(
 	REGEXP_LIKE(targa_manutenzione,'[A-Z]{2}[0-9]{3}[A-Z]{2}'))
@@ -206,7 +207,8 @@ Ora_carico DATE NOT NULL,
 PRIMARY KEY(data_viaggio,cf_viaggio),
 FOREIGN KEY(cf_viaggio) REFERENCES autista(cf_autista)
 ON DELETE CASCADE,
-FOREIGN KEY(p_iva_forn) REFERENCES fornitore(p_iva_fornitore),
+FOREIGN KEY(p_iva_forn) REFERENCES fornitore(p_iva_fornitore)
+ON DELETE CASCADE,
 
 CONSTRAINT cf_viaggio_mask CHECK(
 	REGEXP_LIKE(cf_viaggio,'[A-Z]{6}[0-9]{2}[A-Z][0-9]{2}[A-Z][0-9]{3}[A-Z]'))
@@ -231,8 +233,10 @@ num_tracciamento VARCHAR2(10) PRIMARY KEY,
 data_spedizione DATE NOT NULL,
 cf_spedizione VARCHAR(16) NOT NULL,
 p_iva_aziendaArrivo VARCHAR2(11) NOT NULL,
-FOREIGN KEY(data_spedizione,cf_spedizione) REFERENCES viaggio(data_viaggio,cf_viaggio),
+FOREIGN KEY(data_spedizione,cf_spedizione) REFERENCES viaggio(data_viaggio,cf_viaggio)
+ON DELETE CASCADE,
 FOREIGN KEY(p_iva_aziendaArrivo) REFERENCES azienda_esterna(p_iva_azienda_esterna)
+ON DELETE CASCADE,
 );
 
 
