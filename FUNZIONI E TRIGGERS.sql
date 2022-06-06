@@ -127,13 +127,23 @@ END;
 CREATE OR REPLACE PROCEDURE licenziamento(codFiscale varchar)
 IS
 error1 EXCEPTION;
+cfDir VARCHAR2(16);
 BEGIN
-delete from dipendente where cf = codFiscale;
+select cf_impiegato into cfDir from impiegato where mansione = 'Direttore';
+
+if cfDir = codFiscale then
+    raise error1;
+else
+    delete from dipendente where cf = codFiscale;
+end if;
 DBMS_OUTPUT.PUT_LINE('ELIMINAZIONE DAL DATA-BASE ANDATA A BUON FINE');
-if (select cf from impiegato where
+
+EXCEPTION
+when error1 then 
+DBMS_OUTPUT.PUT_LINE('NON PUOI LICENZIARE UN DIRETTORE SENZA AVERNE ELETTO UN ALTRO');
 END;
 
-
+--ELEZIONE NUOVO DIRETTORE
 CREATE OR REPLACE PROCEDURE nuovoDirettore (CodFiscale varchar)
 IS
 error1 EXCEPTION;
