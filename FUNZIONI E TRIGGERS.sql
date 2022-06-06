@@ -126,9 +126,11 @@ END;
 --LICENZIAMENTO DIPENDENTE (IMPIEGATO/AUTISTA)
 CREATE OR REPLACE PROCEDURE licenziamento(codFiscale varchar)
 IS
+error1 EXCEPTION;
 BEGIN
 delete from dipendente where cf = codFiscale;
 DBMS_OUTPUT.PUT_LINE('ELIMINAZIONE DAL DATA-BASE ANDATA A BUON FINE');
+if (select cf from impiegato where
 END;
 
 
