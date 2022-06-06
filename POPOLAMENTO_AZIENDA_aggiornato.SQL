@@ -214,8 +214,8 @@ insert all
     into contratto (codice_contratto, cf_contratto, durata_contratto, tipo_contratto) values ('GTR9649901','SRCLND77S27G601O',0.6,'Apprendistato')
     into contratto (codice_contratto, cf_contratto, durata_contratto, tipo_contratto) values ('POI2161048','SPNRSR76H05F578I',NULL,'Indeterminato')
     into contratto (codice_contratto, cf_contratto, durata_contratto, tipo_contratto) values ('LKD8273619','LNNGST70B20D443N',2.0,'Determinato')
-    into contratto (codice_contratto, cf_contratto, durata_contratto, tipo_contratto) values ('VMH7195739','GLLLGU01M17F839G',NULL,'Indeterminato')
-    into contratto (codice_contratto, cf_contratto, durata_contratto, tipo_contratto) values ('AFD6195637','VTRLSS98T11F839O',NULL,'Indeterminato')
+    into contratto (codice_contratto, cf_contratto, durata_contratto, tipo_contratto) values ('VMH7195739','GLLLGU01M17F839G',1.0,'Apprendistato')
+    into contratto (codice_contratto, cf_contratto, durata_contratto, tipo_contratto) values ('AFD6195637','VTRLSS98T11F839O',1.0,'Apprendistato')
     into contratto (codice_contratto, cf_contratto, durata_contratto, tipo_contratto) values ('ASD7640625','DNNLCU01E15F839T',NULL,'Indeterminato')
     into contratto (codice_contratto, cf_contratto, durata_contratto, tipo_contratto) values ('BDD0946503','DOXSST85E28B869H',1.6,'Determinato')
     into contratto (codice_contratto, cf_contratto, durata_contratto, tipo_contratto) values ('ANA9018475','RMNGDI92S47F048Q',0.6,'Part-time')
@@ -224,7 +224,7 @@ insert all
     into contratto (codice_contratto, cf_contratto, durata_contratto, tipo_contratto) values ('ZXF3475436','NCRCRD70D14D315A',1.6,'Determinato')
     into contratto (codice_contratto, cf_contratto, durata_contratto, tipo_contratto) values ('PMG4710457','DSSSSN84R30C649B',2.0,'Determinato')
     into contratto (codice_contratto, cf_contratto, durata_contratto, tipo_contratto) values ('DHG9240965','CNGRDT64S13E866D',1.0,'Determinato')
-    into contratto (codice_contratto, cf_contratto, durata_contratto, tipo_contratto) values ('SWW2346345','GPPFNZ63A17G455X',0.6,'Apprendistato')
+    into contratto (codice_contratto, cf_contratto, durata_contratto, tipo_contratto) values ('SWW2346345','GPPFNZ63A17G455X',0.6,'Determinato')
 		into contratto (codice_contratto, cf_contratto, durata_contratto, tipo_contratto) values ('MMM8494933','CLMGLC85L02I926V',1.0,'Part-time')
 		into contratto (codice_contratto, cf_contratto, durata_contratto, tipo_contratto) values ('PQQ7595844','CHPPPN95H19F806J',0.5,'Part_time')
 		into contratto (codice_contratto, cf_contratto, durata_contratto, tipo_contratto) values ('JJH8403130','CRTNDR94P22A310N',3.0,'Determinato')
@@ -238,7 +238,7 @@ insert all
 		into contratto (codice_contratto, cf_contratto, durata_contratto, tipo_contratto) values ('YTR9006546','QRNRNN94E52I566X',2.0,'Determinato')
 		into contratto (codice_contratto, cf_contratto, durata_contratto, tipo_contratto) values ('IUI6895346','DFZSLA76E68L865H',NULL,'Indeterminato')
 		into contratto (codice_contratto, cf_contratto, durata_contratto, tipo_contratto) values ('VVV4711056','SRCSLV85E54D267Z',NULL,'Indeterminato')
-		into contratto (codice_contratto, cf_contratto, durata_contratto, tipo_contratto) values ('OOU8967948','CRLBGD75D59F678Q',1.0,'Apprendistato')
+		into contratto (codice_contratto, cf_contratto, durata_contratto, tipo_contratto) values ('OOU8967948','CRLBGD75D59F678Q',1.0,'Determinato')
 		into contratto (codice_contratto, cf_contratto, durata_contratto, tipo_contratto) values ('GTR7975469','LPRBRN76R42F839H',5.5,'Determinato')
 
 		select 1 from dual;
