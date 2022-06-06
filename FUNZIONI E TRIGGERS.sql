@@ -6,7 +6,7 @@
 */
 -----------------------TRIGGERS------------------------------
 
---CHECK DIPENDENTE MAGGIORENNE
+--1.CHECK DIPENDENTE MAGGIORENNE
 CREATE OR REPLACE TRIGGER maggiorenne
 before insert on dipendente
 for each row
@@ -21,7 +21,7 @@ when check_maggiorenne then
 raise_application_error(-20001,'DIPENDENTE MINORENNE');
 end;
 
---CHECK SINGOLO DIRETTORE AZIENDALE
+--2.CHECK SINGOLO DIRETTORE AZIENDALE
 CREATE OR REPLACE TRIGGER checkMansione
 before insert or update on impiegato
 for each row
@@ -41,7 +41,7 @@ end;
 
 
 
--- CHECK SE L'OFFICINA HA NELLO STESSO PERIODO HA DUE VEICOLI NON PUO INSERIRE IL TERZO
+--3.CHECK SE L'OFFICINA HA NELLO STESSO PERIODO HA DUE VEICOLI NON PUO INSERIRE IL TERZO
 CREATE OR REPLACE TRIGGER checknumVei
 before insert on manutenzione
 for each row
@@ -59,7 +59,7 @@ raise_application_error(-20001,'OFFICINA TROPPO PIENA');
 END;
 
 
---DIPENDENTE TROPPO ANZIANO (OVER 60)
+--4.DIPENDENTE TROPPO ANZIANO (OVER 60)
 CREATE OR REPLACE TRIGGER checkAnziano
 before insert or update on dipendente
 for each row
@@ -74,7 +74,7 @@ when troppoAnziano then
 raise_application_error(-20001,'DIPENDENTE TROPPO ANZIANO PER GLI STANDARD AZIENDALI');
 END;
 
---PESO RISPETTO AL VEICOLO
+--5.PESO RISPETTO AL VEICOLO
 CREATE OR REPLACE TRIGGER checkPeso
 before insert or update on lotto
 for each row
@@ -98,7 +98,7 @@ when overPeso then
 raise_application_error(-20001,'IL VEICOLO NON PUO CONTENERE QUESTO LOTTO');
 END;
 
---TRIGGER CONTROLLA STIPENDIO DEL DIRETTORE
+--6.TRIGGER CONTROLLA STIPENDIO DEL DIRETTORE
 
 CREATE OR REPLACE TRIGGER checkStipendio
 before insert or update on stipendio
@@ -119,7 +119,7 @@ end;
 
 
 
--- CHECK MASSIMO NUMERO DI DIPENDENTI
+--7.CHECK MASSIMO NUMERO DI DIPENDENTI
 CREATE OR REPLACE TRIGGER checkNumDip
 before insert or update on dipendente
 for each row
@@ -159,7 +159,7 @@ when error1 then
 raise_application_error(-20001,'NON PUOI LICENZIARE UN DIRETTORE SENZA AVERNE ELETTO UN ALTRO');
 END;
 
---ELEZIONE NUOVO DIRETTORE
+--1.ELEZIONE NUOVO DIRETTORE
 CREATE OR REPLACE PROCEDURE nuovoDirettore (CodFiscale varchar)
 IS
 error1 EXCEPTION;
