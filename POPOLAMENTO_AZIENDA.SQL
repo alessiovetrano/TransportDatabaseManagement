@@ -338,7 +338,6 @@ select 1 from dual;
 
 --AZIENDA ESTERNA
 
-!!!	MANCA ORA ARRIVO 	!!!
 
 insert all
 	into azienda_esterna(p_iva_azienda_esterna, nome, via, citta, cap, email) values ('28392680808','Euronics', 'Via San Secondo, 98Bis','Torino','10128','euro@euronicsitalia.it')
