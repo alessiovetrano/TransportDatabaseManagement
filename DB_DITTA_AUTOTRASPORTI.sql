@@ -226,7 +226,7 @@ cap VARCHAR2(5) NOT NULL,
 email VARCHAR(30) NOT NULL UNIQUE,
 
 CONSTRAINT email_mask CHECK (
-	REGEXP_LIKE(email,'^\w+.@{1}\w+.$')) --nome@posta.it
+	REGEXP_LIKE(email,'^\w+.*@{1}\w+.*$')) --nome@posta.it
 );
 
 
