@@ -195,8 +195,6 @@ CONSTRAINT targa_manutenzione_mask CHECK(
 	REGEXP_LIKE(targa_manutenzione,'[A-Z]{2}[0-9]{3}[A-Z]{2}'))
 );
 
--- HA SENSO AGGIUNGERE AZIENDA DI PARTENZA E AZIENDA DI ARRIVO! 
--- UTILE ANCHE PER IL JOIN E LA CREAZIONE DEL TRIGGER
 CREATE TABLE viaggio (
 Data_viaggio DATE,
 cf_viaggio VARCHAR2(16),
@@ -209,7 +207,6 @@ PRIMARY KEY(data_viaggio,cf_viaggio),
 FOREIGN KEY(cf_viaggio) REFERENCES autista(cf_autista)
 ON DELETE CASCADE,
 FOREIGN KEY(p_iva_forn) REFERENCES fornitore(p_iva_fornitore),
-
 
 CONSTRAINT cf_viaggio_mask CHECK(
 	REGEXP_LIKE(cf_viaggio,'[A-Z]{6}[0-9]{2}[A-Z][0-9]{2}[A-Z][0-9]{3}[A-Z]'))
@@ -242,7 +239,7 @@ FOREIGN KEY(p_iva_aziendaArrivo) REFERENCES azienda_esterna(p_iva_azienda_estern
 CREATE TABLE lotto (
 bolla_trasporto VARCHAR(10) PRIMARY KEY,
 tracciamento_lotto VARCHAR2(10) NOT NULL,
-peso_lotto NUMBER(2) NOT NULL,
+peso_lotto INT NOT NULL,
 FOREIGN KEY(tracciamento_lotto) REFERENCES spedizione(num_tracciamento)
 ON DELETE CASCADE,
 CONSTRAINT bolla_ammessa CHECK (
