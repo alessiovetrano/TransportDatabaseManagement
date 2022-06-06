@@ -246,7 +246,7 @@ CREATE TABLE lotto (
 bolla_trasporto VARCHAR2(10) PRIMARY KEY,
 tracciamento_lotto VARCHAR2(10) NOT NULL,
 peso_lotto INT NOT NULL,
-tipo_prodotto VARCHAR2(30)
+tipo_prodotto VARCHAR2(30),
 FOREIGN KEY(tracciamento_lotto) REFERENCES spedizione(num_tracciamento)
 ON DELETE CASCADE,
 CONSTRAINT bolla_ammessa CHECK (
