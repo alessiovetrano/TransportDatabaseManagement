@@ -18,7 +18,7 @@ raise check_maggiorenne;
 end if;
 EXCEPTION
 when check_maggiorenne then
-DBMS_OUTPUT.PUT_LINE('DIPENDENTE MINORENNE');
+raise_application_error(-20001,'DIPENDENTE MINORENNE');
 end;
 
 --CHECK SINGOLO DIRETTORE AZIENDALE
@@ -36,7 +36,7 @@ raise overNum;
 end if;
 EXCEPTION
 when overNum then
-DBMS_OUTPUT.PUT_LINE('ESISTE GIA UN DIRETTORE IN AZIENDA');
+raise_application_error(-20001,'ESISTE GIA UN DIRETTORE IN AZIENDA');
 end;
 
 
@@ -55,7 +55,7 @@ if (contatore > 2) then
 end if;
 EXCEPTION
 when overNum then 
-DBMS_OUTPUT.PUT_LINE('OFFICINA TROPPO PIENA');
+raise_application_error(-20001,'OFFICINA TROPPO PIENA');
 END;
 
 
@@ -71,7 +71,7 @@ raise troppoAnziano;
 end if;
 EXCEPTION
 when troppoAnziano then
-DBMS_OUTPUT.PUT_LINE('DIPENDENTE TROPPO ANZIANO PER GLI STANDARD AZIENDALI');
+raise_application_error(-20001,'DIPENDENTE TROPPO ANZIANO PER GLI STANDARD AZIENDALI');
 END;
 
 --PESO RISPETTO AL VEICOLO
@@ -95,7 +95,7 @@ raise overPeso;
 end if;
 EXCEPTION
 when overPeso then
-DBMS_OUTPUT.PUT_LINE('IL VEICOLO NON PUO CONTENERE QUESTO LOTTO');
+raise_application_error(-20001,'IL VEICOLO NON PUO CONTENERE QUESTO LOTTO');
 END;
 
 
@@ -116,7 +116,7 @@ raise MaxNumDip;
 end if;
 EXCEPTION
 when MaxNumDip then
-DBMS_OUTPUT.PUT_LINE('RAGGIUNTO MASSIMO NUMERO DI DIPENDENTI');
+raise_application_error(-20001,'RAGGIUNTO MASSIMO NUMERO DI DIPENDENTI');
 END;
 
 ----------------------------------PROCEDURE----------------------------------
@@ -139,7 +139,7 @@ DBMS_OUTPUT.PUT_LINE('ELIMINAZIONE DAL DATA-BASE ANDATA A BUON FINE');
 
 EXCEPTION
 when error1 then 
-DBMS_OUTPUT.PUT_LINE('NON PUOI LICENZIARE UN DIRETTORE SENZA AVERNE ELETTO UN ALTRO');
+raise_application_error(-20001,'NON PUOI LICENZIARE UN DIRETTORE SENZA AVERNE ELETTO UN ALTRO');
 END;
 
 --ELEZIONE NUOVO DIRETTORE
@@ -161,6 +161,6 @@ end loop;
 
 EXCEPTION
 when error1 then
-dbms_output.put_line('QUESTA PERSONA NON PUO ESSERE NOMINATA DIRETTORE');
+raise_application_error(-20001,'QUESTA PERSONA NON PUO ESSERE NOMINATA DIRETTORE');
 
 END; 
