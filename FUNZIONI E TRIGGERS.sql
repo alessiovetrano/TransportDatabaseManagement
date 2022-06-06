@@ -13,7 +13,6 @@ for each row
 DECLARE
 check_maggiorenne EXCEPTION;
 BEGIN
-floor((sysdate-:new.data_nascita)/365)
 if (floor((sysdate-:new.data_nascita)/365) < 17) then
 raise check_maggiorenne;
 end if;
