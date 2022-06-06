@@ -6,3 +6,8 @@ select * from impiegato im join presenza pr on im.cf_impiegato = pr.cf_presenza 
 -NEL CASO DI QUERY IN CUI ABBIAMO BISOGNO DI VEDERE NELLA TABELLA GLI ORARI UTILIZZIAMO IL TO_CHAR con la seguente sintassi:
 select cf_impiegato, TO_CHAR(ora_entrata,'HH24:MI') as "Ora_entrata",TO_CHAR(ora_uscita,'HH24:MI') as "Ora_uscita"
 from impiegato im join presenza pr on im.cf_impiegato = pr.cf_presenza where Data_presenza = DATE '2022-04-04' 
+
+
+-QUERY CHE CI DICE QUANTE SPEDIZIONI SONO FATTE PER OGNI VIAGGIO
+select cf_viaggio,data_viaggio,p_iva_forn,count(*) from viaggio join spedizione on cf_viaggio = cf_spedizione AND data_viaggio = data_spedizione
+group by cf_viaggio,data_viaggio,p_iva_forn;
