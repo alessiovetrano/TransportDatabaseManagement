@@ -75,17 +75,22 @@ when troppoAnziano then
 raise_application_error(-20001,'Il dipendente è troppo anziano per gli standard aziendali');
 END;
 
---CONTROLLA SE IL PESO DEL LOTTO PUO ESSERE PRESO DAL CAMION
---||| PER FARLA FUNZIONARE SI DOVREBBE AGGIUNGERE UNA CHIAVE ESTERNA CHE COLLEGA L'AZIENDA ESTERNA AL VIAGGIO CON IL NOME p_iva_az_esterna |||
 
- 
+
+--PESO LOTTO RISPETTO AL VEICOLO
 CREATE OR REPLACE TRIGGER checkPeso
 before insert or update on lotto
 for each row
 DECLARE
 overPeso EXCEPTION;
 BEGIN
-if (select peso_massimo from lotto lt join spedizione sp on lt.tracciamento_lotto = sp.num_tracciamento join azienda_esterna ae on sp.p_iva_aziendaArrivo = ae.p_iva_azienda_esterna join viaggio vg on ar.p_iva_azeinda_esterna = vg.p_iva_az_esterna join autista au on vg.cf_viaggio = au.cf_autista join veicolo vc on au.targa_autista = vc.targa) < :new.peso_lotto then
+if select peso_massimo from ((((viaggio v 
+join fornitore forn on v.p_iva_forn = forn.p_iva_fornitore)
+join spedizione s on v.cf_viaggio  = s.cf_spedizione and v.data_viaggio = s.data_spedizione)
+join azienda_esterna az on s.p_iva_aziendaArrivo = az.p_iva_azienda_esterna)
+join autista aux on v.cf_viaggio = aux.cf_autista)
+join veicolo v on v.targa = aux.targa_autista
+) < :new.peso_lotto + (select SUM(Peso_lotto) from lotto lt join spedizione sp on lt.tracciamento_lotto = sp.num_tracciamento) then
 raise overPeso;
 end if;
 EXCEPTION
