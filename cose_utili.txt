@@ -11,3 +11,7 @@ from impiegato im join presenza pr on im.cf_impiegato = pr.cf_presenza where Dat
 -QUERY CHE CI DICE QUANTE SPEDIZIONI SONO FATTE PER OGNI VIAGGIO
 select cf_viaggio,data_viaggio,p_iva_forn,count(*) from viaggio join spedizione on cf_viaggio = cf_spedizione AND data_viaggio = data_spedizione
 group by cf_viaggio,data_viaggio,p_iva_forn;
+
+-QUERY CHE CI DICE QUANTI IMPIEGATI LAVORANO IN UFFICIO
+select num_ufficio,count(*) as persone_ufficio from impiegato join ufficio on ufficio_impiegato = num_ufficio
+group by ufficio_impiegato
