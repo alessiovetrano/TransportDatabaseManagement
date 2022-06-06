@@ -633,3 +633,41 @@ insert all
 	select 1 from dual;
 	
 	--LOTTO
+
+insert all
+	into lotto(bolla_trasporto,tracciamento_lotto,peso_lotto,tipo_prodotto) values ('ALBN837589','1945690239','20','mobili')
+	into lotto(bolla_trasporto,tracciamento_lotto,peso_lotto,tipo_prodotto) values ('LBNM758367','7849216401','10','formaggio')
+	into lotto(bolla_trasporto,tracciamento_lotto,peso_lotto,tipo_prodotto) values ('QJRL295780','4825702161','5','formaggio')
+	into lotto(bolla_trasporto,tracciamento_lotto,peso_lotto,tipo_prodotto) values ('LMQP654980','3424816704','40','mobili')
+	into lotto(bolla_trasporto,tracciamento_lotto,peso_lotto,tipo_prodotto) values ('XZOI174793','5638495720','30','mobili')
+	into lotto(bolla_trasporto,tracciamento_lotto,peso_lotto,tipo_prodotto) values ('MYCE734138','3449186234','10','salumi')
+	into lotto(bolla_trasporto,tracciamento_lotto,peso_lotto,tipo_prodotto) values ('ZAOP618539','4923651034','35','generi alimentari')
+	into lotto(bolla_trasporto,tracciamento_lotto,peso_lotto,tipo_prodotto) values ('OIAS925146','1293465403','25','generi alimentari')
+	into lotto(bolla_trasporto,tracciamento_lotto,peso_lotto,tipo_prodotto) values ('SDYJ579328','4329650123','29','mobili')
+	into lotto(bolla_trasporto,tracciamento_lotto,peso_lotto,tipo_prodotto) values ('GRWD376214','1293764321','50','mobili')
+	into lotto(bolla_trasporto,tracciamento_lotto,peso_lotto,tipo_prodotto) values ('ZQIL168937','5497203559','50','prodotti per la casa')
+	into lotto(bolla_trasporto,tracciamento_lotto,peso_lotto,tipo_prodotto) values ('JHTR157243','2914375430','6','elettrodomestici')
+	into lotto(bolla_trasporto,tracciamento_lotto,peso_lotto,tipo_prodotto) values ('ZXOP879132','3245986503','23','prodotti per la casa')
+	into lotto(bolla_trasporto,tracciamento_lotto,peso_lotto,tipo_prodotto) values ('LQYC197286','3219458654','31','mobili')
+	into lotto(bolla_trasporto,tracciamento_lotto,peso_lotto,tipo_prodotto) values ('ANUE498261','3249869123','20','videogiochi')
+	into lotto(bolla_trasporto,tracciamento_lotto,peso_lotto,tipo_prodotto) values ('VQHY497365','4595364329','17','mobili')
+	into lotto(bolla_trasporto,tracciamento_lotto,peso_lotto,tipo_prodotto) values ('JHRT549836','5649825548','27','prodotti per la casa')
+	into lotto(bolla_trasporto,tracciamento_lotto,peso_lotto,tipo_prodotto) values ('IEMZ146389','9584549828','4','elettrodomestici')
+	into lotto(bolla_trasporto,tracciamento_lotto,peso_lotto,tipo_prodotto) values ('UZMT781452','9458284582','41','mobili')
+	into lotto(bolla_trasporto,tracciamento_lotto,peso_lotto,tipo_prodotto) values ('WQNH156827','5598598987','36','prrodotti per la casa')
+	into lotto(bolla_trasporto,tracciamento_lotto,peso_lotto,tipo_prodotto) values ('ZXBE736819','6894549848','25','generi alimentari')
+	into lotto(bolla_trasporto,tracciamento_lotto,peso_lotto,tipo_prodotto) values ('AOUZ245186','8947549451','40','mobili')
+	into lotto(bolla_trasporto,tracciamento_lotto,peso_lotto,tipo_prodotto) values ('YBCI914873','9874984858','10','formaggio')
+	into lotto(bolla_trasporto,tracciamento_lotto,peso_lotto,tipo_prodotto) values ('HURZ573568','9854898456','15','salumi')
+	into lotto(bolla_trasporto,tracciamento_lotto,peso_lotto,tipo_prodotto) values ('NPWC246585','8744984494','20','generi alimentari')
+	into lotto(bolla_trasporto,tracciamento_lotto,peso_lotto,tipo_prodotto) values ('HJTG576268','9842894859','24','generi alimentari')
+	into lotto(bolla_trasporto,tracciamento_lotto,peso_lotto,tipo_prodotto) values ('HEMJ137845','9847848484','23','generi alimentari')
+	into lotto(bolla_trasporto,tracciamento_lotto,peso_lotto,tipo_prodotto) values ('QFZH423614','9498449844','21','salumi)
+	into lotto(bolla_trasporto,tracciamento_lotto,peso_lotto,tipo_prodotto) values ('LIXS762149','9789498475','34','formaggio')
+	into lotto(bolla_trasporto,tracciamento_lotto,peso_lotto,tipo_prodotto) values ('XURH497853','9888795498','38','mobili')
+	into lotto(bolla_trasporto,tracciamento_lotto,peso_lotto,tipo_prodotto) values ('JHDS745624','4586239875','38','articoli sportivi')
+	
+	select 1 from dual;
+	
+	
+	
