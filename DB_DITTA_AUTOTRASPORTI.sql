@@ -223,7 +223,7 @@ nome VARCHAR2(30) NOT NULL,
 via VARCHAR2(30) NOT NULL,
 citta VARCHAR2(20) NOT NULL,
 cap VARCHAR2(5) NOT NULL,
-email VARCHAR(30) NOT NULL UNIQUE,
+email VARCHAR2(30) NOT NULL UNIQUE,
 
 CONSTRAINT email_mask CHECK (
 	REGEXP_LIKE(email,'^\w+.*@{1}\w+.*$')) --nome@posta.it
@@ -243,9 +243,10 @@ ON DELETE CASCADE
 
 
 CREATE TABLE lotto (
-bolla_trasporto VARCHAR(10) PRIMARY KEY,
+bolla_trasporto VARCHAR2(10) PRIMARY KEY,
 tracciamento_lotto VARCHAR2(10) NOT NULL,
 peso_lotto INT NOT NULL,
+tipo_prodotto VARCHAR2(30)
 FOREIGN KEY(tracciamento_lotto) REFERENCES spedizione(num_tracciamento)
 ON DELETE CASCADE,
 CONSTRAINT bolla_ammessa CHECK (
