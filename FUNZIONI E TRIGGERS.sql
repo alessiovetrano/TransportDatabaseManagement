@@ -146,21 +146,25 @@ END;
 CREATE OR REPLACE PROCEDURE nuovoDirettore (CodFiscale varchar)
 IS
 error1 EXCEPTION;
+nomeDir varchar2(30);
+cognomeDir varchar2(30);
+
 BEGIN
+select nome,cognome into nomeDir,cognomeDir  from impiegato im join dipendente dip on im.cf_impiegato = dip.cf where cf = CodFiscale;
 for ind in 
 (select cf_impiegato from dipendente join impiegato on cf=cf_impiegato join contratto on cf_impiegato = cf_contratto 
     where mansione = 'Segretario' OR tipo_contratto != 'Indeterminato' OR TO_CHAR(data_assunzione) > '2012-01-01')
 loop
     if ind.cf_impiegato = CodFiscale then
         raise error1;
-    else
-         update impiegato set mansione = 'Manager' where mansione = 'Direttore';
-         update impiegato set mansione = 'Direttore' where cf_impiegato = CodFiscale;
     end if;
 end loop;
+update impiegato set mansione = 'Manager' where mansione = 'Direttore';
+update impiegato set mansione = 'Direttore' where cf_impiegato = CodFiscale;
+DBMS_OUTPUT.PUT_LINE('L''impiegato ' || (nomeDir) ||' ' || (cognomeDir) ||' è ufficialmente il nuovo direttore');
 
 EXCEPTION
 when error1 then
-raise_application_error(-20001,'QUESTA PERSONA NON PUO ESSERE NOMINATA DIRETTORE');
-
+DBMS_OUTPUT.PUT_LINE('L''impiegato ' || (nomeDir) ||' ' || (cognomeDir) ||' non può diventare direttore per le regole aziendali'); 
 END; 
+
