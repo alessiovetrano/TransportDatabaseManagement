@@ -98,7 +98,24 @@ when overPeso then
 raise_application_error(-20001,'IL VEICOLO NON PUO CONTENERE QUESTO LOTTO');
 END;
 
+--TRIGGER CONTROLLA STIPENDIO DEL DIRETTORE
 
+CREATE OR REPLACE TRIGGER checkStipendio
+before insert or update on stipendio
+for each row
+DECLARE
+codice_cont_check VARCHAR2(30);
+stipendio_basso EXCEPTION;
+BEGIN
+select codice_contratto into codice_cont_check from impiegato im join dipendente dip on im.cf_impiegato = dip.cf 
+join contratto contr on dip.cf = contr.cf_contratto where mansione = 'Direttore';
+if (:new.importo < 3200 and :new.contratto_stipendio = codice_cont_check) then
+raise stipendio_basso;
+end if;
+EXCEPTION
+when stipendio_basso then
+raise_application_error(-20001,'STIPENDIO TROPPO BASSO PER UN DIRETTORE');
+end;
 
 
 
