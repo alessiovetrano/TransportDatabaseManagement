@@ -236,7 +236,7 @@ p_iva_aziendaArrivo VARCHAR2(11) NOT NULL,
 FOREIGN KEY(data_spedizione,cf_spedizione) REFERENCES viaggio(data_viaggio,cf_viaggio)
 ON DELETE CASCADE,
 FOREIGN KEY(p_iva_aziendaArrivo) REFERENCES azienda_esterna(p_iva_azienda_esterna)
-ON DELETE CASCADE,
+ON DELETE CASCADE
 );
 
 
