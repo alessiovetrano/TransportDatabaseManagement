@@ -76,27 +76,32 @@ raise_application_error(-20001,'Il dipendente è troppo anziano per gli standard
 END;
 
 
-
---PESO LOTTO RISPETTO AL VEICOLO
 CREATE OR REPLACE TRIGGER checkPeso
 before insert or update on lotto
 for each row
 DECLARE
 overPeso EXCEPTION;
+peso INT;
+somma_lotti INT;
 BEGIN
-if select peso_massimo from ((((viaggio v 
-join fornitore forn on v.p_iva_forn = forn.p_iva_fornitore)
-join spedizione s on v.cf_viaggio  = s.cf_spedizione and v.data_viaggio = s.data_spedizione)
-join azienda_esterna az on s.p_iva_aziendaArrivo = az.p_iva_azienda_esterna)
-join autista aux on v.cf_viaggio = aux.cf_autista)
-join veicolo v on v.targa = aux.targa_autista
-) < :new.peso_lotto + (select SUM(Peso_lotto) from lotto lt join spedizione sp on lt.tracciamento_lotto = sp.num_tracciamento) then
+select peso_massimo into peso from viaggio v 
+join fornitore forn on v.p_iva_forn = forn.p_iva_fornitore
+join spedizione s on v.cf_viaggio  = s.cf_spedizione and v.data_viaggio = s.data_spedizione
+join azienda_esterna az on s.p_iva_aziendaArrivo = az.p_iva_azienda_esterna
+join autista aux on v.cf_viaggio = aux.cf_autista
+join veicolo v on v.targa = aux.targa_autista;
+
+select SUM(Peso_lotto) into somma_lotti from lotto lt join spedizione sp on lt.tracciamento_lotto = sp.num_tracciamento;
+
+
+if (peso < :new.peso_lotto + somma_lotti) then
 raise overPeso;
 end if;
 EXCEPTION
 when overPeso then
 raise_application_error(-20001,'Il camion non può contenere questo lotto');
 END;
+
 
 
 
