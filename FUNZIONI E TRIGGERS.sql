@@ -75,7 +75,7 @@ when troppoAnziano then
 raise_application_error(-20001,'Il dipendente è troppo anziano per gli standard aziendali');
 END;
 
-
+--PESO RISPETTO AL VEICOLO
 CREATE OR REPLACE TRIGGER checkPeso
 before insert or update on lotto
 for each row
@@ -90,10 +90,7 @@ join spedizione s on v.cf_viaggio  = s.cf_spedizione and v.data_viaggio = s.data
 join azienda_esterna az on s.p_iva_aziendaArrivo = az.p_iva_azienda_esterna
 join autista aux on v.cf_viaggio = aux.cf_autista
 join veicolo v on v.targa = aux.targa_autista;
-
 select SUM(Peso_lotto) into somma_lotti from lotto lt join spedizione sp on lt.tracciamento_lotto = sp.num_tracciamento;
-
-
 if (peso < :new.peso_lotto + somma_lotti) then
 raise overPeso;
 end if;
