@@ -39,6 +39,9 @@ EXCEPTION
 when overNum then
 raise_application_error(-20001,'Esiste già un direttore in azienda');
 end;
+
+
+
 -- CHECK SE L'OFFICINA HA NELLO STESSO PERIODO HA DUE VEICOLI NON PUO INSERIRE IL TERZO
 CREATE OR REPLACE TRIGGER checknumVei
 before insert on manutenzione
@@ -55,6 +58,8 @@ EXCEPTION
 when overNum then 
 raise_application_error(-20001,'Officina troppo piena');
 END;
+
+
 --DIPENDENTE TROPPO ANZIANO (OVER 60)
 CREATE OR REPLACE TRIGGER checkAnziano
 before insert or update on dipendente
@@ -71,7 +76,7 @@ raise_application_error(-20001,'Il dipendente è troppo anziano per gli standard
 END;
 
 --CONTROLLA SE IL PESO DEL LOTTO PUO ESSERE PRESO DAL CAMION
-||| PER FARLA FUNZIONARE SI DOVREBBE AGGIUNGERE UNA CHIAVE ESTERNA CHE COLLEGA L'AZIENDA ESTERNA AL VIAGGIO CON IL NOME p_iva_az_esterna |||
+--||| PER FARLA FUNZIONARE SI DOVREBBE AGGIUNGERE UNA CHIAVE ESTERNA CHE COLLEGA L'AZIENDA ESTERNA AL VIAGGIO CON IL NOME p_iva_az_esterna |||
 
  
 CREATE OR REPLACE TRIGGER checkPeso
@@ -80,12 +85,12 @@ for each row
 DECLARE
 overPeso EXCEPTION;
 BEGIN
-if(select peso_massimo from lotto lt join spedizione sp on lt.tracciamento_lotto = sp.num_tracciamento join azienda_esterna ae on sp.p_iva_aziendaArrivo = ae.p_iva_azienda_esterna join viaggio vg on ar.p_iva_azeinda_esterna = vg.p_iva_az_esterna join autista au on vg.cf_viaggio = au.cf_autista join veicolo vc on au.targa_autista = vc.targa) < :new.peso_lotto then
-reise overPeso;
+if (select peso_massimo from lotto lt join spedizione sp on lt.tracciamento_lotto = sp.num_tracciamento join azienda_esterna ae on sp.p_iva_aziendaArrivo = ae.p_iva_azienda_esterna join viaggio vg on ar.p_iva_azeinda_esterna = vg.p_iva_az_esterna join autista au on vg.cf_viaggio = au.cf_autista join veicolo vc on au.targa_autista = vc.targa) < :new.peso_lotto then
+raise overPeso;
 end if;
 EXCEPTION
 when overPeso then
-raise_application_error(-20001,'Il camion non puo contenere questo lotto');
+raise_application_error(-20001,'Il camion non può contenere questo lotto');
 END;
 
 
