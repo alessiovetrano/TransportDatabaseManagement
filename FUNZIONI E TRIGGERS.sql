@@ -128,7 +128,7 @@ MaxNumDip EXCEPTION;
 cont NUMBER;
 BEGIN
 select count(*) into cont from dipendente;
-if (cont=35) then
+if (cont=40) then
 raise MaxNumDip;
 end if;
 EXCEPTION
