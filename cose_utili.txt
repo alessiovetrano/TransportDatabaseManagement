@@ -15,3 +15,9 @@ group by cf_viaggio,data_viaggio,p_iva_forn;
 -QUERY CHE CI DICE QUANTI IMPIEGATI LAVORANO IN UFFICIO
 select num_ufficio,count(*) as persone_ufficio from impiegato join ufficio on ufficio_impiegato = num_ufficio
 group by ufficio_impiegato
+
+
+--QUERY ORE LAVORATE IN UN SINGOLO GIORNO
+select cf, data_presenza,floor(((ora_uscita - ora_entrata)*24 - 1)) as ore_effettuate from dipendente dip 
+join impiegato im on dip.cf = im.cf_impiegato 
+join presenza pr on im.cf_impiegato = pr.cf_presenza;
