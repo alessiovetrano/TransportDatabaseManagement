@@ -245,144 +245,7 @@ insert all
 
 
 
--- STIPENDIO DEGLI ULTIMI 4 MESI
 
---ANALISTA IN MEDIA 2200 EURO QUINDI CALCOLO LE TRATTENUTE IN BASE ALLO STIPENDIO CHE DECIDO
---LEGALE IN MEDIA 2550 EURO
---DIRETTORE IN MEDIA 3200
---SEGRETARIO 1400
---MANAGER 2000
---AUTISTA 1800 IN MEDIA
-
---data degli stipendi di solito è il 27
---Considero stipendi da Gennaio ad Aprile
-
-
-insert all
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','QRT1859037',2057,143) --ANALISTA
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','QRT1859037',2074,126)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','QRT1859037',2120,80)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','QRT1859037',2087,113)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','GTR9649901',1220,80) --SEGRETARIO in apprendistato stipendio piu basso
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','GTR9649901',1236,64)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','GTR9649901',1217,83)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','GTR9649901',1203,97)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','POI2161048',1330,70) --SEGRETARIO
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','POI2161048',1345,55)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','POI2161048',1377,23)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','POI2161048',1380,20)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','LKD8273619',2537,13) --LEGALE
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','LKD8273619',2475,75)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','LKD8273619',2492,58)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','LKD8273619',2522,28)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','VMH7195739',1950,50)-- MANAGER
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','VMH7195739',1980,20)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','VMH7195739',1927,73)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','VMH7195739',1948,52)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','AFD6195637',2173,27) --ANALISTA
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','AFD6195637',2097,103)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','AFD6195637',2105,95)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','AFD6195637',2122,78)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','ASD7640625',3173,27)--DIRETTORE
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','ASD7640625',3123,77)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','ASD7640625',3144,56)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','ASD7640625',3102,98)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','BDD0946503',2477,73)--LEGALE
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','BDD0946503',2492,58)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','BDD0946503',2522,28)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','BDD0946503',2517,33)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','ANA9018475',927,73)--SEGRETARIO PART-TIME(1000 euro im media)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','ANA9018475',933,73)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','ANA9018475',955,45)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','ANA9018475',944,56)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','LQW5916239',2083,117)--ANALISTA
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','LQW5916239',2112,88)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','LQW5916239',2123,77)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','LQW5916239',2113,87)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','VHG6123654',1927,73)--MANAGER
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','VHG6123654',1933,67)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','VHG6123654',1955,45)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','VHG6123654',1931,69)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','ZXF3475436',1944,56)--MANAGER
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','ZXF3475436',1952,48)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','ZXF3475436',1964,36)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','ZXF3475436',1970,30)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','PMG4710457',1952,48)--MANAGER
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','PMG4710457',1966,34)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','PMG4710457',1972,28)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','PMG4710457',1924,76)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','DHG9240965',2097,103)--ANALISTA
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','DHG9240965',2180,20)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','DHG9240965',2113,87)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','DHG9240965',2128,72)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','SWW2346345',1220,80)--SEGRETARIO APPRENDISTATO
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','SWW2346345',1227,74)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','SWW2346345',1275,25)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','SWW2346345',1233,67)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','MMM8494933',1233,67) --PART TIME--AUTISTI
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','MMM8494933',1220,80)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','MMM8494933',1228,72)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','MMM8494933',1243,67)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','PQQ7595844',1247,53) --PART TIME
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','PQQ7595844',1238,62)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','PQQ7595844',1222,78)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','PQQ7595844',1233,67)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','JJH8403130',1772,28) --
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','JJH8403130',1680,120)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','JJH8403130',1727,73)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','JJH8403130',1782,18)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','YUI8940357',1697,103) --
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','YUI8940357',1712,88)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','YUI8940357',1722,78)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','YUI8940357',1744,56)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','ZXC4789654',1733,67) --
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','ZXC4789654',1781,19)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','ZXC4789654',1711,89)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','ZXC4789654',1688,112)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','IUT2345609',1727,73) --
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','IUT2345609',1711,89)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','IUT2345609',1733,67)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','IUT2345609',1772,28)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','LKJ5600865',1447,53) -- APPRENDISTATO
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','LKJ5600865',1422,78)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','LKJ5600865',1452,48)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','LKJ5600865',1405,95)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','XXX7009764',1398,102) -- APPRENDISTATO
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','XXX7009764',1412,88)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','XXX7009764',1433,67)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','XXX7009764',1444,56)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','QQQ7811146',1713,87) --
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','QQQ7811146',1711,89)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','QQQ7811146',1728,72)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','QQQ7811146',1698,102)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','LLF8909654',1697,103) --
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','LLF8909654',1702,98)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','LLF8909654',1733,67)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','LLF8909654',1724,76)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','YTR9006546',1727,73) --
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','YTR9006546',1733,67)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','YTR9006546',1713,87)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','YTR9006546',1692,108)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','IUI6895346',1781,19) --
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','IUI6895346',1712,88)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','IUI6895346',1774,26)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','IUI6895346',1698,102)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','VVV4711056',1743,67) --
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','VVV4711056',1783,17)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','VVV4711056',1723,77)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','VVV4711056',1712,88)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','OOU8967948',1388,112) -- APPRENDISTATO
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','OOU8967948',1424,76)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','OOU8967948',1432,68)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','OOU8967948',1447,53)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','GTR7975469',1753,47) --
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','GTR7975469',1783,17)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','GTR7975469',1744,56)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','GTR7975469',1722,78)
-
-
-
-select 1 from dual;
 
 
 --AUTISTI
@@ -560,6 +423,151 @@ into viaggio(Data_viaggio,cf_viaggio,p_iva_forn,km_totali,num_soste,Durata,Ora_c
 into viaggio(Data_viaggio,cf_viaggio,p_iva_forn,km_totali,num_soste,Durata,Ora_carico) values(to_date('2022-04-04','yyyy-mm-dd'),'LPRBRN76R42F839H','76896748487','610','3','20',to_date('2022-04-05 12:00','yyyy-mm-dd hh24:mi'))
 into viaggio(Data_viaggio,cf_viaggio,p_iva_forn,km_totali,num_soste,Durata,Ora_carico) values(to_date('2022-04-06','yyyy-mm-dd'),'LPRBRN76R42F839H','00103498345','860','5','38',to_date('2022-04-08 06:00','yyyy-mm-dd hh24:mi'))
 select 1 from dual;
+
+
+
+
+
+-- STIPENDIO DEGLI ULTIMI 4 MESI
+
+--ANALISTA IN MEDIA 2200 EURO QUINDI CALCOLO LE TRATTENUTE IN BASE ALLO STIPENDIO CHE DECIDO
+--LEGALE IN MEDIA 2550 EURO
+--DIRETTORE IN MEDIA 3200
+--SEGRETARIO 1400
+--MANAGER 2000
+--AUTISTA 1800 IN MEDIA
+
+--data degli stipendi di solito è il 27
+--Considero stipendi da Gennaio ad Aprile
+
+
+insert all
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','QRT1859037',2057,143) --ANALISTA
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','QRT1859037',2074,126)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','QRT1859037',2120,80)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','QRT1859037',2087,113)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','GTR9649901',1220,80) --SEGRETARIO in apprendistato stipendio piu basso
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','GTR9649901',1236,64)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','GTR9649901',1217,83)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','GTR9649901',1203,97)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','POI2161048',1330,70) --SEGRETARIO
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','POI2161048',1345,55)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','POI2161048',1377,23)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','POI2161048',1380,20)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','LKD8273619',2537,13) --LEGALE
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','LKD8273619',2475,75)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','LKD8273619',2492,58)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','LKD8273619',2522,28)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','VMH7195739',1950,50)-- MANAGER
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','VMH7195739',1980,20)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','VMH7195739',1927,73)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','VMH7195739',1948,52)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','AFD6195637',2173,27) --ANALISTA
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','AFD6195637',2097,103)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','AFD6195637',2105,95)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','AFD6195637',2122,78)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','ASD7640625',3173,27)--DIRETTORE
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','ASD7640625',3123,77)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','ASD7640625',3144,56)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','ASD7640625',3102,98)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','BDD0946503',2477,73)--LEGALE
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','BDD0946503',2492,58)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','BDD0946503',2522,28)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','BDD0946503',2517,33)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','ANA9018475',927,73)--SEGRETARIO PART-TIME(1000 euro im media)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','ANA9018475',933,73)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','ANA9018475',955,45)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','ANA9018475',944,56)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','LQW5916239',2083,117)--ANALISTA
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','LQW5916239',2112,88)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','LQW5916239',2123,77)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','LQW5916239',2113,87)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','VHG6123654',1927,73)--MANAGER
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','VHG6123654',1933,67)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','VHG6123654',1955,45)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','VHG6123654',1931,69)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','ZXF3475436',1944,56)--MANAGER
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','ZXF3475436',1952,48)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','ZXF3475436',1964,36)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','ZXF3475436',1970,30)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','PMG4710457',1952,48)--MANAGER
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','PMG4710457',1966,34)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','PMG4710457',1972,28)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','PMG4710457',1924,76)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','DHG9240965',2097,103)--ANALISTA
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','DHG9240965',2180,20)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','DHG9240965',2113,87)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','DHG9240965',2128,72)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','SWW2346345',1220,80)--SEGRETARIO APPRENDISTATO
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','SWW2346345',1227,74)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','SWW2346345',1275,25)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','SWW2346345',1233,67)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','MMM8494933',1233,67) --PART TIME--AUTISTI
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','MMM8494933',1220,80)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','MMM8494933',1228,72)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','MMM8494933',1243,67)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','PQQ7595844',1247,53) --PART TIME
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','PQQ7595844',1238,62)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','PQQ7595844',1222,78)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','PQQ7595844',1233,67)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','JJH8403130',1772,28) --
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','JJH8403130',1680,120)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','JJH8403130',1727,73)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','JJH8403130',1782,18)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','YUI8940357',1697,103) --
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','YUI8940357',1712,88)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','YUI8940357',1722,78)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','YUI8940357',1744,56)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','ZXC4789654',1733,67) --
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','ZXC4789654',1781,19)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','ZXC4789654',1711,89)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','ZXC4789654',1688,112)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','IUT2345609',1727,73) --
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','IUT2345609',1711,89)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','IUT2345609',1733,67)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','IUT2345609',1772,28)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','LKJ5600865',1447,53) -- APPRENDISTATO
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','LKJ5600865',1422,78)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','LKJ5600865',1452,48)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','LKJ5600865',1405,95)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','XXX7009764',1398,102) -- APPRENDISTATO
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','XXX7009764',1412,88)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','XXX7009764',1433,67)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','XXX7009764',1444,56)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','QQQ7811146',1713,87) --
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','QQQ7811146',1711,89)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','QQQ7811146',1728,72)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','QQQ7811146',1698,102)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','LLF8909654',1697,103) --
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','LLF8909654',1702,98)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','LLF8909654',1733,67)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','LLF8909654',1724,76)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','YTR9006546',1727,73) --
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','YTR9006546',1733,67)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','YTR9006546',1713,87)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','YTR9006546',1692,108)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','IUI6895346',1781,19) --
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','IUI6895346',1712,88)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','IUI6895346',1774,26)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','IUI6895346',1698,102)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','VVV4711056',1743,67) --
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','VVV4711056',1783,17)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','VVV4711056',1723,77)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','VVV4711056',1712,88)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','OOU8967948',1388,112) -- APPRENDISTATO
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','OOU8967948',1424,76)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','OOU8967948',1432,68)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','OOU8967948',1447,53)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','GTR7975469',1753,47) --
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','GTR7975469',1783,17)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','GTR7975469',1744,56)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','GTR7975469',1722,78)
+
+
+
+select 1 from dual;
+
+
 
 --AZIENDA ESTERNA
 insert all
