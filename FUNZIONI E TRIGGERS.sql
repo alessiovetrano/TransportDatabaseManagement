@@ -216,24 +216,22 @@ END;
 
 --
 --PROCEDURA CONTA ORA DI PRESENZA --PRENDI IL NOME E NON IL CODICE FISCALE
-CREATE OR REPLACE PROCEDURE contaOre (CodFiscale varchar)
+CREATE OR REPLACE PROCEDURE contaOre (nomeP varchar, cognomeP varchar)
 IS
 error1 EXCEPTION;
 numOre NUMBER;
 nomeDir VARCHAR2(30);
 cognomeDir VARCHAR2(30);
-cf_test VARCHAR2(16); --SI PUO EVITARE
 BEGIN
-select nome,cognome into nomeDir,cognomeDir from impiegato im join dipendente dip on im.cf_impiegato = dip.cf where cf = CodFiscale;
 
-select cf, sum(floor(((ora_uscita - ora_entrata)*24 - 1))) into cf_test,numOre from dipendente dip 
+select nome, cognome, sum(floor(((ora_uscita - ora_entrata)*24 - 1))) into nomeDir,cognomeDir,numOre 
+    from dipendente dip 
     join impiegato im on dip.cf = im.cf_impiegato 
     join presenza pr on im.cf_impiegato = pr.cf_presenza
-    where CodFiscale = im.cf_impiegato
-group by cf;
+    where nomeP = dip.nome and cognomeP = dip.cognome
+group by nome, cognome;
 
 DBMS_OUTPUT.PUT_LINE('L''impiegato ' || (nomeDir) ||' ' || (cognomeDir) ||' ha effettuato '||(numOre) || ' ore di presenze'); 
 
 END; 
-
 
