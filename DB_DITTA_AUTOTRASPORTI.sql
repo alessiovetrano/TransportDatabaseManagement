@@ -17,7 +17,6 @@ CONSTRAINT data_assunzione_check CHECK(
 
 );
 
-
 --OK
 CREATE TABLE veicolo (
 targa VARCHAR2(7) NOT NULL PRIMARY KEY,
