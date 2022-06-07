@@ -224,15 +224,12 @@ numOre NUMBER;
 nomeDir VARCHAR2(30);
 cognomeDir VARCHAR2(30);
 BEGIN
-
 select nome, cognome, sum(floor(((ora_uscita - ora_entrata)*24 - 1))) into nomeDir,cognomeDir,numOre 
     from dipendente dip 
     join impiegato im on dip.cf = im.cf_impiegato 
     join presenza pr on im.cf_impiegato = pr.cf_presenza
     where nomeP = dip.nome and cognomeP = dip.cognome
 group by nome, cognome;
-
 DBMS_OUTPUT.PUT_LINE('L''impiegato ' || (nomeDir) ||' ' || (cognomeDir) ||' ha effettuato '||(numOre) || ' ore di presenze'); 
-
 END; 
 
