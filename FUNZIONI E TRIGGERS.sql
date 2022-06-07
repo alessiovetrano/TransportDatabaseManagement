@@ -214,3 +214,26 @@ when error1 then
 DBMS_OUTPUT.PUT_LINE('L''impiegato ' || (nomeDir) ||' ' || (cognomeDir) ||' non può diventare direttore per le regole aziendali'); 
 END; 
 
+--
+--PROCEDURA CONTA ORA DI PRESENZA
+CREATE OR REPLACE PROCEDURE contaOre (CodFiscale varchar)
+IS
+error1 EXCEPTION;
+numOre NUMBER;
+nomeDir VARCHAR2(30);
+cognomeDir VARCHAR2(30);
+cf_test VARCHAR2(16); --SI PUO EVITARE
+BEGIN
+select nome,cognome into nomeDir,cognomeDir from impiegato im join dipendente dip on im.cf_impiegato = dip.cf where cf = CodFiscale;
+
+select cf, sum(floor(((ora_uscita - ora_entrata)*24 - 1))) into cf_test,numOre from dipendente dip 
+    join impiegato im on dip.cf = im.cf_impiegato 
+    join presenza pr on im.cf_impiegato = pr.cf_presenza
+    where CodFiscale = im.cf_impiegato
+group by cf;
+
+DBMS_OUTPUT.PUT_LINE('L''impiegato ' || (nomeDir) ||' ' || (cognomeDir) ||' ha effettuato '||(numOre) || ' ore di presenze'); 
+
+END; 
+
+
