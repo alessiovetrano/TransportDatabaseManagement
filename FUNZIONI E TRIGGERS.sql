@@ -215,7 +215,7 @@ DBMS_OUTPUT.PUT_LINE('L''impiegato ' || (nomeDir) ||' ' || (cognomeDir) ||' non 
 END; 
 
 --
---PROCEDURA CONTA ORA DI PRESENZA - FAI CONTROLLO SE ESISTE NELLA TABELLA CON MESSAGGIO D'ERRORE
+--2.PROCEDURA CONTA ORA DI PRESENZA - FAI CONTROLLO SE ESISTE NELLA TABELLA CON MESSAGGIO D'ERRORE
 --UTLIZZO TRE TABELLE DIVERSE
 CREATE OR REPLACE PROCEDURE contaOre (nomeP varchar, cognomeP varchar)
 IS
@@ -232,7 +232,9 @@ select nome, cognome, sum(floor(((ora_uscita - ora_entrata)*24 - 1))) into nomeD
 group by nome, cognome;
 DBMS_OUTPUT.PUT_LINE('L''impiegato ' || (nomeDir) ||' ' || (cognomeDir) ||' ha effettuato '||(numOre) || ' ore di presenze'); 
 END; 
---FARE ALTRI TEST
+
+--3. PROCEDURA SULLA SCHEDULAZIONE DI UN NUOVO VIAGGIO---FARE ALTRI TEST
+-- AGGIUNGENO IL LOTTO(CHECK SULA BOLLA TRASPORTO) RAGGIUNGIAMO TRE TABELLE
 
 CREATE OR REPLACE PROCEDURE ScheduleViaggio(dataViaggio date, kilometri number,pivaforn varchar, pivaesterna varchar)
 IS
@@ -243,11 +245,6 @@ DurataViaggio int := floor(Kilometri/90);
 numTracc int := dbms_random.value(100000000,999999999);
 BEGIN
 
---insert into viaggio (data_viaggio,cf_viaggio,p_iva_forn,km_totali,num_soste,durata) values (dataViaggio,AutistaCandidato,pivaforn,kilometri,numSoste,durataViaggio);
-
-
-
-
 select cf_autista into AutistaCandidato from (autista join viaggio on cf_autista = cf_viaggio) 
 where 
 not dataViaggio between data_viaggio and (data_viaggio+(durata/24)+8/24) and 
@@ -256,10 +253,6 @@ and data_viaggio < ( dataViaggio+(DurataViaggio/24)+8/24)
 
 order by dbms_random.value()
 fetch first 1 row only;
-
-
---TORNA VUOTO PERCHE NELLA DATA SELEZIONATA NON CI SONO AUTISTI A DISPOSIZIONE
-
 
 
     insert into viaggio (data_viaggio,cf_viaggio,p_iva_forn,km_totali,num_soste,durata) values(dataViaggio,AutistaCandidato,pivaforn,kilometri,numSoste,durataViaggio);
