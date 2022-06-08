@@ -204,7 +204,6 @@ p_iva_forn VARCHAR2(11) NOT NULL,
 km_totali NUMBER(4) NOT NULL,
 num_soste INT NOT NULL,
 Durata INT NOT NULL,
-Ora_carico DATE NOT NULL,
 PRIMARY KEY(data_viaggio,cf_viaggio),
 FOREIGN KEY(cf_viaggio) REFERENCES autista(cf_autista)
 ON DELETE CASCADE,
