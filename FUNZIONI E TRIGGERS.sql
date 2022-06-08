@@ -232,4 +232,43 @@ select nome, cognome, sum(floor(((ora_uscita - ora_entrata)*24 - 1))) into nomeD
 group by nome, cognome;
 DBMS_OUTPUT.PUT_LINE('L''impiegato ' || (nomeDir) ||' ' || (cognomeDir) ||' ha effettuato '||(numOre) || ' ore di presenze'); 
 END; 
+--FARE ALTRI TEST
+
+CREATE OR REPLACE PROCEDURE ScheduleViaggio(dataViaggio date, kilometri number,pivaforn varchar, pivaesterna varchar)
+IS
+AutistaCandidato varchar2(16);
+error1 exception;
+numSoste number := floor(kilometri/300);
+DurataViaggio int := floor(Kilometri/90);
+numTracc int := dbms_random.value(100000000,999999999);
+BEGIN
+
+--insert into viaggio (data_viaggio,cf_viaggio,p_iva_forn,km_totali,num_soste,durata) values (dataViaggio,AutistaCandidato,pivaforn,kilometri,numSoste,durataViaggio);
+
+
+
+
+select cf_autista into AutistaCandidato from (autista join viaggio on cf_autista = cf_viaggio) 
+where 
+not dataViaggio between data_viaggio and (data_viaggio+(durata/24)+8/24) and 
+not (dataViaggio+(DurataViaggio/24)+8/24) between data_viaggio and (data_viaggio+(durata/24)+8/24)
+and data_viaggio < ( dataViaggio+(DurataViaggio/24)+8/24)
+
+order by dbms_random.value()
+fetch first 1 row only;
+
+
+--TORNA VUOTO PERCHE NELLA DATA SELEZIONATA NON CI SONO AUTISTI A DISPOSIZIONE
+
+
+
+    insert into viaggio (data_viaggio,cf_viaggio,p_iva_forn,km_totali,num_soste,durata) values(dataViaggio,AutistaCandidato,pivaforn,kilometri,numSoste,durataViaggio);
+    insert into spedizione values(NumTracc,dataViaggio,AutistaCandidato,pivaesterna);
+
+ 
+
+EXCEPTION
+WHEN NO_DATA_FOUND THEN
+DBMS_OUTPUT.PUT_LINE('Il viaggio non puo essere schedulato nella seguente data: '|| (dataViaggio));
+END;
 
