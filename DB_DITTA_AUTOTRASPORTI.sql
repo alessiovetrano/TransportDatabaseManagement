@@ -78,7 +78,7 @@ Cod_fiscale_ferie VARCHAR(16),
 data_fine DATE NOT NULL,
 Retribuzione INT,
 tipo_ferie VARCHAR(30),
-PRIMARY KEY(data_inizio_ferie,Cod_fiscale_ferie),
+CONSTRAINT pk_ferie PRIMARY KEY(data_inizio_ferie,Cod_fiscale_ferie),
 FOREIGN KEY(Cod_fiscale_ferie) REFERENCES dipendente(cf)
 ON DELETE CASCADE
 );
@@ -128,7 +128,7 @@ importo NUMBER(4) NOT NULL,
 trattenute NUMBER(3) NOT NULL,
 FOREIGN KEY(contratto_stipendio) REFERENCES contratto(codice_contratto)
 ON DELETE CASCADE,
-PRIMARY KEY(data_stipendio,contratto_stipendio),
+CONSTRAINT pk_stipendio PRIMARY KEY(data_stipendio,contratto_stipendio),
 
 CONSTRAINT cod_contratto_stipendio CHECK(
 	REGEXP_LIKE(contratto_stipendio,'[A-Z]{3}[0-9]{7}'))
@@ -167,7 +167,7 @@ ora_entrata DATE,
 ora_uscita DATE,
 FOREIGN KEY(cf_presenza) REFERENCES impiegato(cf_impiegato)
 ON DELETE CASCADE,
-PRIMARY KEY(data_presenza,cf_presenza),
+CONSTRAINT pk_presenza PRIMARY KEY(data_presenza,cf_presenza),
 
 CONSTRAINT cf_presenza_mask CHECK(
 	REGEXP_LIKE(cf_presenza,'[A-Z]{6}[0-9]{2}[A-Z][0-9]{2}[A-Z][0-9]{3}[A-Z]')),
@@ -205,7 +205,7 @@ km_totali NUMBER(4) NOT NULL,
 num_soste INT NOT NULL,
 Durata INT NOT NULL,
 Ora_carico DATE NOT NULL,
-PRIMARY KEY(data_viaggio,cf_viaggio),
+CONSTRAINT pk_viaggio PRIMARY KEY(data_viaggio,cf_viaggio),
 FOREIGN KEY(cf_viaggio) REFERENCES autista(cf_autista)
 ON DELETE CASCADE,
 FOREIGN KEY(p_iva_forn) REFERENCES fornitore(p_iva_fornitore)
@@ -234,7 +234,7 @@ num_tracciamento VARCHAR2(10) PRIMARY KEY,
 data_spedizione DATE NOT NULL,
 cf_spedizione VARCHAR(16) NOT NULL,
 p_iva_aziendaArrivo VARCHAR2(11) NOT NULL,
-FOREIGN KEY(data_spedizione,cf_spedizione) REFERENCES viaggio(data_viaggio,cf_viaggio)
+CONSTRAINT fk_spedizione FOREIGN KEY(data_spedizione,cf_spedizione) REFERENCES viaggio(data_viaggio,cf_viaggio)
 ON DELETE CASCADE,
 FOREIGN KEY(p_iva_aziendaArrivo) REFERENCES azienda_esterna(p_iva_azienda_esterna)
 ON DELETE CASCADE
