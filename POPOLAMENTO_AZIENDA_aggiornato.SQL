@@ -391,6 +391,7 @@ Insert all
 
 
 --VIAGGIO DA FARE
+--OGNI 300 KM SOSTA
 insert all
 into viaggio(Data_viaggio,cf_viaggio,p_iva_forn,km_totali,num_soste,Durata,Ora_carico) values(to_date('2022-04-04','yyyy-mm-dd'),'CLMGLC85L02I926V','74015300846','1000','6','41',to_date('2022-04-06','yyyy-mm-dd'))
 into viaggio(Data_viaggio,cf_viaggio,p_iva_forn,km_totali,num_soste,Durata,Ora_carico) values(to_date('2022-04-07','yyyy-mm-dd'),'CLMGLC85L02I926V','13273750110','450','2','16',to_date('2022-04-08','yyyy-mm-dd'))
