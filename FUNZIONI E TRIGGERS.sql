@@ -293,7 +293,31 @@ DBMS_OUTPUT.PUT_LINE();
 END;
 
 
+--PROCEDURA DI UNA PROMOZIONE DI UN SEGRETARIO A MANAGER
 
+CREATE OR REPLACE PROCEDURE promozione(nomep varchar2, cognomep varchar2) -- PROMOZIONE DA SEGRETARIO A MANAGER
+IS
+Cod_contr VARCHAR2(10); 
+mansione_im VARCHAR2(30);
+nomeProm varchar(30);
+cognomeProm varchar(30);
+cfprom varchar(16);
+BEGIN
+select nome, cognome , codice_contratto, cf_impiegato, mansione into nomeProm, cognomeProm, Cod_contr, cfprom, mansione_im from impiegato im
+join dipendente dip on dip.cf = im.cf_impiegato  
+join contratto contr on dip.cf = contr.cf_contratto 
+where nomep = nome and cognomep = cognome;
+
+if lower(mansione_im) = 'segretario' then
+    UPDATE IMPIEGATO set mansione = 'manager' where cf_impiegato = cfprom;
+    DBMS_OUTPUT.PUT_LINE('Il dipendente '|| (nomep) ||' ' ||(cognomep)||' è stato promosso correttamente');
+else
+    DBMS_OUTPUT.PUT_LINE('Il dipendente '|| (nomep) ||' ' ||(cognomep)|| ' non è un segretario');
+    end if;
+EXCEPTION
+WHEN NO_DATA_FOUND THEN
+DBMS_OUTPUT.PUT_LINE('Il dipendente '|| (nomep) || (cognomep)|| ' non fa parte del database');
+END; 
 
 
 
