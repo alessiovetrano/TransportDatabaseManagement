@@ -282,33 +282,6 @@ DBMS_OUTPUT.PUT_LINE('Il viaggio non puo essere schedulato nella seguente data: 
 END;
 
 
---PROCEDURA SULLA PROMOZIONE DI UN IMPIEGATO CON UN CAMBIAMENTO DELLO STIPENDIO E DEL CONTRATTO
-
-CREATE OR REPLACE PROCEDURE promozione(codFis varchar)
-IS
-Cod_contr VARCHAR2(); --CONTROLLA QUANTI CARATTERI
-ERR_1 EXCEPTION;
-BEGIN
-
-select codice_contratto into cod_contr 
-join dipendente dip on dip.cf = cf_contratto 
-join impiegato im on dip.cf = im.cf_impiegato 
-join stipendio st on contratto.codice_conntratto = st.contratto_stipendio
-where cf_impiegato = codFis;
-
-
-UPDATE IMPIEGATO set mansione = '' where cf_impiegato = CodFis;
-UPDATE CONTRATTO set tipo_contratto = '' where codice_contratto = Cod_contr;
-UPDATE STIPENDIO set importo = '' and trattenute = '' where contratto_stipendio = Cod_contr;
-
-DBMS_OUTPUT.PUT_LINE();
-
-EXCEPTION
-when no_data_found then
-DBMS_OUTPUT.PUT_LINE();
-END;
-
-
 --PROCEDURA DI UNA PROMOZIONE DI UN SEGRETARIO A MANAGER
 
 CREATE OR REPLACE PROCEDURE promozione(nomep varchar2, cognomep varchar2) -- PROMOZIONE DA SEGRETARIO A MANAGER
