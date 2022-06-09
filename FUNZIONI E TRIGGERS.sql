@@ -100,7 +100,7 @@ END;
 
 --6.TRIGGER CONTROLLA STIPENDIO DEL DIRETTORE
 CREATE OR REPLACE TRIGGER checkStipendio
-before insert or update on stipendio
+before insert on stipendio
 for each row
 DECLARE
 mansioneCheck VARCHAR2(30);
