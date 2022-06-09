@@ -99,23 +99,39 @@ raise_application_error(-20001,'IL VEICOLO NON PUO CONTENERE QUESTO LOTTO');
 END;
 
 --6.TRIGGER CONTROLLA STIPENDIO DEL DIRETTORE
-
 CREATE OR REPLACE TRIGGER checkStipendio
 before insert or update on stipendio
 for each row
 DECLARE
-codice_cont_check VARCHAR2(30);
+mansioneCheck VARCHAR2(30);
 stipendio_basso EXCEPTION;
 BEGIN
-select codice_contratto into codice_cont_check from impiegato im join dipendente dip on im.cf_impiegato = dip.cf 
-join contratto contr on dip.cf = contr.cf_contratto where mansione = 'Direttore';
-if (:new.importo < 3200 and :new.contratto_stipendio = codice_cont_check) then
-raise stipendio_basso;
+
+select mansione into mansioneCheck from impiegato im join dipendente dip on im.cf_impiegato = dip.cf 
+join contratto contr on dip.cf = contr.cf_contratto join stipendio stip on stip.contratto_stipendio = contr.codice_contratto
+where contr.codice_contratto = :new.contratto_stipendio
+group by cf_impiegato, mansione;
+
+
+
+if (:new.importo < 3200 and mansioneCheck = 'Direttore') then
+    raise stipendio_basso;
+elsif (:new.importo < 1400 and mansioneCheck = 'Segretario') then 
+    raise stipendio_basso;
+elsif (:new.importo < 2000 and mansioneCheck = 'Manager') then 
+    raise stipendio_basso;
+elsif (:new.importo < 2550 and mansioneCheck = 'Legale' ) then 
+    raise stipendio_basso;
+elsif (:new.importo < 2200 and mansioneCheck = 'Analista') then 
+    raise stipendio_basso;
 end if;
+
+
 EXCEPTION
 when stipendio_basso then
-raise_application_error(-20001,'STIPENDIO TROPPO BASSO PER UN DIRETTORE');
+raise_application_error(-20001,'STIPENDIO TROPPO BASSO PER QUESTA DETERMINATA MANSIONE');
 end;
+
 
 
 
