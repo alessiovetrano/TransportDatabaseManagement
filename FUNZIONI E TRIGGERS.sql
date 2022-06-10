@@ -6,7 +6,7 @@
 */
 -----------------------TRIGGERS------------------------------
 
---1.CHECK DIPENDENTE MAGGIORENNE
+--1.CHECK DIPENDENTE MAGGIORENNE -----> INUTILE MEGLIO INSERIRLO COME CONSTRAINT
 CREATE OR REPLACE TRIGGER maggiorenne
 before insert on dipendente
 for each row
@@ -21,22 +21,43 @@ when check_maggiorenne then
 raise_application_error(-20001,'DIPENDENTE MINORENNE');
 end;
 
---2.CHECK SINGOLO DIRETTORE AZIENDALE
+--2.CHECK SINGOLO DIRETTORE AZIENDALE + CHECK CAPIENZA UFFICIO
 CREATE OR REPLACE TRIGGER checkMansione
 before insert or update on impiegato
 for each row
 DECLARE
 overNum EXCEPTION;
+overNumUfficio EXCEPTION;
 contatore NUMBER;
+contatoreUff NUMBER;
+num_max INT;
+numero_ufficio varchar(30);
 BEGIN
 select count(*) into contatore from IMPIEGATO
 where mansione = 'Direttore';
+
+select count(*) into contatore
+from impiegato im join ufficio uff on im.ufficio_impiegato = uff.num_ufficio
+where :new.ufficio_impiegato = uff.num_ufficio;
+
+
+select  NUM_IMPIEGATI,  num_ufficio into num_max, numero_ufficio
+from impiegato im join ufficio uff on im.ufficio_impiegato = uff.num_ufficio
+where :new.ufficio_impiegato = uff.num_ufficio group by NUM_IMPIEGATI, num_ufficio;
+--CONTROLLO SULL'ESISTENZA DI UN SINGOLO DIRETTORE IN AZIENDA
 if contatore = 1 then
 raise overNum;
 end if;
+--CONTROLLO SUL NUM_MAX IN UFFICIO
+if ((contatoreUff + 1) > num_max) then
+raise overNumUfficio;
+end if;
+
 EXCEPTION
 when overNum then
 raise_application_error(-20001,'ESISTE GIA UN DIRETTORE IN AZIENDA');
+when overNumUfficio then
+raise_application_error(-20001,'Errore l''ufficio pieno. L''impiegato non può essere assegnato.');
 end;
 
 
@@ -59,7 +80,7 @@ raise_application_error(-20001,'OFFICINA TROPPO PIENA');
 END;
 
 
---4.DIPENDENTE TROPPO ANZIANO (OVER 60)
+--4.DIPENDENTE TROPPO ANZIANO (OVER 60) --INSERISCI NEI CONSTAINT
 CREATE OR REPLACE TRIGGER checkAnziano
 before insert or update on dipendente
 for each row
@@ -152,33 +173,7 @@ when MaxNumDip then
 raise_application_error(-20001,'RAGGIUNTO MASSIMO NUMERO DI DIPENDENTI');
 END;
 
---9. CHECK CAPIENZA_UFFICIO
-CREATE OR REPLACE TRIGGER checkUfficio
-before insert or update on impiegato
-for each row
-DECLARE
-overNumUfficio EXCEPTION;
-contatore INT;
-num_max INT;
-numero_ufficio varchar(30);
-BEGIN
 
-select count(*) into contatore
-from impiegato im join ufficio uff on im.ufficio_impiegato = uff.num_ufficio
-where :new.ufficio_impiegato = uff.num_ufficio;
-
-
-select  NUM_IMPIEGATI,  num_ufficio into num_max, numero_ufficio
-from impiegato im join ufficio uff on im.ufficio_impiegato = uff.num_ufficio
-where :new.ufficio_impiegato = uff.num_ufficio group by NUM_IMPIEGATI, num_ufficio;
-
-if ((contatore + 1) > num_max) then
-raise overNumUfficio;
-end if;
-EXCEPTION
-when overNumUfficio then
-raise_application_error(-20001,'Errore l''ufficio pieno. L''impiegato non può essere assegnato.');
-end;
 
 
 ----------------------------------PROCEDURE----------------------------------
