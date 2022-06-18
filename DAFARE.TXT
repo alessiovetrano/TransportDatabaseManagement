@@ -19,6 +19,7 @@ COSE DA FARE:
 
 - Completa una procedura che è a metà (Risoluzione del problema nel raise)---> SCHEDULING
 - Aggiunta gestione degli utenti
+- Dump del database
 - Relazione 
 
 ------------
