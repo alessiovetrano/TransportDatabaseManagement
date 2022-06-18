@@ -4,7 +4,7 @@ COSE DA FARE:
   prendano tutti le stesse ferie!
 - Sostituire trigger maggiorenne e aggiungerlo come constraint
 - Sostituire trigger troppo_anziano e aggiungerlo come constraint
-- Aggiunge 5 trigger (potenzialmente 3)
+- Aggiunge 4 trigger (potenzialmente 2)
 - Aggiungere 2 procedure (1-> Procedura Sostituiscimi() )
 - Completa una procedura che è a metà (Risoluzione del problema nel raise)
 - Aggiunta gestione degli utenti
