@@ -6,22 +6,23 @@
 */
 -----------------------TRIGGERS------------------------------
 
---1.CHECK DIPENDENTE MAGGIORENNE -----> INUTILE MEGLIO INSERIRLO COME CONSTRAINT
+--CHECK DIPENDENTE MAGGIORENNE O TROPPO ANZIANO
 CREATE OR REPLACE TRIGGER maggiorenne
 before insert on dipendente
 for each row
 DECLARE
-check_maggiorenne EXCEPTION;
+check_eta EXCEPTION;
 BEGIN
-if (floor((sysdate-:new.data_nascita)/365) < 17) then
-raise check_maggiorenne;
+if (floor((sysdate-:new.data_nascita)/365) < 17 OR (floor((sysdate-:new.data_nascita)/365)) > 60 ) then
+raise check_eta;
 end if;
 EXCEPTION
-when check_maggiorenne then
-raise_application_error(-20001,'DIPENDENTE MINORENNE');
+when check_eta then
+raise_application_error(-20001,'Il candidato dipendente non rientra nei paramentri di assunzione');
 end;
 
---2.CHECK SINGOLO DIRETTORE AZIENDALE + CHECK CAPIENZA UFFICIO
+
+--1.CHECK SINGOLO DIRETTORE AZIENDALE + CHECK CAPIENZA UFFICIO
 CREATE OR REPLACE TRIGGER checkMansione
 before insert or update on impiegato
 for each row
@@ -62,7 +63,7 @@ end;
 
 
 
---3.CHECK SE L'OFFICINA HA NELLO STESSO PERIODO HA DUE VEICOLI NON PUO INSERIRE IL TERZO
+--2.CHECK SE L'OFFICINA HA NELLO STESSO PERIODO HA DUE VEICOLI NON PUO INSERIRE IL TERZO
 CREATE OR REPLACE TRIGGER checknumVei
 before insert on manutenzione
 for each row
@@ -80,22 +81,7 @@ raise_application_error(-20001,'OFFICINA TROPPO PIENA');
 END;
 
 
---4.DIPENDENTE TROPPO ANZIANO (OVER 60) --INSERISCI NEI CONSTAINT
-CREATE OR REPLACE TRIGGER checkAnziano
-before insert or update on dipendente
-for each row
-DECLARE
-troppoAnziano EXCEPTION;
-BEGIN
-if (floor((sysdate-:new.data_nascita)/365)) > 60 then
-raise troppoAnziano;
-end if;
-EXCEPTION
-when troppoAnziano then
-raise_application_error(-20001,'DIPENDENTE TROPPO ANZIANO PER GLI STANDARD AZIENDALI');
-END;
-
---5.PESO RISPETTO AL VEICOLO
+--3.PESO RISPETTO AL VEICOLO
 CREATE OR REPLACE TRIGGER checkPeso
 before insert or update on lotto
 for each row
@@ -119,7 +105,7 @@ when overPeso then
 raise_application_error(-20001,'IL VEICOLO NON PUO CONTENERE QUESTO LOTTO');
 END;
 
---6.TRIGGER CONTROLLA STIPENDIO DEL DIRETTORE
+--4.TRIGGER CONTROLLA STIPENDIO DEL DIRETTORE
 CREATE OR REPLACE TRIGGER checkStipendio
 before insert on stipendio
 for each row
@@ -154,9 +140,7 @@ raise_application_error(-20001,'STIPENDIO TROPPO BASSO PER QUESTA DETERMINATA MA
 end;
 
 
-
-
---7.CHECK MASSIMO NUMERO DI DIPENDENTI
+--5.CHECK MASSIMO NUMERO DI DIPENDENTI
 CREATE OR REPLACE TRIGGER checkNumDip
 before insert or update on dipendente
 for each row
@@ -174,9 +158,7 @@ raise_application_error(-20001,'RAGGIUNTO MASSIMO NUMERO DI DIPENDENTI');
 END;
 
 
---TRIGGER NON PUOI AGGIUNGERE FERIE 
---SE CI SONO GIA DUE PERSONE
--- NELLO STESSO UFFICIO IN FERIE
+--6.TRIGGER NON PUOI AGGIUNGERE FERIE SE CI SONO GIA DUE PERSONE NELLO STESSO UFFICIO IN FERIE
 
 CREATE OR REPLACE TRIGGER check_ferie
 BEFORE INSERT ON FERIE
@@ -212,7 +194,7 @@ when underImpiegati then
 raise_application_error(-20001,'Non è possibile assegnare queste ferie poichè l''ufficio di competenza rimarrebbe vuoto');
 END;
 
---Non è possibile inserire una presenza se l'impiegato è in ferie
+--7. Non è possibile inserire una presenza se l'impiegato è in ferie
 CREATE OR REPLACE TRIGGER checkPresFerie
 before insert on presenza
 for each row
@@ -239,28 +221,7 @@ raise_application_error(-20001,'Non è possibile inserire una presenza poichè i
 end;
 ----------------------------------PROCEDURE----------------------------------
 
-
---LICENZIAMENTO DIPENDENTE (IMPIEGATO/AUTISTA)
-CREATE OR REPLACE PROCEDURE licenziamento(codFiscale varchar)
-IS
-error1 EXCEPTION;
-cfDir VARCHAR2(16);
-BEGIN
-select cf_impiegato into cfDir from impiegato where mansione = 'Direttore';
-
-if cfDir = codFiscale then
-    raise error1;
-else
-    delete from dipendente where cf = codFiscale;
-end if;
-DBMS_OUTPUT.PUT_LINE('ELIMINAZIONE DAL DATA-BASE ANDATA A BUON FINE');
-
-EXCEPTION
-when error1 then 
-raise_application_error(-20001,'NON PUOI LICENZIARE UN DIRETTORE SENZA AVERNE ELETTO UN ALTRO');
-END;
-
---1.ELEZIONE NUOVO DIRETTORE
+--1.  ELEZIONE NUOVO DIRETTORE
 CREATE OR REPLACE PROCEDURE nuovoDirettore (CodFiscale varchar)
 IS
 nomeDir varchar2(30);
@@ -338,7 +299,7 @@ DBMS_OUTPUT.PUT_LINE('Il viaggio non puo essere schedulato nella seguente data: 
 END;
 
 
---PROCEDURA DI UNA PROMOZIONE DI UN SEGRETARIO A MANAGER
+--4. PROCEDURA DI UNA PROMOZIONE DI UN SEGRETARIO A MANAGER
 
 CREATE OR REPLACE PROCEDURE promozione(nomep varchar2, cognomep varchar2) -- PROMOZIONE DA SEGRETARIO A MANAGER
 IS
@@ -364,5 +325,23 @@ WHEN NO_DATA_FOUND THEN
 DBMS_OUTPUT.PUT_LINE('Il dipendente '|| (nomep) || (cognomep)|| ' non fa parte del database');
 END; 
 
+--LICENZIAMENTO DIPENDENTE (IMPIEGATO/AUTISTA)
+CREATE OR REPLACE PROCEDURE licenziamento(codFiscale varchar)
+IS
+error1 EXCEPTION;
+cfDir VARCHAR2(16);
+BEGIN
+select cf_impiegato into cfDir from impiegato where mansione = 'Direttore';
 
+if cfDir = codFiscale then
+    raise error1;
+else
+    delete from dipendente where cf = codFiscale;
+end if;
+DBMS_OUTPUT.PUT_LINE('ELIMINAZIONE DAL DATA-BASE ANDATA A BUON FINE');
+
+EXCEPTION
+when error1 then 
+raise_application_error(-20001,'NON PUOI LICENZIARE UN DIRETTORE SENZA AVERNE ELETTO UN ALTRO');
+END;
 
