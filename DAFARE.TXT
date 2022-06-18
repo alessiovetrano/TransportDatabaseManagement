@@ -1,6 +1,7 @@
 COSE DA FARE:
 
 - Aggiunge 4 trigger (potenzialmente 2)
+- TRIGGER PIRMA DI INSERIRE L'AUTISTA CONTROLLA SE IL TIPO DEL VEICOLO PUO ESSERE GUIDATO IN BASE ALLA PATENTE 
 - Aggiungere 2 procedure (1-> Procedura Sostituiscimi())
 - Completa una procedura che è a metà (Risoluzione del problema nel raise)---> SCHEDULING
 - Aggiunta gestione degli utenti
