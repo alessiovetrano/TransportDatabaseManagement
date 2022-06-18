@@ -1,7 +1,9 @@
 COSE DA FARE:
 
 - Modificare popolamento delle ferie stando attenti che non sono state inserite gia presenze in quei giorni oppure controllare che gli impiegati non 
-prendano tutti le stesse ferie!
+  prendano tutti le stesse ferie!
+- Sostituire trigger maggiorenne e aggiungerlo come constraint
+- Sostituire trigger troppo_anziano e aggiungerlo come constraint
 - Aggiunge 5 trigger (potenzialmente 3)
 - Aggiungere 2 procedure (1-> Procedura Sostituiscimi() )
 - Completa una procedura che è a metà (Risoluzione del problema nel raise)
