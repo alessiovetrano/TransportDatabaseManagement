@@ -174,6 +174,41 @@ raise_application_error(-20001,'RAGGIUNTO MASSIMO NUMERO DI DIPENDENTI');
 END;
 
 
+--TRIGGER NON PUOI AGGIUNGERE FERIE 
+--SE CI SONO GIA DUE PERSONE
+-- NELLO STESSO UFFICIO IN FERIE
+
+CREATE OR REPLACE TRIGGER check_ferie
+BEFORE INSERT ON FERIE
+FOR EACH ROW
+DECLARE
+num_ufficio = VARCHAR2(2);
+contatore_impiegati = NUMBER;
+raise underImpiegati EXCEPTIION;
+BEGIN
+
+select ufficio_impiegato into num_ufficio from ferie fer join dipendente dip on fer.cod_fiscale_ferie = dip.cf join impiegato im on dip.cf = im.cf_impiegato
+where cod_fiscale_ferie = :new.cod_fiscale_ferie
+group by ufficio_impiegato;
+
+select count(*) into contatore_impiegati from impiegato join dipendente dip on cf_impiegato = dip.cf 
+join ferie fer on fer.cod_fiscale_ferie = dip.cf 
+where UFFICIO_IMPIEGATO = num_ufficio 
+and :new.DATA_INIZIO_FERIE between DATA_INIZIO_FERIE and DATA_FINE
+and :new.DATA_FINE between DATA_INIZIO_FERIE and DATA_FINE
+
+
+if(contatore_impiegati>2) then
+  raise underImpiegati;
+end if;
+
+
+EXCEPTION
+
+when underImpiegati then
+raise_application_error(-20001,'Non è possibile assegnare queste ferie poichè l''ufficio di competenza rimarrebbe vuoto');
+END 
+
 
 
 ----------------------------------PROCEDURE----------------------------------
