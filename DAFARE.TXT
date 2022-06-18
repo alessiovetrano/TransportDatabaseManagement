@@ -1,0 +1,10 @@
+COSE DA FARE:
+
+- Modificare popolamento delle ferie stando attenti che non sono state inserite gia presenze in quei giorni oppure controllare che gli impiegati non 
+prendano tutti le stesse ferie!
+- Aggiunge 5 trigger (potenzialmente 3)
+- Aggiungere 2 procedure (1-> Procedura Sostituiscimi() )
+- Completa una procedura che è a metà (Risoluzione del problema nel raise)
+- Aggiunta gestione degli utenti
+- Se abbiamo tempo camiare creazione tabelle aggiungendo fk (Constraint doppia chiave)
+- Relazione
