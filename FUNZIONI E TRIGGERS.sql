@@ -263,26 +263,26 @@ END;
 --1.ELEZIONE NUOVO DIRETTORE
 CREATE OR REPLACE PROCEDURE nuovoDirettore (CodFiscale varchar)
 IS
-error1 EXCEPTION;
 nomeDir varchar2(30);
 cognomeDir varchar2(30);
+cod_fiscale VARCHAR(16);
 
 BEGIN
-select nome,cognome into nomeDir,cognomeDir  from impiegato im join dipendente dip on im.cf_impiegato = dip.cf where cf = CodFiscale;
-for ind in 
-(select cf_impiegato from dipendente join impiegato on cf=cf_impiegato join contratto on cf_impiegato = cf_contratto 
-    where mansione = 'Segretario' OR tipo_contratto != 'Indeterminato' OR TO_CHAR(data_assunzione) > '2012-01-01')
-loop
-    if ind.cf_impiegato = CodFiscale then
-        raise error1;
-    end if;
-end loop;
+
+select nome, cognome, cf  into nomeDir,cognomeDir,cod_fiscale from impiegato im 
+join dipendente dip on im.cf_impiegato = dip.cf 
+join contratto on cf_impiegato = cf_contratto 
+WHERE cf = codFiscale
+AND MANSIONE != 'Segretario'
+and tipo_contratto = 'Indeterminato';
+
+
 update impiegato set mansione = 'Manager' where mansione = 'Direttore';
 update impiegato set mansione = 'Direttore' where cf_impiegato = CodFiscale;
 DBMS_OUTPUT.PUT_LINE('L''impiegato ' || (nomeDir) ||' ' || (cognomeDir) ||' è ufficialmente il nuovo direttore');
 
 EXCEPTION
-when error1 then
+when NO_DATA_FOUND then
 DBMS_OUTPUT.PUT_LINE('L''impiegato ' || (nomeDir) ||' ' || (cognomeDir) ||' non può diventare direttore per le regole aziendali'); 
 END; 
 
