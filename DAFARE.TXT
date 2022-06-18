@@ -1,12 +1,9 @@
 COSE DA FARE:
 
 - Aggiunge 4 trigger (potenzialmente 2)
-
 - Aggiungere 2 procedure (1-> Procedura Sostituiscimi())
 - Completa una procedura che è a metà (Risoluzione del problema nel raise)---> SCHEDULING
-
 - Aggiunta gestione degli utenti
-- Se abbiamo tempo cambiare creazione tabelle aggiungendo fk (Constraint doppia chiave)
 - Relazione
 
 ------------
