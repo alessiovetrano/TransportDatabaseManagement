@@ -167,7 +167,7 @@ ora_entrata DATE,
 ora_uscita DATE,
 FOREIGN KEY(cf_presenza) REFERENCES impiegato(cf_impiegato)
 ON DELETE CASCADE,
-PRIMARY KEY(data_presenza,cf_presenza),
+CONSTRAINT pk_presenza PRIMARY KEY(data_presenza,cf_presenza),
 
 CONSTRAINT cf_presenza_mask CHECK(
 	REGEXP_LIKE(cf_presenza,'[A-Z]{6}[0-9]{2}[A-Z][0-9]{2}[A-Z][0-9]{3}[A-Z]')),
@@ -176,7 +176,6 @@ CONSTRAINT data_presenza_check CHECK(
 
 
 	TO_CHAR(data_presenza,'YYYY-MM-DD') > '1990-01-01') --CONTROLLA SE FUNZIONA
-
 
 );
 
@@ -204,12 +203,11 @@ p_iva_forn VARCHAR2(11) NOT NULL,
 km_totali NUMBER(4) NOT NULL,
 num_soste INT NOT NULL,
 Durata INT NOT NULL,
-PRIMARY KEY(data_viaggio,cf_viaggio),
 FOREIGN KEY(cf_viaggio) REFERENCES autista(cf_autista)
 ON DELETE CASCADE,
 FOREIGN KEY(p_iva_forn) REFERENCES fornitore(p_iva_fornitore)
 ON DELETE CASCADE,
-
+CONSTRAINT pk_viaggio PRIMARY KEY(data_viaggio,cf_viaggio),
 CONSTRAINT cf_viaggio_mask CHECK(
 	REGEXP_LIKE(cf_viaggio,'[A-Z]{6}[0-9]{2}[A-Z][0-9]{2}[A-Z][0-9]{3}[A-Z]'))
 );
