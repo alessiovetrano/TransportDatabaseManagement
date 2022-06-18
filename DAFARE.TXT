@@ -1,12 +1,25 @@
 COSE DA FARE:
 
-- Modificare popolamento delle ferie stando attenti che non sono state inserite gia presenze in quei giorni oppure controllare che gli impiegati non 
-  prendano tutti le stesse ferie!
 - Sostituire trigger maggiorenne e aggiungerlo come constraint
 - Sostituire trigger troppo_anziano e aggiungerlo come constraint
+
 - Aggiunge 4 trigger (potenzialmente 2)
-- Aggiungere 2 procedure (1-> Procedura Sostituiscimi() )
-- Completa una procedura che è a metà (Risoluzione del problema nel raise)
+
+- Aggiungere 2 procedure (1-> Procedura Sostituiscimi())
+- Completa una procedura che è a metà (Risoluzione del problema nel raise)---> SCHEDULING
+
 - Aggiunta gestione degli utenti
-- Se abbiamo tempo camiare creazione tabelle aggiungendo fk (Constraint doppia chiave)
+- Se abbiamo tempo cambiare creazione tabelle aggiungendo fk (Constraint doppia chiave)
 - Relazione
+
+TROVARE DUE TRIGGER (INSERIMENTO O ELIMINAZIONE) IN REFERIMENTO A QUESTE TABELLE:
+
+- SPEDIZIONE
+- VEICOLO
+- CONTRATTO
+- AZIENDA_ESTERNA
+- FORNITORE
+- VIAGGIO
+- STIPENDIO
+
+
