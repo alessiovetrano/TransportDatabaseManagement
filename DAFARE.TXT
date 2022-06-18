@@ -1,8 +1,5 @@
 COSE DA FARE:
 
-- Sostituire trigger maggiorenne e aggiungerlo come constraint
-- Sostituire trigger troppo_anziano e aggiungerlo come constraint
-
 - Aggiunge 4 trigger (potenzialmente 2)
 
 - Aggiungere 2 procedure (1-> Procedura Sostituiscimi())
@@ -12,6 +9,7 @@ COSE DA FARE:
 - Se abbiamo tempo cambiare creazione tabelle aggiungendo fk (Constraint doppia chiave)
 - Relazione
 
+------------
 TROVARE DUE TRIGGER (INSERIMENTO O ELIMINAZIONE) IN REFERIMENTO A QUESTE TABELLE:
 
 - SPEDIZIONE
