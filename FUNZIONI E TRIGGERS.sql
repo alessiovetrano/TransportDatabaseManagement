@@ -212,7 +212,31 @@ when underImpiegati then
 raise_application_error(-20001,'Non è possibile assegnare queste ferie poichè l''ufficio di competenza rimarrebbe vuoto');
 END;
 
+--Non è possibile inserire una presenza se l'impiegato è in ferie
+CREATE OR REPLACE TRIGGER checkPresFerie
+before insert on presenza
+for each row
+DECLARE
+check_ferie EXCEPTION;
+contatore NUMBER;
+BEGIN
+select count(*) into contatore from ferie 
+where cod_fiscale_ferie = (select cf_presenza from impiegato im 
+join presenza pr on im.cf_impiegato = pr.cf_presenza
+where cf_presenza = :new.cf_presenza
+and :new.data_presenza between DATA_INIZIO_FERIE and DATA_FINE
+group by cf_presenza
+);
 
+if contatore >0 then
+    raise check_ferie;
+end if;
+
+
+EXCEPTION
+when check_ferie then
+raise_application_error(-20001,'Non è possibile inserire una presenza poichè il dipednente è in ferie');
+end;
 ----------------------------------PROCEDURE----------------------------------
 
 
