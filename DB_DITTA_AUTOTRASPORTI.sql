@@ -90,8 +90,7 @@ cf_impiegato VARCHAR2(16) PRIMARY KEY,
 ufficio_impiegato VARCHAR2(2) NOT NULL,
 codice_badge VARCHAR2(5) NOT NULL UNIQUE,
 mansione VARCHAR2(30) NOT NULL,
-FOREIGN KEY(ufficio_impiegato) REFERENCES ufficio(num_ufficio)
-ON DELETE CASCADE,
+FOREIGN KEY(ufficio_impiegato) REFERENCES ufficio(num_ufficio),
 FOREIGN KEY(cf_impiegato) REFERENCES dipendente(cf)
 ON DELETE CASCADE,
 
@@ -112,6 +111,9 @@ tipo_contratto VARCHAR2(25) NOT NULL,
 FOREIGN KEY(cf_contratto) REFERENCES dipendente(cf)
 ON DELETE CASCADE,
 
+CONSTRAINT durata_contatto CHECK(
+	(LOWER(tipo_contratto) = 'indeterminato' AND durata_contatto IS NULL)),
+	
 CONSTRAINT cod_contratto CHECK(
 	REGEXP_LIKE(codice_contratto,'[A-Z]{3}[0-9]{7}')),
 
