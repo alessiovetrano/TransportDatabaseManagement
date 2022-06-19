@@ -220,6 +220,29 @@ when check_ferie then
 raise_application_error(-20001,'Non è possibile inserire una presenza poichè il dipednente è in ferie');
 end;
 
+--8. NON PUOI ELIMINARE UN UFFICIO SE CI SONO DEGLI IMPIEGATI ASSEGNATI AD ESSO
+CREATE OR REPLACE TRIGGER checkMansione
+before delete on ufficio
+for each row
+DECLARE
+num_impiegati_uff ufficio.num_impiegati%type;
+ufficio_imp impiegato.ufficio_impiegato%type;
+overNumImp EXCEPTION;
+BEGIN
+
+select count(*) into num_impiegati_uff 
+from impiegato  
+where ufficio_impiegato = :old.num_ufficio
+group by ufficio_impiegato;
+
+if (num_impiegati_uff != 0) then
+raise overNumImp;
+end if;
+
+EXCEPTION
+when overNumImp then
+raise_application_error(-20001,'Non è possibile eliminare l''ufficio poichè esistono degli impiegati assegnati ad esso');
+end;
 
 ----------------------------------PROCEDURE----------------------------------
 
