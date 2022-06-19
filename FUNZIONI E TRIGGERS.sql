@@ -365,3 +365,30 @@ when error1 then
 raise_application_error(-20001,'NON PUOI LICENZIARE UN DIRETTORE SENZA AVERNE ELETTO UN ALTRO');
 END;
 
+--PROCEDURA TREDICESIMA, QUATTORDICESIMA
+
+CREATE OR REPLACE PROCEDURE check_bonus(nomeIn varchar2, cognomeIn varchar2)
+
+IS
+importo_stip stipendio.importo%type;
+nomeSt dipendente.nome%type;
+cognomeSt dipendente.cognome%type;
+codice_stipendio stipendio.contratto_stipendio%type;
+BEGIN
+
+select nome, cognome , importo, contratto_stipendio into nomeSt, cognomeSt, importo_stip, codice_stipendio from dipendente dip join contratto cont
+on dip.cf = cont.cf_contratto join stipendio st on cont.codice_contratto  = st.contratto_stipendio
+where nome = nomeIn and cognome = CognomeIn  
+and data_stipendio between date'2022-06-01' and date'2022-06-30' 
+or data_stipendio between date'2022-12-01' and date'2022-12-31';
+
+UPDATE stipendio set importo = importo_stip*1.3 where contratto_stipendio = codice_stipendio; --30% in piu
+
+DBMS_OUTPUT.PUT_LINE('L''impiegato' || (nomeSt) ||' ' || (cognomeSt) ||'ha ricevuto l''aumento'); 
+
+
+EXCEPTION
+when NO_DATA_FOUND then
+DBMS_OUTPUT.PUT_LINE('L''impiegato' || (nomeSt) ||' ' || (cognomeSt) ||' non ha ancora percepito lo stipendio'); 
+END; 
+
