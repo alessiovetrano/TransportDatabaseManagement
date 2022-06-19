@@ -219,6 +219,25 @@ EXCEPTION
 when check_ferie then
 raise_application_error(-20001,'Non è possibile inserire una presenza poichè il dipednente è in ferie');
 end;
+
+
+--8. Controlla se all'eliminazione di un ufficio se ci sono degli impiegati assegnati ad esso
+CREATE OR REPLACE TRIGGER checkMansione
+before delete on ufficio
+for each row
+DECLARE
+num_impiegati_uff ufficio.num_impiegati%type;
+overNumImp EXCEPTION;
+BEGIN
+select num_impiegati into num_impiegati_uff from ufficio;
+if (num_impiegati_uff != 0) then
+raise overNumImp;
+end if;
+
+EXCEPTION
+when overNumImp then
+raise_application_error(-20001,'Non è possibile eliminare l''ufficio poichè esistono degli impiegati assegnati ad esso');
+end;
 ----------------------------------PROCEDURE----------------------------------
 
 --1.  ELEZIONE NUOVO DIRETTORE
