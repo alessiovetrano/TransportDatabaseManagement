@@ -12,6 +12,7 @@ COSE DA FARE:
 - PROCEDURA: SOSTITUISCIMI
 - PROCEDURA: RINNOVA CONTRATTO
 
+- Chidei al prof se sarebbe utile fare uno scheduling al mese slla procedura di tredicesima
 - Completa una procedura che è a metà (Risoluzione del problema nel raise)---> SCHEDULING
 
 
