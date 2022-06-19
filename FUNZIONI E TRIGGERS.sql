@@ -229,7 +229,8 @@ DECLARE
 num_impiegati_uff ufficio.num_impiegati%type;
 overNumImp EXCEPTION;
 BEGIN
-select num_impiegati into num_impiegati_uff from ufficio;
+select num_impiegati into num_impiegati_uff from ufficio where num_ufficio = :new.num_ufficio;
+
 if (num_impiegati_uff != 0) then
 raise overNumImp;
 end if;
