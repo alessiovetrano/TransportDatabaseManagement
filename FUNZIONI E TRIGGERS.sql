@@ -157,6 +157,31 @@ when MaxNumDip then
 raise_application_error(-20001,'RAGGIUNTO MASSIMO NUMERO DI DIPENDENTI');
 END;
 
+--CHECK PATENTE CON IL TIPO DEL VEICOLO
+CREATE OR REPLACE TRIGGER checkPatente 
+before insert on autista
+FOR EACH ROW 
+DECLARE 
+checkVeicolo veicolo.tipo_veicolo%type;
+Error1 EXCEPTION;
+
+BEGIN
+select tipo_veicolo into checkVeicolo from veicolo where targa = :new.targa_autista;
+
+if checkVeicolo = 'motrice' AND :new.tipo_patente = 'B1' then 
+raise Error1;
+elsif checkVeicolo = 'bilico' AND :new.tipo_patente = 'B1' then 
+raise Error1;
+elsif checkVeicolo = 'bilico' AND :new.tipo_patente = 'C1' then 
+raise Error1;
+elsif checkVeicolo = 'autotreno' AND :new.tipo_patente != 'CE' then 
+raise Error1;
+end if;
+
+EXCEPTION
+when Error1 then
+raise_application_error(-20001,'QUESTO VEICOLO NON PUO ESSERE GUIDATO CON TALE PATENTE');
+END;
 
 --6.TRIGGER NON PUOI AGGIUNGERE FERIE SE CI SONO GIA DUE PERSONE NELLO STESSO UFFICIO IN FERIE
 
