@@ -252,8 +252,15 @@ IS
 nomeDir varchar2(30);
 cognomeDir varchar2(30);
 cod_fiscale VARCHAR(16);
+giaDirettore EXCEPTION;
+CodDirettore varchar2(30);
 
 BEGIN
+select cf_impiegato into CodDirettore from impiegato where mansione = 'Direttore';
+
+if CodDirettore = CodFiscale then
+raise giaDirettore;
+end if;
 
 select nome, cognome, cf  into nomeDir,cognomeDir,cod_fiscale from impiegato im 
 join dipendente dip on im.cf_impiegato = dip.cf 
@@ -270,6 +277,10 @@ DBMS_OUTPUT.PUT_LINE('L''impiegato ' || (nomeDir) ||' ' || (cognomeDir) ||' è u
 EXCEPTION
 when NO_DATA_FOUND then
 DBMS_OUTPUT.PUT_LINE('L''impiegato ' || (nomeDir) ||' ' || (cognomeDir) ||' non può diventare direttore per le regole aziendali'); 
+
+when giaDirettore then
+DBMS_OUTPUT.PUT_LINE('L''impiegato ' || (nomeDir) ||' ' || (cognomeDir) ||' è gia Direttore');
+COMMIT;
 END; 
 
 --
