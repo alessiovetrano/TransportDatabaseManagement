@@ -1,31 +1,40 @@
 COSE DA FARE:
-
-- Aggiunge 1 trigger 
-
-
-- TRIGGER: PRIMA DI INSERIRE L'AUTISTA CONTROLLA SE IL TIPO DEL VEICOLO PUO ESSERE GUIDATO IN BASE ALLA PATENTE 
-
-- Aggiungere 1 procedure
-
-- PROCEDURA: MANUTENZIONE DI UN UFFICIO CON SMISTAMENTO DEGLI IMPIEGATI
-- PROCEDURA: RIPRISTINO DATI ORIGINALI DOPO MANUTENZIONE DELL UFFICIO (*)
-- PROCEDURA: SOSTITUISCIMI
-- PROCEDURA: RINNOVA CONTRATTO
-
-- Chidei al prof se sarebbe utile fare uno scheduling al mese slla procedura di tredicesima
-- Completa una procedura che è a metà (Risoluzione del problema nel raise)---> SCHEDULING
+****************
 
 
+-AGGIUNGERE TRIGGER: PRIMA DI INSERIRE L'AUTISTA CONTROLLA SE IL TIPO DEL VEICOLO PUO ESSERE GUIDATO IN BASE ALLA PATENTE
 
-- Aggiunta gestione degli utenti
-- Dump del database
-- Relazione 
-
-------------
 TROVARE TRIGGER (INSERIMENTO O ELIMINAZIONE) IN REFERIMENTO A QUESTE TABELLE:
 
 - SPEDIZIONE
 - VEICOLO
 - VIAGGIO
+
+*********************************************************************************************************************
+- Aggiungere 1 procedure
+
+(INSICURI)
+- PROCEDURA: MANUTENZIONE DI UN UFFICIO CON SMISTAMENTO DEGLI IMPIEGATI
+- PROCEDURA: RIPRISTINO DATI ORIGINALI DOPO MANUTENZIONE DELL UFFICIO (*)
+- PROCEDURA: SOSTITUISCIMI
+- PROCEDURA: RINNOVA CONTRATTOù
+
+TROVARE TRIGGER (INSERIMENTO O ELIMINAZIONE) IN REFERIMENTO A QUESTE TABELLE:
+
+- SPEDIZIONE
+- VEICOLO
+- VIAGGIO
+
+
+*********************************************************************************************************************
+
+- Chiedi al prof se sia utile fare uno scheduling al mese alla procedura di tredicesima
+- Completa una procedura che è a metà (Risoluzione del problema nel raise)---> SCHEDULING
+
+- Aggiunta gestione degli utenti
+- Dump del database
+- Relazione 
+
+
 
 
