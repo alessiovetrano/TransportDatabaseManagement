@@ -112,7 +112,7 @@ FOREIGN KEY(cf_contratto) REFERENCES dipendente(cf)
 ON DELETE CASCADE,
 
 CONSTRAINT durata_contatto CHECK(
-	(LOWER(tipo_contratto) = 'indeterminato' AND durata_contatto IS NULL)),
+	(LOWER(tipo_contratto) = 'indeterminato' OR durata_contatto IS NOT NULL)),
 	
 CONSTRAINT cod_contratto CHECK(
 	REGEXP_LIKE(codice_contratto,'[A-Z]{3}[0-9]{7}')),
