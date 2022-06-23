@@ -275,26 +275,26 @@ insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) va
 
 
 
-Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('BA767WF','32000',10,'furgone','Mercedes');
-Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('CZ371YF','117000',260,'autotreno','Mercedes');
-Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('FS717BG','57000',25,'motrice','Daf');
-Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('CD121FR','98000',240,'bilico','Iveco');
-Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('FW123FC','29500',10,'furgone','Iveco');
-Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('CZ441YF','122000',260,'autotreno','Daf');
-Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('DF717GG','34200',10,'furgone','Daf');
-Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('FZ121ER','53200',25,'motrice','Scania');
-Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('DZ671AZ','112000',260,'autotreno','Scania');
-Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('DW134DC','106000',240,'bilico','Scania');
-Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('FS757BG','27800',10,'furgone','Daf');
-Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('FG666FG','45000',25,'motrice','Mercedes');
-Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('AZ222DC','97800',240,'bilico','Scania');
-Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('DF678DF','52300',25,'motrice','Scania');
-Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('FD321AZ','12700',260,'autotreno','Scania');
-Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('AC415DC','109000',240,'bilico','Scania');
-Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('FG341BG','29000',10,'furgone','Daf');
-Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('FW343FC','37800',25,'motrice','Mercedes');
-Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('GH123DD','112000',240,'bilico','Scania');
-Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('EH565FG','27900',10,'furgone','Iveco');
+Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('BA767WF','32000',50,'furgone','Mercedes');
+Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('CZ371YF','117000',500,'autotreno','Mercedes');
+Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('FS717BG','57000',100,'motrice','Daf');
+Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('CD121FR','98000',350,'bilico','Iveco');
+Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('FW123FC','29500',50,'furgone','Iveco');
+Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('CZ441YF','122000',500,'autotreno','Daf');
+Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('DF717GG','34200',50,'furgone','Daf');
+Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('FZ121ER','53200',100,'motrice','Scania');
+Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('DZ671AZ','112000',500,'autotreno','Scania');
+Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('DW134DC','106000',350,'bilico','Scania');
+Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('FS757BG','27800',50,'furgone','Daf');
+Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('FG666FG','45000',100,'motrice','Mercedes');
+Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('AZ222DC','97800',350,'bilico','Scania');
+Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('DF678DF','52300',100,'motrice','Scania');
+Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('FD321AZ','12700',500,'autotreno','Scania');
+Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('AC415DC','109000',350,'bilico','Scania');
+Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('FG341BG','29000',50,'furgone','Daf');
+Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('FW343FC','37800',100,'motrice','Mercedes');
+Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('GH123DD','112000',350,'bilico','Scania');
+Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('EH565FG','27900',50,'furgone','Iveco');
 
 
 
