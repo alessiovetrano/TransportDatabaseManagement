@@ -1,14 +1,13 @@
 COSE DA FARE:
 ****************
 *********************************************************************************************************************
-- Aggiungere 1 procedure
+- Procedura fatta in cui manca una tabella:
+PROCEDURA: RINNOVA CONTRATTO  ***
+Modifiche nel popolamento in quanto la data_viaggio non era uguale alla data_spedizione quindi niente join
 
-- PROCEDURA: MANUTENZIONE DI UN UFFICIO CON SMISTAMENTO DEGLI IMPIEGATI
-- PROCEDURA: RIPRISTINO DATI ORIGINALI DOPO MANUTENZIONE DELL UFFICIO (*)
-- PROCEDURA: SOSTITUISCIMI
-- PROCEDURA: RINNOVA CONTRATTO  ***
 
 ---------------------------------------------------------------------------------------------------------------------
+- Controllo del funzionamento di TUTTI i trigger e procedure
 - Normalizzazione
 - Aggiunta gestione degli utenti
 - Dump del database
