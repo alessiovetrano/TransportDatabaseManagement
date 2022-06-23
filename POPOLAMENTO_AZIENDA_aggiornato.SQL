@@ -637,7 +637,7 @@ insert all
 
 	--SPEDIZIONE
 insert all
-	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,orario_consegna,p_iva_aziendaArrivo) values ('1945690239',to_date('2022-04-04','yyyy-mm-dd',),'CLMGLC85L02I926V',to_date('2022-04-06 09:00','yyyy-mm-dd hh24:mi'),'56363534242')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,orario_consegna,p_iva_aziendaArrivo) values ('1945690239',to_date('2022-04-04','yyyy-mm-dd'),'CLMGLC85L02I926V',to_date('2022-04-06 09:00','yyyy-mm-dd hh24:mi'),'56363534242')
 	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,orario_consegna,p_iva_aziendaArrivo) values ('7849216401',to_date('2022-04-07','yyyy-mm-dd'),'CLMGLC85L02I926V',to_date('2022-04-07 14:00','yyyy-mm-dd hh24:mi'),'13145424211')
 	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,orario_consegna,p_iva_aziendaArrivo) values ('4825702161',to_date('2022-04-07','yyyy-mm-dd'),'CLMGLC85L02I926V',to_date('2022-04-07 00:00','yyyy-mm-dd hh24:mi'),'46433524545')
 	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,orario_consegna,p_iva_aziendaArrivo) values ('3424816704',to_date('2022-04-04','yyyy-mm-dd'),'CHPPPN95H19F806J',to_date('2022-04-04 21:00','yyyy-mm-dd hh24:mi'),'56363534242')
