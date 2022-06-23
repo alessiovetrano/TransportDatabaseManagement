@@ -109,9 +109,9 @@ ON DELETE CASCADE,
 
 CONSTRAINT data_inizio_contratto_check CHECK(
 
-	TO_CHAR(data_inizio_contratto,'YYYY-MM-DD') between '1990-01-01' AND '2022-01-01'),
+	TO_CHAR(data_inizio_contratto,'YYYY-MM-DD') > '1990-01-01' ,
 
-	CONSTRAINT durata_contatto CHECK(
+CONSTRAINT durata_contatto CHECK(
 	(LOWER(tipo_contratto) = 'indeterminato' and durata_contratto is null)
 	OR
 	(LOWER(tipo_contratto) = 'determinato' and durata_contratto is not null)
