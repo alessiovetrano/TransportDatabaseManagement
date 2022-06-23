@@ -735,6 +735,7 @@ insert all
 	into lotto(bolla_trasporto,tracciamento_lotto,peso_lotto,tipo_prodotto) values ('JHFD987421','4569871589','30','elettrodomestici')
 
 	select 1 from dual;
-	
+
+
 	
 	
