@@ -31,13 +31,13 @@ CONSTRAINT casa_prod CHECK(
 		('Mercedes','Iveco','Scania','Daf')),
 
 CONSTRAINT peso_veicolo CHECK(
-	(LOWER(tipo_veicolo) = 'furgone' AND peso_massimo = 10)
+	(LOWER(tipo_veicolo) = 'furgone' AND peso_massimo = 50)
 	OR
-	(LOWER(tipo_veicolo) = 'motrice' AND peso_massimo = 25)
+	(LOWER(tipo_veicolo) = 'motrice' AND peso_massimo = 100)
 	OR
-	(LOWER(tipo_veicolo) = 'bilico' AND peso_massimo = 240)
+	(LOWER(tipo_veicolo) = 'bilico' AND peso_massimo = 350)
 	OR
-	(LOWER(tipo_veicolo) = 'autotreno' AND peso_massimo = 260))
+	(LOWER(tipo_veicolo) = 'autotreno' AND peso_massimo = 500))
 );
 
 --OK
