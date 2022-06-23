@@ -113,32 +113,39 @@ for each row
 DECLARE
 mansioneCheck VARCHAR2(30);
 stipendio_basso EXCEPTION;
+contatore NUMBER;
+contatoreIm NUMBER;
 BEGIN
 
-select mansione into mansioneCheck from impiegato im join dipendente dip on im.cf_impiegato = dip.cf 
-join contratto contr on dip.cf = contr.cf_contratto 
-where contr.codice_contratto = :new.contratto_stipendio
-group by cf_impiegato, mansione;
+select count(*),mansione into contatore, mansioneCheck from impiegato im join dipendente dip on im.cf_impiegato = dip.cf 
+    join contratto contr on dip.cf = contr.cf_contratto 
+    where contr.codice_contratto = :new.contratto_stipendio
+    group by cf_impiegato, mansione;
 
 
-
-if (:new.importo < 3000 and mansioneCheck = 'Direttore') then
-    raise stipendio_basso;
-elsif (:new.importo < 1200 and mansioneCheck = 'Segretario') then 
-    raise stipendio_basso;
-elsif (:new.importo < 1300 and mansioneCheck = 'Manager') then 
-    raise stipendio_basso;
-elsif (:new.importo < 2300 and mansioneCheck = 'Legale' ) then 
-    raise stipendio_basso;
-elsif (:new.importo < 1950 and mansioneCheck = 'Analista') then 
-    raise stipendio_basso;
+if (contatore > 0) then 
+     if (:new.importo < 3000 and mansioneCheck = 'Direttore') then
+        raise stipendio_basso;
+    elsif (:new.importo < 1200 and mansioneCheck = 'Segretario') then 
+        raise stipendio_basso;
+    elsif (:new.importo < 1300 and mansioneCheck = 'Manager') then 
+        raise stipendio_basso;
+    elsif (:new.importo < 2300 and mansioneCheck = 'Legale' ) then 
+        raise stipendio_basso;
+    elsif (:new.importo < 1950 and mansioneCheck = 'Analista') then 
+        raise stipendio_basso;
+    end if;
 end if;
 
-
 EXCEPTION
+when NO_DATA_FOUND then
+    if :new.importo < 1200 then
+    raise stipendio_basso;
+    end if;
 when stipendio_basso then
 raise_application_error(-20001,'STIPENDIO TROPPO BASSO PER QUESTA DETERMINATA MANSIONE');
 end;
+
 
 
 --5.CHECK MASSIMO NUMERO DI DIPENDENTI
