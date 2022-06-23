@@ -37,7 +37,7 @@ BEGIN
 select count(*) into contatore from IMPIEGATO
 where mansione = 'Direttore';
 
-select count(*) into contatore
+select count(*) into contatoreUff
 from impiegato im join ufficio uff on im.ufficio_impiegato = uff.num_ufficio
 where :new.ufficio_impiegato = uff.num_ufficio;
 
