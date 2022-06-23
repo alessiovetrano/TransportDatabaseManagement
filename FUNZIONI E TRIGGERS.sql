@@ -96,7 +96,10 @@ join fornitore forn on v.p_iva_forn = forn.p_iva_fornitore
 join spedizione s on v.cf_viaggio  = s.cf_spedizione and v.data_viaggio = s.data_spedizione
 join azienda_esterna az on s.p_iva_aziendaArrivo = az.p_iva_azienda_esterna
 join autista aux on v.cf_viaggio = aux.cf_autista
-join veicolo v on v.targa = aux.targa_autista;
+join veicolo v on v.targa = aux.targa_autista
+where s.num_tracciamento = :new.tracciamento_lotto;
+
+
 select SUM(Peso_lotto) into somma_lotti from lotto lt join spedizione sp on lt.tracciamento_lotto = sp.num_tracciamento;
 if (peso < :new.peso_lotto + somma_lotti) then
 raise overPeso;
