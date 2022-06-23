@@ -1,9 +1,10 @@
 COSE DA FARE:
 ****************
 *********************************************************************************************************************
-- Procedura fatta in cui manca una tabella:
-PROCEDURA: RINNOVA CONTRATTO  *** -> GUARDA BENE LA CONCATENAZIONE DELLE STRINGHE RANDOMICHE COME SONO BELLE
-Modifiche nel popolamento in quanto la data_viaggio non era uguale alla data_spedizione quindi niente join
+Cose modificate:
+
+-PROCEDURA: RINNOVA CONTRATTO  *** -> GUARDA BENE LA CONCATENAZIONE DELLE STRINGHE RANDOMICHE COME SONO BELLE --> zMANCA UNA TERZA TABELLA
+-Modifiche nel popolamento in quanto la data_viaggio non era uguale alla data_spedizione quindi niente join
 
 
 ---------------------------------------------------------------------------------------------------------------------
