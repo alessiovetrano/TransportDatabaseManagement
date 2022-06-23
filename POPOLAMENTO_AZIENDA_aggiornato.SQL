@@ -34,6 +34,208 @@ Insert	into dipendente (cf,nome,cognome,data_nascita) values('LPRBRN76R42F839H',
 
 
 
+Insert into contratto  values ('QRT1859037','MRTPLN65L69G577R',0.6,'Part-time',DATE'2004-09-01');
+Insert    into contratto  values ('QRT1859038','MRTPLN65L69G577R',NULL,'Indeterminato',DATE'2005-04-01');
+Insert    into contratto   values ('GTR9649901','SRCLND77S27G601O',0.6,'Apprendistato',DATE'2002-09-01');
+Insert    into contratto   values('GTR9649902','SRCLND77S27G601O',7.0,'Determinato',DATE'2003-04-01');
+Insert    into contratto values('GTR9649903','SRCLND77S27G601O',NULL,'Indeterminato',DATE'2010-04-01');
+Insert   into contratto  values ('POI2161048','SPNRSR76H05F578I',NULL,'Indeterminato',DATE'2006-01-01');
+Insert    into contratto  values ('LKD8273619','LNNGST70B20D443N',2.0,'Determinato',DATE'2005-09-01');
+Insert    into contratto values ('LKD8273920','LNNGST70B20D443N',5.0,'Determinato',DATE'2007-09-01');
+Insert    into contratto values ('LKD8283921','LNNGST70B20D443N',5.0,'Determinato',DATE'2012-09-01');
+Insert    into contratto values ('LKD8283922','LNNGST70B20D443N',10.0,'Determinato',DATE'2017-09-01');
+Insert    into contratto  values ('VMH7195739','GLLLGU01M17F839G',2.0,'Apprendistato',DATE'2021-01-01');
+Insert    into contratto  values ('AFD6195637','VTRLSS98T11F839O',NULL,'Indeterminato',DATE'2021-01-01');
+Insert    into contratto  values ('ASD7640625','DNNLCU01E15F839T',NULL,'Indeterminato',DATE'2021-01-01');
+Insert  into contratto  values ('BDD0946503','DOXSST85E28B869H',5.0,'Determinato',DATE'2002-10-01');
+Insert   into contratto values ('BDD0946504','DOXSST85E28B869H',6.0,'Determinato',DATE'2007-10-01');
+Insert    into contratto values ('BDD0946505','DOXSST85E28B869H',10.0,'Determinato',DATE'2013-10-01');
+Insert    into contratto  values ('ANA9018475','RMNGDI92S47F048Q',1.0,'Part-time',DATE'2013-01-01');
+Insert    into contratto values ('ANA9018476','RMNGDI92S47F048Q',3.0,'Determinato',DATE'2014-01-01');
+Insert    into contratto values ('ANA9018477','RMNGDI92S47F048Q',5.0,'Determinato',DATE'2019-01-01');
+Insert    into contratto  values ('LQW5916239','RPSLNZ87E52I963W',1.6,'Determinato',DATE'2009-03-01');
+Insert    into contratto values  ('LQW5916240','RPSLNZ87E52I963W',3.5,'Determinato',DATE'2010-09-01');
+Insert    into contratto values ('LQW5916241','RPSLNZ87E52I963W',8.5,'Determinato',DATE'2014-01-01');
+Insert    into contratto  values ('VHG6123654','SMCRLD67H20B617Z',5.0,'Determinato',DATE'2001-01-01');
+Insert    into contratto values ('VHG6123655','SMCRLD67H20B617Z',5.0,'Determinato',DATE'2006-01-01');
+Insert    into contratto values ('VHG6123656','SMCRLD67H20B617Z',8.0,'Determinato',DATE'2011-01-01');
+Insert    into contratto values ('VHG6123657','SMCRLD67H20B617Z',NULL,'Indeterminato',DATE'2019-01-01');
+Insert    into contratto  values ('ZXF3475436','NCRCRD70D14D315A',NULL,'Indeterminato',DATE'1997-03-01');
+Insert    into contratto  values ('PMG4710457','DSSSSN84R30C649B',2.0,'Determinato',DATE'2004-09-01');
+Insert    into contratto values ('PMG4710458','DSSSSN84R30C649B',5.0,'Determinato',DATE'2006-09-01');
+Insert    into contratto values ('PMG4710459','DSSSSN84R30C649B',7.0,'Determinato',DATE'2011-09-01');
+Insert    into contratto values ('PMG4710460','DSSSSN84R30C649B',8.0,'Determinato',DATE'2018-09-01');
+Insert    into contratto  values ('DHG9240965','CNGRDT64S13E866D',NULL,'Indeterminato',DATE'2009-09-01');
+Insert    into contratto  values ('SWW2346345','GPPFNZ63A17G455X',10.0,'Determinato',DATE'1994-10-01');
+Insert    into contratto  values ('SWW2346346','GPPFNZ63A17G455X',NULL,'Indeterminato',DATE'2004-10-01');
+Insert    into contratto  values ('MMM8494933','CLMGLC85L02I926V',2.0,'Part-time',DATE'2004-01-01');
+Insert    into contratto  values ('MMM8494934','CLMGLC85L02I926V',5.0,'Part-time',DATE'2006-01-01');
+Insert    into contratto  values ('MMM8494935','CLMGLC85L02I926V',5.0,'Determinato',DATE'2011-01-01');
+Insert    into contratto  values ('MMM8494936','CLMGLC85L02I926V',5.0,'Determinato',DATE'2016-01-01');
+Insert    into contratto  values ('MMM8494937','CLMGLC85L02I926V',5.0,'Determinato',DATE'2021-01-01');
+Insert    into contratto  values ('PQQ7595844','CHPPPN95H19F806J',0.5,'Part-time',DATE'2015-09-01');
+Insert    into contratto  values ('PQQ7595845','CHPPPN95H19F806J',2.0,'Part-time',DATE'2016-03-01');
+Insert    into contratto  values ('PQQ7595846','CHPPPN95H19F806J',5.0,'Determinato',DATE'2018-03-01');
+Insert   into contratto  values ('JJH8403130','CRTNDR94P22A310N',3.0,'Determinato',DATE'2016-01-01');
+Insert    into contratto  values ('JJH8403131','CRTNDR94P22A310N',4.0,'Determinato',DATE'2019-01-01');
+Insert    into contratto  values ('YUI8940357','SDNGTR73T41F025B',5.0,'Determinato',DATE'1998-01-01');
+Insert    into contratto  values ('YUI8940358','SDNGTR73T41F025B',5.0,'Determinato',DATE'2003-01-01');
+Insert    into contratto  values ('YUI8940359','SDNGTR73T41F025B',5.0,'Determinato',DATE'2008-01-01');
+Insert    into contratto  values ('YUI8940360','SDNGTR73T41F025B',5.0,'Determinato',DATE'2013-01-01');
+Insert    into contratto  values ('YUI8940361','SDNGTR73T41F025B',5.0,'Determinato',DATE'2018-01-01');
+Insert    into contratto  values ('ZXC4789654','BSLCLL67C08L155K',NULL,'Indeterminato',DATE'2006-09-01');
+Insert    into contratto  values ('IUT2345609','FVLPRN75R41A139W',NULL,'Indeterminato',DATE'2002-09-01');
+Insert    into contratto  values ('LKJ5600865','VLLGPR97E08F089M',1.0,'Apprendistato',DATE'2020-01-01');
+Insert    into contratto  values ('LKJ5600866','VLLGPR97E08F089M',2.0,'Part-time',DATE'2021-01-01');
+Insert    into contratto  values ('XXX7009764','BTTPTR92P30E158C',1.0,'Part-time',DATE'2011-09-01');
+Insert    into contratto  values ('XXX7009765','BTTPTR92P30E158C',3.0,'Part-time',DATE'2012-09-01');
+Insert    into contratto  values ('XXX7009766','BTTPTR92P30E158C',5.0,'Determinato',DATE'2015-09-01');
+Insert    into contratto  values ('XXX7009767','BTTPTR92P30E158C',5.0,'Determinato',DATE'2020-09-01');
+Insert    into contratto  values ('QQQ7811146','PVNLNZ68S18L974V',NULL,'Indeterminato',DATE'2000-06-01');
+Insert    into contratto  values ('LLF8909654','CRUVLR88C23E922X',4.0,'Determinato',DATE'2009-01-01');
+Insert    into contratto  values ('LLF8909655','CRUVLR88C23E922X',5.0,'Determinato',DATE'2013-01-01');
+Insert    into contratto  values ('LLF8909656','CRUVLR88C23E922X',4.0,'Determinato',DATE'2018-01-01');
+Insert    into contratto  values ('LLF8909657','CRUVLR88C23E922X',4.0,'Determinato',DATE'2022-01-01');
+Insert    into contratto  values ('YTR9006546','QRNRNN94E52I566X',5.0,'Determinato',DATE'2006-01-01');
+Insert    into contratto  values ('YTR9006547','QRNRNN94E52I566X',5.0,'Determinato',DATE'2011-01-01');
+Insert    into contratto  values ('YTR9006548','QRNRNN94E52I566X',5.0,'Determinato',DATE'2016-01-01');
+Insert    into contratto  values ('YTR9006549','QRNRNN94E52I566X',5.0,'Determinato',DATE'2021-01-01');
+Insert    into contratto  values ('IUI6895346','DFZSLA76E68L865H',NULL,'Indeterminato',DATE'1998-07-01');
+Insert    into contratto  values ('VVV4711056','SRCSLV85E54D267Z',NULL,'Indeterminato',DATE'2012-11-01');
+Insert    into contratto  values ('OOU8967948','CRLBGD75D59F678Q',2.0,'Part-time',DATE'2002-02-01');
+Insert    into contratto  values ('OOU8967949','CRLBGD75D59F678Q',3.0,'Part-time',DATE'2004-02-01');
+Insert    into contratto  values ('OOU8967950','CRLBGD75D59F678Q',5.0,'Determinato',DATE'2007-02-01');
+Insert    into contratto  values ('OOU8967951','CRLBGD75D59F678Q',7.0,'Determinato',DATE'2012-02-01');
+Insert    into contratto  values ('OOU8967952','CRLBGD75D59F678Q',5.0,'Determinato',DATE'2019-02-01');
+Insert    into contratto  values ('GTR7975469','LPRBRN76R42F839H',NULL,'Indeterminato',DATE'2002-01-01');
+
+
+
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','QRT1859038',2057,143); 
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','QRT1859038',2074,126);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','QRT1859038',2120,80);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','QRT1859038',2087,113);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','GTR9649903',1300,80); 
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','GTR9649903',1330,64);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','GTR9649903',1330,83);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','GTR9649903',1203,97);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','POI2161048',1330,70); 
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','POI2161048',1345,55);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','POI2161048',1377,23);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','POI2161048',1380,20);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','LKD8283922',2537,13); 
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','LKD8283922',2475,75);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','LKD8283922',2492,58);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','LKD8283922',2522,28);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','VMH7195739',1500,50); 
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','VMH7195739',1500,20);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','VMH7195739',1500,73);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','VMH7195739',1500,52);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','AFD6195637',2173,27);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','AFD6195637',2097,103);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','AFD6195637',2105,95);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','AFD6195637',2122,78);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','ASD7640625',3173,27);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','ASD7640625',3123,77);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','ASD7640625',3144,56);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','ASD7640625',3102,98);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','BDD0946505',2477,73); 
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','BDD0946505',2492,58);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','BDD0946505',2522,28);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','BDD0946505',2517,33);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','ANA9018477',1300,73); 
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','ANA9018477',1310,73);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','ANA9018477',1400,45);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','ANA9018477',1520,56);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','LQW5916241',2083,117); 
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','LQW5916241',2112,88);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','LQW5916241',2123,77);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','LQW5916241',2113,87);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','VHG6123657',1927,73); 
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','VHG6123657',1933,67);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','VHG6123657',1955,45);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','VHG6123657',1931,69);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','ZXF3475436',1944,56); 
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','ZXF3475436',1952,48);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','ZXF3475436',1964,36);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','ZXF3475436',1970,30);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','PMG4710460',1952,48); 
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','PMG4710460',1966,34);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','PMG4710460',1972,28);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','PMG4710460',1924,76);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','DHG9240965',2097,103); 
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','DHG9240965',2180,20);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','DHG9240965',2113,87);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','DHG9240965',2128,72);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','SWW2346346',1220,80); 
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','SWW2346346',1227,74);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','SWW2346346',1275,25);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','SWW2346346',1233,67);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','MMM8494937',1300,67); 
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','MMM8494937',1310,80);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','MMM8494937',1400,72);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','MMM8494937',1410,67);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','PQQ7595846',1247,53); 
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','PQQ7595846',1238,62);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','PQQ7595846',1222,78);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','PQQ7595846',1233,67);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','JJH8403131',1772,28); 
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','JJH8403131',1680,120);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','JJH8403131',1727,73);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','JJH8403131',1782,18);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','YUI8940361',1697,103); 
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','YUI8940361',1712,88);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','YUI8940361',1722,78);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','YUI8940361',1744,56);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','ZXC4789654',1733,67); 
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','ZXC4789654',1781,19);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','ZXC4789654',1711,89);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','ZXC4789654',1688,112);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','IUT2345609',1727,73); 
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','IUT2345609',1711,89);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','IUT2345609',1733,67);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','IUT2345609',1772,28);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','LKJ5600866',1600,53); 
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','LKJ5600866',1600,78);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','LKJ5600866',1600,48);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','LKJ5600866',1600,95);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','XXX7009767',1398,102); 
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','XXX7009767',1412,88);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','XXX7009767',1433,67);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','XXX7009767',1444,56);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','QQQ7811146',1713,87); 
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','QQQ7811146',1711,89);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','QQQ7811146',1728,72);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','QQQ7811146',1698,102);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','LLF8909657',1697,103); 
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','LLF8909657',1702,98);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','LLF8909657',1733,67);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','LLF8909657',1724,76);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','YTR9006549',1727,73); 
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','YTR9006549',1733,67);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','YTR9006549',1713,87);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','YTR9006549',1692,108);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','IUI6895346',1781,19); 
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','IUI6895346',1712,88);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','IUI6895346',1774,26);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','IUI6895346',1698,102);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','VVV4711056',1743,67); 
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','VVV4711056',1783,17);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','VVV4711056',1723,77);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','VVV4711056',1712,88);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','OOU8967951',1388,112); 
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','OOU8967951',1424,76);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','OOU8967951',1432,68);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','OOU8967951',1447,53);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','GTR7975469',1753,47); 
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','GTR7975469',1783,17);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','GTR7975469',1744,56);
+insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','GTR7975469',1722,78);
+
+
+
+
+
 
 Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('BA767WF','32000',10,'furgone','Mercedes');
 Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('CZ371YF','117000',260,'autotreno','Mercedes');
@@ -175,93 +377,6 @@ Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tip
 Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','CNGRDT64S13E866D',date'2021-01-03',101,'Capodanno');
 Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','GPPFNZ63A17G455X',date'2021-12-26',90,'Feste Natalizie');
 Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','GPPFNZ63A17G455X',date'2021-01-03',101,'Capodanno');
-
-
-
-
-
-
-
-
-
-
-Insert into contratto  values ('QRT1859037','MRTPLN65L69G577R',0.6,'Part-time',DATE'2004-09-01');
-Insert    into contratto  values ('QRT1859038','MRTPLN65L69G577R',NULL,'Indeterminato',DATE'2005-04-01');
-Insert    into contratto   values ('GTR9649901','SRCLND77S27G601O',0.6,'Apprendistato',DATE'2002-09-01');
-Insert    into contratto   values('GTR9649902','SRCLND77S27G601O',7.0,'Determinato',DATE'2003-04-01');
-Insert    into contratto values('GTR9649903','SRCLND77S27G601O',NULL,'Indeterminato',DATE'2010-04-01');
-Insert   into contratto  values ('POI2161048','SPNRSR76H05F578I',NULL,'Indeterminato',DATE'2006-01-01');
-Insert    into contratto  values ('LKD8273619','LNNGST70B20D443N',2.0,'Determinato',DATE'2005-09-01');
-Insert    into contratto values ('LKD8273920','LNNGST70B20D443N',5.0,'Determinato',DATE'2007-09-01');
-Insert    into contratto values ('LKD8283921','LNNGST70B20D443N',5.0,'Determinato',DATE'2012-09-01');
-Insert    into contratto values ('LKD8283922','LNNGST70B20D443N',10.0,'Determinato',DATE'2017-09-01');
-Insert    into contratto  values ('VMH7195739','GLLLGU01M17F839G',2.0,'Apprendistato',DATE'2021-01-01');
-Insert    into contratto  values ('AFD6195637','VTRLSS98T11F839O',NULL,'Indeterminato',DATE'2021-01-01');
-Insert    into contratto  values ('ASD7640625','DNNLCU01E15F839T',NULL,'Indeterminato',DATE'2021-01-01');
-Insert  into contratto  values ('BDD0946503','DOXSST85E28B869H',5.0,'Determinato',DATE'2002-10-01');
-Insert   into contratto values ('BDD0946504','DOXSST85E28B869H',6.0,'Determinato',DATE'2007-10-01');
-Insert    into contratto values ('BDD0946505','DOXSST85E28B869H',10.0,'Determinato',DATE'2013-10-01');
-Insert    into contratto  values ('ANA9018475','RMNGDI92S47F048Q',1.0,'Part-time',DATE'2013-01-01');
-Insert    into contratto values ('ANA9018476','RMNGDI92S47F048Q',3.0,'Determinato',DATE'2014-01-01');
-Insert    into contratto values ('ANA9018477','RMNGDI92S47F048Q',5.0,'Determinato',DATE'2019-01-01');
-Insert    into contratto  values ('LQW5916239','RPSLNZ87E52I963W',1.6,'Determinato',DATE'2009-03-01');
-Insert    into contratto values  ('LQW5916240','RPSLNZ87E52I963W',3.5,'Determinato',DATE'2010-09-01');
-Insert    into contratto values ('LQW5916241','RPSLNZ87E52I963W',8.5,'Determinato',DATE'2014-01-01');
-Insert    into contratto  values ('VHG6123654','SMCRLD67H20B617Z',5.0,'Determinato',DATE'2001-01-01');
-Insert    into contratto values ('VHG6123655','SMCRLD67H20B617Z',5.0,'Determinato',DATE'2006-01-01');
-Insert    into contratto values ('VHG6123656','SMCRLD67H20B617Z',8.0,'Determinato',DATE'2011-01-01');
-Insert    into contratto values ('VHG6123657','SMCRLD67H20B617Z',NULL,'Indeterminato',DATE'2019-01-01');
-Insert    into contratto  values ('ZXF3475436','NCRCRD70D14D315A',NULL,'Indeterminato',DATE'1997-03-01');
-Insert    into contratto  values ('PMG4710457','DSSSSN84R30C649B',2.0,'Determinato',DATE'2004-09-01');
-Insert    into contratto values ('PMG4710458','DSSSSN84R30C649B',5.0,'Determinato',DATE'2006-09-01');
-Insert    into contratto values ('PMG4710459','DSSSSN84R30C649B',7.0,'Determinato',DATE'2011-09-01');
-Insert    into contratto values ('PMG4710460','DSSSSN84R30C649B',8.0,'Determinato',DATE'2018-09-01');
-Insert    into contratto  values ('DHG9240965','CNGRDT64S13E866D',NULL,'Indeterminato',DATE'2009-09-01');
-Insert    into contratto  values ('SWW2346345','GPPFNZ63A17G455X',10.0,'Determinato',DATE'1994-10-01');
-Insert    into contratto  values ('SWW2346346','GPPFNZ63A17G455X',NULL,'Indeterminato',DATE'2004-10-01');
-Insert    into contratto  values ('MMM8494933','CLMGLC85L02I926V',2.0,'Part-time',DATE'2004-01-01');
-Insert    into contratto  values ('MMM8494934','CLMGLC85L02I926V',5.0,'Part-time',DATE'2006-01-01');
-Insert    into contratto  values ('MMM8494935','CLMGLC85L02I926V',5.0,'Determinato',DATE'2011-01-01');
-Insert    into contratto  values ('MMM8494936','CLMGLC85L02I926V',5.0,'Determinato',DATE'2016-01-01');
-Insert    into contratto  values ('MMM8494937','CLMGLC85L02I926V',5.0,'Determinato',DATE'2021-01-01');
-Insert    into contratto  values ('PQQ7595844','CHPPPN95H19F806J',0.5,'Part-time',DATE'2015-09-01');
-Insert    into contratto  values ('PQQ7595845','CHPPPN95H19F806J',2.0,'Part-time',DATE'2016-03-01');
-Insert    into contratto  values ('PQQ7595846','CHPPPN95H19F806J',5.0,'Determinato',DATE'2018-03-01');
-Insert   into contratto  values ('JJH8403130','CRTNDR94P22A310N',3.0,'Determinato',DATE'2016-01-01');
-Insert    into contratto  values ('JJH8403131','CRTNDR94P22A310N',4.0,'Determinato',DATE'2019-01-01');
-Insert    into contratto  values ('YUI8940357','SDNGTR73T41F025B',5.0,'Determinato',DATE'1998-01-01');
-Insert    into contratto  values ('YUI8940358','SDNGTR73T41F025B',5.0,'Determinato',DATE'2003-01-01');
-Insert    into contratto  values ('YUI8940359','SDNGTR73T41F025B',5.0,'Determinato',DATE'2008-01-01');
-Insert    into contratto  values ('YUI8940360','SDNGTR73T41F025B',5.0,'Determinato',DATE'2013-01-01');
-Insert    into contratto  values ('YUI8940361','SDNGTR73T41F025B',5.0,'Determinato',DATE'2018-01-01');
-Insert    into contratto  values ('ZXC4789654','BSLCLL67C08L155K',NULL,'Indeterminato',DATE'2006-09-01');
-Insert    into contratto  values ('IUT2345609','FVLPRN75R41A139W',NULL,'Indeterminato',DATE'2002-09-01');
-Insert    into contratto  values ('LKJ5600865','VLLGPR97E08F089M',1.0,'Apprendistato',DATE'2020-01-01');
-Insert    into contratto  values ('LKJ5600866','VLLGPR97E08F089M',2.0,'Part-time',DATE'2021-01-01');
-Insert    into contratto  values ('XXX7009764','BTTPTR92P30E158C',1.0,'Part-time',DATE'2011-09-01');
-Insert    into contratto  values ('XXX7009765','BTTPTR92P30E158C',3.0,'Part-time',DATE'2012-09-01');
-Insert    into contratto  values ('XXX7009766','BTTPTR92P30E158C',5.0,'Determinato',DATE'2015-09-01');
-Insert    into contratto  values ('XXX7009767','BTTPTR92P30E158C',5.0,'Determinato',DATE'2020-09-01');
-Insert    into contratto  values ('QQQ7811146','PVNLNZ68S18L974V',NULL,'Indeterminato',DATE'2000-06-01');
-Insert    into contratto  values ('LLF8909654','CRUVLR88C23E922X',4.0,'Determinato',DATE'2009-01-01');
-Insert    into contratto  values ('LLF8909655','CRUVLR88C23E922X',5.0,'Determinato',DATE'2013-01-01');
-Insert    into contratto  values ('LLF8909656','CRUVLR88C23E922X',4.0,'Determinato',DATE'2018-01-01');
-Insert    into contratto  values ('LLF8909657','CRUVLR88C23E922X',4.0,'Determinato',DATE'2022-01-01');
-Insert    into contratto  values ('YTR9006546','QRNRNN94E52I566X',5.0,'Determinato',DATE'2006-01-01');
-Insert    into contratto  values ('YTR9006547','QRNRNN94E52I566X',5.0,'Determinato',DATE'2011-01-01');
-Insert    into contratto  values ('YTR9006548','QRNRNN94E52I566X',5.0,'Determinato',DATE'2016-01-01');
-Insert    into contratto  values ('YTR9006549','QRNRNN94E52I566X',5.0,'Determinato',DATE'2021-01-01');
-Insert    into contratto  values ('IUI6895346','DFZSLA76E68L865H',NULL,'Indeterminato',DATE'1998-07-01');
-Insert    into contratto  values ('VVV4711056','SRCSLV85E54D267Z',NULL,'Indeterminato',DATE'2012-11-01');
-Insert    into contratto  values ('OOU8967948','CRLBGD75D59F678Q',2.0,'Part-time',DATE'2002-02-01');
-Insert    into contratto  values ('OOU8967949','CRLBGD75D59F678Q',3.0,'Part-time',DATE'2004-02-01');
-Insert    into contratto  values ('OOU8967950','CRLBGD75D59F678Q',5.0,'Determinato',DATE'2007-02-01');
-Insert    into contratto  values ('OOU8967951','CRLBGD75D59F678Q',7.0,'Determinato',DATE'2012-02-01');
-Insert    into contratto  values ('OOU8967952','CRLBGD75D59F678Q',5.0,'Determinato',DATE'2019-02-01');
-Insert    into contratto  values ('GTR7975469','LPRBRN76R42F839H',NULL,'Indeterminato',DATE'2002-01-01');
-
-
-
 
 
 
@@ -443,131 +558,7 @@ insert into viaggio(Data_viaggio,cf_viaggio,p_iva_forn,km_totali,num_soste,Durat
 
 
 
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','QRT1859038',2057,143); 
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','QRT1859038',2074,126);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','QRT1859038',2120,80);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','QRT1859038',2087,113);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','GTR9649903',1300,80); 
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','GTR9649903',1330,64);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','GTR9649903',1330,83);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','GTR9649903',1203,97);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','POI2161048',1330,70); 
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','POI2161048',1345,55);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','POI2161048',1377,23);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','POI2161048',1380,20);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','LKD8283922',2537,13); 
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','LKD8283922',2475,75);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','LKD8283922',2492,58);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','LKD8283922',2522,28);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','VMH7195739',1500,50); 
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','VMH7195739',1500,20);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','VMH7195739',1500,73);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','VMH7195739',1500,52);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','AFD6195637',2173,27);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','AFD6195637',2097,103);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','AFD6195637',2105,95);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','AFD6195637',2122,78);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','ASD7640625',3173,27);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','ASD7640625',3123,77);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','ASD7640625',3144,56);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','ASD7640625',3102,98);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','BDD0946505',2477,73); 
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','BDD0946505',2492,58);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','BDD0946505',2522,28);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','BDD0946505',2517,33);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','ANA9018477',1300,73); 
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','ANA9018477',1310,73);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','ANA9018477',1400,45);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','ANA9018477',1520,56);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','LQW5916241',2083,117); 
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','LQW5916241',2112,88);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','LQW5916241',2123,77);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','LQW5916241',2113,87);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','VHG6123657',1927,73); 
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','VHG6123657',1933,67);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','VHG6123657',1955,45);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','VHG6123657',1931,69);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','ZXF3475436',1944,56); 
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','ZXF3475436',1952,48);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','ZXF3475436',1964,36);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','ZXF3475436',1970,30);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','PMG4710460',1952,48); 
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','PMG4710460',1966,34);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','PMG4710460',1972,28);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','PMG4710460',1924,76);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','DHG9240965',2097,103); 
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','DHG9240965',2180,20);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','DHG9240965',2113,87);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','DHG9240965',2128,72);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','SWW2346346',1220,80); 
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','SWW2346346',1227,74);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','SWW2346346',1275,25);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','SWW2346346',1233,67);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','MMM8494937',1300,67); 
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','MMM8494937',1310,80);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','MMM8494937',1400,72);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','MMM8494937',1410,67);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','PQQ7595846',1247,53); 
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','PQQ7595846',1238,62);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','PQQ7595846',1222,78);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','PQQ7595846',1233,67);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','JJH8403131',1772,28); 
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','JJH8403131',1680,120);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','JJH8403131',1727,73);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','JJH8403131',1782,18);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','YUI8940361',1697,103); 
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','YUI8940361',1712,88);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','YUI8940361',1722,78);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','YUI8940361',1744,56);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','ZXC4789654',1733,67); 
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','ZXC4789654',1781,19);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','ZXC4789654',1711,89);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','ZXC4789654',1688,112);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','IUT2345609',1727,73); 
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','IUT2345609',1711,89);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','IUT2345609',1733,67);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','IUT2345609',1772,28);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','LKJ5600866',1600,53); 
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','LKJ5600866',1600,78);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','LKJ5600866',1600,48);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','LKJ5600866',1600,95);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','XXX7009767',1398,102); 
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','XXX7009767',1412,88);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','XXX7009767',1433,67);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','XXX7009767',1444,56);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','QQQ7811146',1713,87); 
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','QQQ7811146',1711,89);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','QQQ7811146',1728,72);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','QQQ7811146',1698,102);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','LLF8909657',1697,103); 
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','LLF8909657',1702,98);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','LLF8909657',1733,67);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','LLF8909657',1724,76);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','YTR9006549',1727,73); 
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','YTR9006549',1733,67);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','YTR9006549',1713,87);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','YTR9006549',1692,108);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','IUI6895346',1781,19); 
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','IUI6895346',1712,88);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','IUI6895346',1774,26);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','IUI6895346',1698,102);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','VVV4711056',1743,67); 
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','VVV4711056',1783,17);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','VVV4711056',1723,77);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','VVV4711056',1712,88);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','OOU8967951',1388,112); 
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','OOU8967951',1424,76);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','OOU8967951',1432,68);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','OOU8967951',1447,53);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','GTR7975469',1753,47); 
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','GTR7975469',1783,17);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','GTR7975469',1744,56);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','GTR7975469',1722,78);
-
-
-
-
-
+		
 
 
 
