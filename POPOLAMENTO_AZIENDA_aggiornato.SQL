@@ -111,6 +111,44 @@ Insert    into contratto  values ('GTR7975469','LPRBRN76R42F839H',NULL,'Indeterm
 
 
 
+Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('01',1,2);
+Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('02',1,3);
+Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('03',1,3);
+Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('04',2,2);
+Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('05',2,2);
+Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('06',3,4);
+Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('07',3,4);
+Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('08',3,5);
+Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('09',3,4);
+Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('10',4,4);
+Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('11',4,3);
+Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('12',4,4);
+Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('13',5,2);
+Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('14',5,4);
+Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('15',5,5);
+
+
+
+
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('MRTPLN65L69G577R','10','01003','Analista'); 
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('SRCLND77S27G601O','01','00120','Segretario'); 
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('SPNRSR76H05F578I','01','00001','Segretario'); 
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('LNNGST70B20D443N','02','01001','Legale'); 
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('GLLLGU01M17F839G','02','01110','Manager'); 
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('VTRLSS98T11F839O','02','90010','Analista'); 
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('DNNLCU01E15F839T','10','01088','Direttore'); 
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('DOXSST85E28B869H','10','34111','Legale'); 
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('RMNGDI92S47F048Q','09','80093','Segretario'); 
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('RPSLNZ87E52I963W','08','45211','Analista'); 
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('SMCRLD67H20B617Z','07','35311','Manager'); 
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('NCRCRD70D14D315A','08','41131','Manager'); 
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('DSSSSN84R30C649B','08','01312','Manager'); 
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('CNGRDT64S13E866D','06','41252','Analista'); 
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('GPPFNZ63A17G455X','06','68576','Segretario'); 
+
+
+
+
 insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','QRT1859038',2057,143); 
 insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','QRT1859038',2074,126);
 insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','QRT1859038',2120,80);
@@ -263,26 +301,6 @@ Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_prod
 
 
 
-Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('01',1,2);
-Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('02',1,3);
-Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('03',1,3);
-Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('04',2,2);
-Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('05',2,2);
-Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('06',3,4);
-Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('07',3,4);
-Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('08',3,5);
-Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('09',3,4);
-Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('10',4,4);
-Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('11',4,3);
-Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('12',4,4);
-Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('13',5,2);
-Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('14',5,4);
-Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('15',5,5);
-
-
-
-
-
 Insert	into officina(p_iva_officina, nome, via, citta, cap) values ('46083770191', 'SUDueRuote', 'Via Gian Battista Vico','Napoli','80137');
 Insert	into officina(p_iva_officina, nome, via, citta, cap) values ('22691950095', 'Officina Manco', 'Via Santa Maria a Cubito','Mugnano di Napoli','80145');
 Insert	into officina(p_iva_officina, nome, via, citta, cap) values ('35710160710', 'Carrozzeria Esposito', 'Viale Europa','Afragola','80021');
@@ -321,24 +339,6 @@ Insert	into fornitore(p_iva_fornitore, nome, via, citta, cap, tipo_prodotto) val
 
 
 
-
-
-
-Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('MRTPLN65L69G577R','10','01003','Analista'); 
-Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('SRCLND77S27G601O','01','00120','Segretario'); 
-Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('SPNRSR76H05F578I','01','00001','Segretario'); 
-Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('LNNGST70B20D443N','02','01001','Legale'); 
-Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('GLLLGU01M17F839G','02','01110','Manager'); 
-Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('VTRLSS98T11F839O','02','90010','Analista'); 
-Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('DNNLCU01E15F839T','10','01088','Direttore'); 
-Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('DOXSST85E28B869H','10','34111','Legale'); 
-Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('RMNGDI92S47F048Q','09','80093','Segretario'); 
-Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('RPSLNZ87E52I963W','08','45211','Analista'); 
-Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('SMCRLD67H20B617Z','07','35311','Manager'); 
-Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('NCRCRD70D14D315A','08','41131','Manager'); 
-Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('DSSSSN84R30C649B','08','01312','Manager'); 
-Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('CNGRDT64S13E866D','06','41252','Analista'); 
-Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('GPPFNZ63A17G455X','06','68576','Segretario'); 
 
 
 Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2022-04-08','MRTPLN65L69G577R',date'2022-04-08',NULL,'Impegni Familiari');
