@@ -282,7 +282,7 @@ insert all
     into contratto  values ('OOU8967949','CRLBGD75D59F678Q',3.0,'Part-time',DATE'2004-02-01')
     into contratto  values ('OOU8967950','CRLBGD75D59F678Q',5.0,'Determinato',DATE'2007-02-01')
     into contratto  values ('OOU8967951','CRLBGD75D59F678Q',7.0,'Determinato',DATE'2012-02-01')
-    into contratto  values ('OOU8967951','CRLBGD75D59F678Q',5.0,'Determinato',DATE'2019-02-01')
+    into contratto  values ('OOU8967952','CRLBGD75D59F678Q',5.0,'Determinato',DATE'2019-02-01')
     into contratto  values ('GTR7975469','LPRBRN76R42F839H',NULL,'Indeterminato',DATE'2002-01-01')
 
     select 1 from dual;
@@ -599,10 +599,10 @@ insert all
 		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','VVV4711056',1783,17)
 		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','VVV4711056',1723,77)
 		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','VVV4711056',1712,88)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','OOU8967951',1388,112) -- DETERMINATO
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','OOU8967951',1424,76)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','OOU8967951',1432,68)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','OOU8967951',1447,53)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','OOU8967952',1388,112) -- DETERMINATO
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','OOU8967952',1424,76)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','OOU8967952',1432,68)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','OOU8967952',1447,53)
 		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','GTR7975449',1753,47) -- INDETERMINATO
 		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','GTR7975449',1783,17)
 		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','GTR7975449',1744,56)
