@@ -40,252 +40,243 @@ Insert	into dipendente (cf,nome,cognome,data_nascita) values('LPRBRN76R42F839H',
 
 --VEICOLO -- 20 VEICOLI
 
-insert all
+Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('BA767WF','32000',10,'furgone','Mercedes')
+Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('CZ371YF','117000',260,'autotreno','Mercedes')
+Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('FS717BG','57000',25,'motrice','Daf')
+Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('CD121FR','98000',240,'bilico','Iveco')
+Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('FW123FC','29500',10,'furgone','Iveco')
+Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('CZ441YF','122000',260,'autotreno','Daf')
+Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('DF717GG','34200',10,'furgone','Daf')
+Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('FZ121ER','53200',25,'motrice','Scania')
+Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('DZ671AZ','112000',260,'autotreno','Scania')
+Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('DW134DC','106000',240,'bilico','Scania')
+Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('FS757BG','27800',10,'furgone','Daf')
+Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('FG666FG','45000',25,'motrice','Mercedes')
+Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('AZ222DC','97800',240,'bilico','Scania')
+Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('DF678DF','52300',25,'motrice','Scania')
+Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('FD321AZ','12700',260,'autotreno','Scania')
+Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('AC415DC','109000',240,'bilico','Scania')
+Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('FG341BG','29000',10,'furgone','Daf')
+Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('FW343FC','37800',25,'motrice','Mercedes')
+Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('GH123DD','112000',240,'bilico','Scania')
+Insert	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('EH565FG','27900',10,'furgone','Iveco')
 
-	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('BA767WF','32000',10,'furgone','Mercedes')
-	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('CZ371YF','117000',260,'autotreno','Mercedes')
-	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('FS717BG','57000',25,'motrice','Daf')
-	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('CD121FR','98000',240,'bilico','Iveco')
-	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('FW123FC','29500',10,'furgone','Iveco')
-	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('CZ441YF','122000',260,'autotreno','Daf')
-	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('DF717GG','34200',10,'furgone','Daf')
-	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('FZ121ER','53200',25,'motrice','Scania')
-	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('DZ671AZ','112000',260,'autotreno','Scania')
-	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('DW134DC','106000',240,'bilico','Scania')
-	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('FS757BG','27800',10,'furgone','Daf')
-	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('FG666FG','45000',25,'motrice','Mercedes')
-	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('AZ222DC','97800',240,'bilico','Scania')
-	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('DF678DF','52300',25,'motrice','Scania')
-	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('FD321AZ','12700',260,'autotreno','Scania')
-	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('AC415DC','109000',240,'bilico','Scania')
-	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('FG341BG','29000',10,'furgone','Daf')
-	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('FW343FC','37800',25,'motrice','Mercedes')
-	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('GH123DD','112000',240,'bilico','Scania')
-	into veicolo (targa, costo_veicolo, peso_massimo, tipo_veicolo, casa_produttrice) values	('EH565FG','27900',10,'furgone','Iveco')
 
-	SELECT 1 FROM DUAL;
 
 
 --UFFICIO -> 15
-insert all
-	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('01',1,2)
-	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('02',1,3)
-	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('03',1,3)
-	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('04',2,2)
-	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('05',2,2)
-	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('06',3,4)
-	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('07',3,4)
-	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('08',3,5)
-	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('09',3,4)
-	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('10',4,4)
-	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('11',4,3)
-	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('12',4,4)
-	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('13',5,2)
-	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('14',5,4)
-	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('15',5,5)
 
-	SELECT 1 FROM DUAL;
+Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('01',1,2)
+Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('02',1,3)
+Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('03',1,3)
+Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('04',2,2)
+Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('05',2,2)
+Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('06',3,4)
+Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('07',3,4)
+Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('08',3,5)
+Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('09',3,4)
+Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('10',4,4)
+Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('11',4,3)
+Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('12',4,4)
+Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('13',5,2)
+Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('14',5,4)
+Insert	into ufficio(num_ufficio, piano_ufficio, num_impiegati) values ('15',5,5)
+
 
 
 --OFFICINA COMPLETO -> 15
 
-insert all
-	into officina(p_iva_officina, nome, via, citta, cap) values ('46083770191', 'SUDueRuote', 'Via Gian Battista Vico','Napoli','80137')
-	into officina(p_iva_officina, nome, via, citta, cap) values ('22691950095', 'Officina Manco', 'Via Santa Maria a Cubito','Mugnano di Napoli','80145')
-	into officina(p_iva_officina, nome, via, citta, cap) values ('35710160710', 'Carrozzeria Esposito', 'Viale Europa','Afragola','80021')
-	into officina(p_iva_officina, nome, via, citta, cap) values ('15135260402', 'TuttoGomme', 'Via Arpino','Casoria','80026')
-	into officina(p_iva_officina, nome, via, citta, cap) values ('44537280404', 'Gomme Rippa', 'Via Filippo Briganti','Napoli','80141')
-	into officina(p_iva_officina, nome, via, citta, cap) values ('51507310467', 'Carrozzeria Simeoli', 'Via Tito Livio','Volla','80040')
-	into officina(p_iva_officina, nome, via, citta, cap) values ('17291027830', 'Officina Russo', 'Largo Francesco Celebrano, 24','Napoli','80129')
-	into officina(p_iva_officina, nome, via, citta, cap) values ('78102936718', 'Officina Nettuno', 'Via Carlo Di Tocco','Napoli','80142')
-	into officina(p_iva_officina, nome, via, citta, cap) values ('45618920192', 'CarBlind', 'Via Torino','Napoli','80121')
-	into officina(p_iva_officina, nome, via, citta, cap) values ('91928361782', 'Rosano Gomme', 'Via Acquaviva, 8','Napoli','80141')
-	into officina(p_iva_officina, nome, via, citta, cap) values ('22335201920', 'Ruote24', 'Via Nuova Poggioreale, 56','Napoli','80143')
-	into officina(p_iva_officina, nome, via, citta, cap) values ('67401823311', 'Officina Contiello', 'Via Calabria, 3','Napoli','80142')
-	into officina(p_iva_officina, nome, via, citta, cap) values ('19897887655', 'Autofficina Romano', 'Via Micca, 3','Casoria','80026')
-	into officina(p_iva_officina, nome, via, citta, cap) values ('56761221341', 'QuattroRuote', 'Via Rossini, 31','Casoria','80026')
-	into officina(p_iva_officina, nome, via, citta, cap) values ('89987654321', 'Officina Conte', 'Via Palazziello, 93','Volla','80040')
 
-	SELECT 1 FROM DUAL;
+Insert	into officina(p_iva_officina, nome, via, citta, cap) values ('46083770191', 'SUDueRuote', 'Via Gian Battista Vico','Napoli','80137')
+Insert	into officina(p_iva_officina, nome, via, citta, cap) values ('22691950095', 'Officina Manco', 'Via Santa Maria a Cubito','Mugnano di Napoli','80145')
+Insert	into officina(p_iva_officina, nome, via, citta, cap) values ('35710160710', 'Carrozzeria Esposito', 'Viale Europa','Afragola','80021')
+Insert	into officina(p_iva_officina, nome, via, citta, cap) values ('15135260402', 'TuttoGomme', 'Via Arpino','Casoria','80026')
+Insert	into officina(p_iva_officina, nome, via, citta, cap) values ('44537280404', 'Gomme Rippa', 'Via Filippo Briganti','Napoli','80141')
+Insert	into officina(p_iva_officina, nome, via, citta, cap) values ('51507310467', 'Carrozzeria Simeoli', 'Via Tito Livio','Volla','80040')
+Insert	into officina(p_iva_officina, nome, via, citta, cap) values ('17291027830', 'Officina Russo', 'Largo Francesco Celebrano, 24','Napoli','80129')
+Insert	into officina(p_iva_officina, nome, via, citta, cap) values ('78102936718', 'Officina Nettuno', 'Via Carlo Di Tocco','Napoli','80142')
+Insert	into officina(p_iva_officina, nome, via, citta, cap) values ('45618920192', 'CarBlind', 'Via Torino','Napoli','80121')
+Insert	into officina(p_iva_officina, nome, via, citta, cap) values ('91928361782', 'Rosano Gomme', 'Via Acquaviva, 8','Napoli','80141')
+Insert	into officina(p_iva_officina, nome, via, citta, cap) values ('22335201920', 'Ruote24', 'Via Nuova Poggioreale, 56','Napoli','80143')
+Insert	into officina(p_iva_officina, nome, via, citta, cap) values ('67401823311', 'Officina Contiello', 'Via Calabria, 3','Napoli','80142')
+Insert	into officina(p_iva_officina, nome, via, citta, cap) values ('19897887655', 'Autofficina Romano', 'Via Micca, 3','Casoria','80026')
+Insert	into officina(p_iva_officina, nome, via, citta, cap) values ('56761221341', 'QuattroRuote', 'Via Rossini, 31','Casoria','80026')
+Insert	into officina(p_iva_officina, nome, via, citta, cap) values ('89987654321', 'Officina Conte', 'Via Palazziello, 93','Volla','80040')
+
 
 -- FORNITORE -- OK
 
-insert all
-	into fornitore(p_iva_fornitore, nome, via, citta, cap, tipo_prodotto) values ('74015300846','Biscottificio Fazzi', 'Via Della Meccanica, 10','Verona','37139','biscotti')
-	into fornitore(p_iva_fornitore, nome, via, citta, cap, tipo_prodotto) values ('13273750110','Saporti Italiani', 'Via Guglielmo Marconi, 44','Bentivoglio','40010','Formaggi')
-	into fornitore(p_iva_fornitore, nome, via, citta, cap, tipo_prodotto) values ('65987210906','F.lli Manco', 'Via Bottinaccio, 3','Montelupo Fiorentino','50056','Salumi')
-	into fornitore(p_iva_fornitore, nome, via, citta, cap, tipo_prodotto) values ('74015311846','DND s.r.l.', 'Via Kennedy, 5','Pietramelara','81051','Prodotti per Ufficio')
-	into fornitore(p_iva_fornitore, nome, via, citta, cap, tipo_prodotto) values ('47096840864','Bestit', 'Via Scandone, 11','Avellino','83100','Mobilio')
-	into fornitore(p_iva_fornitore, nome, via, citta, cap, tipo_prodotto) values ('32953090639','Party-Games', 'Via Del Caucaso, 49','Roma','00144','Giochi')
-	into fornitore(p_iva_fornitore, nome, via, citta, cap, tipo_prodotto) values ('54046440977','MyShopCasa', 'Via Del Marzocco, 75','Pietrasanta','55045','Prodotti per la casa')
-	into fornitore(p_iva_fornitore, nome, via, citta, cap, tipo_prodotto) values ('23844060097','GrandiStock', 'Via Premuda, 18','Lecce','73100','Ingrosso alimentare')
-	into fornitore(p_iva_fornitore, nome, via, citta, cap, tipo_prodotto) values ('44941270322','Moccia Cash and Carry', 'Via Brecciame, 49','Maddaloni','81024','Ingrosso alimentare')
-	into fornitore(p_iva_fornitore, nome, via, citta, cap, tipo_prodotto) values ('20052840558','ItalyEatFood', 'Vicolo Lambro, 1','Monza','20900','Ingrosso alimentare')
-	into fornitore(p_iva_fornitore, nome, via, citta, cap, tipo_prodotto) values ('00103498345','SportPerTutti','Via Nicolardi, 10','Napoli','80131','Articoli Sportivi')
-	into fornitore(p_iva_fornitore, nome, via, citta, cap, tipo_prodotto) values ('90004576975','HardwareStock','Via Brombeis, 119','Salerno','84121','Prodotti hardware')
-	into fornitore(p_iva_fornitore, nome, via, citta, cap, tipo_prodotto) values ('12390442324','ElettroShop','Via Vesuvio, 202','Nola','80035','Elettrodomestici')
-	into fornitore(p_iva_fornitore, nome, via, citta, cap, tipo_prodotto) values ('45521466213','Abbigliamento De Luca','Via Colosseo, 10','Roma','00100','Ingrosso abbigliamento')
-	into fornitore(p_iva_fornitore, nome, via, citta, cap, tipo_prodotto) values ('76896748487','Mobilingrosso','Via Falcone, 101','Afragola','80021','Mobilio')
 
-	SELECT 1 FROM DUAL;
+Insert	into fornitore(p_iva_fornitore, nome, via, citta, cap, tipo_prodotto) values ('74015300846','Biscottificio Fazzi', 'Via Della Meccanica, 10','Verona','37139','biscotti')
+Insert	into fornitore(p_iva_fornitore, nome, via, citta, cap, tipo_prodotto) values ('13273750110','Saporti Italiani', 'Via Guglielmo Marconi, 44','Bentivoglio','40010','Formaggi')
+Insert	into fornitore(p_iva_fornitore, nome, via, citta, cap, tipo_prodotto) values ('65987210906','F.lli Manco', 'Via Bottinaccio, 3','Montelupo Fiorentino','50056','Salumi')
+Insert	into fornitore(p_iva_fornitore, nome, via, citta, cap, tipo_prodotto) values ('74015311846','DND s.r.l.', 'Via Kennedy, 5','Pietramelara','81051','Prodotti per Ufficio')
+Insert	into fornitore(p_iva_fornitore, nome, via, citta, cap, tipo_prodotto) values ('47096840864','Bestit', 'Via Scandone, 11','Avellino','83100','Mobilio')
+Insert	into fornitore(p_iva_fornitore, nome, via, citta, cap, tipo_prodotto) values ('32953090639','Party-Games', 'Via Del Caucaso, 49','Roma','00144','Giochi')
+Insert	into fornitore(p_iva_fornitore, nome, via, citta, cap, tipo_prodotto) values ('54046440977','MyShopCasa', 'Via Del Marzocco, 75','Pietrasanta','55045','Prodotti per la casa')
+Insert	into fornitore(p_iva_fornitore, nome, via, citta, cap, tipo_prodotto) values ('23844060097','GrandiStock', 'Via Premuda, 18','Lecce','73100','Ingrosso alimentare')
+Insert	into fornitore(p_iva_fornitore, nome, via, citta, cap, tipo_prodotto) values ('44941270322','Moccia Cash and Carry', 'Via Brecciame, 49','Maddaloni','81024','Ingrosso alimentare')
+Insert	into fornitore(p_iva_fornitore, nome, via, citta, cap, tipo_prodotto) values ('20052840558','ItalyEatFood', 'Vicolo Lambro, 1','Monza','20900','Ingrosso alimentare')
+Insert	into fornitore(p_iva_fornitore, nome, via, citta, cap, tipo_prodotto) values ('00103498345','SportPerTutti','Via Nicolardi, 10','Napoli','80131','Articoli Sportivi')
+Insert	into fornitore(p_iva_fornitore, nome, via, citta, cap, tipo_prodotto) values ('90004576975','HardwareStock','Via Brombeis, 119','Salerno','84121','Prodotti hardware')
+Insert	into fornitore(p_iva_fornitore, nome, via, citta, cap, tipo_prodotto) values ('12390442324','ElettroShop','Via Vesuvio, 202','Nola','80035','Elettrodomestici')
+Insert	into fornitore(p_iva_fornitore, nome, via, citta, cap, tipo_prodotto) values ('45521466213','Abbigliamento De Luca','Via Colosseo, 10','Roma','00100','Ingrosso abbigliamento')
+Insert	into fornitore(p_iva_fornitore, nome, via, citta, cap, tipo_prodotto) values ('76896748487','Mobilingrosso','Via Falcone, 101','Afragola','80021','Mobilio')
 
-insert all
-	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2022-04-08','MRTPLN65L69G577R',date'2022-04-08',NULL,'Impegni Familiari')
-	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','MRTPLN65L69G577R',date'2021-12-26',102,'Feste Natalizie')
-	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','MRTPLN65L69G577R',date'2022-01-03',110,'Capodanno')
 
-	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','SRCLND77S27G601O',date'2021-12-26',123,'Feste Natalizie')
-	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','SRCLND77S27G601O',date'2022-01-03',100,'Capodanno')
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2022-04-08','MRTPLN65L69G577R',date'2022-04-08',NULL,'Impegni Familiari')
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','MRTPLN65L69G577R',date'2021-12-26',102,'Feste Natalizie')
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','MRTPLN65L69G577R',date'2022-01-03',110,'Capodanno')
 
-	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','SPNRSR76H05F578I',date'2021-12-26',90,'Feste Natalizie')
-	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','SPNRSR76H05F578I',date'2021-01-03',101,'Capodanno')
-	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2022-03-12','SPNRSR76H05F578I',date'2022-03-13',50,'Malattia')
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','SRCLND77S27G601O',date'2021-12-26',123,'Feste Natalizie')
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','SRCLND77S27G601O',date'2022-01-03',100,'Capodanno')
 
-	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2022-04-05','LNNGST70B20D443N',date'2022-04-05',NULL,'Matrimonio')
-	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','LNNGST70B20D443N',date'2021-12-26',90,'Feste Natalizie')
-	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','LNNGST70B20D443N',date'2021-01-03',101,'Capodanno')
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','SPNRSR76H05F578I',date'2021-12-26',90,'Feste Natalizie')
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','SPNRSR76H05F578I',date'2021-01-03',101,'Capodanno')
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2022-03-12','SPNRSR76H05F578I',date'2022-03-13',50,'Malattia')
 
-	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','GLLLGU01M17F839G',date'2021-12-26',90,'Feste Natalizie')
-	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','GLLLGU01M17F839G',date'2021-01-03',101,'Capodanno')
-	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2022-01-07','GLLLGU01M17F839G',date'2022-01-18',212,'Covid-19')
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2022-04-05','LNNGST70B20D443N',date'2022-04-05',NULL,'Matrimonio')
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','LNNGST70B20D443N',date'2021-12-26',90,'Feste Natalizie')
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','LNNGST70B20D443N',date'2021-01-03',101,'Capodanno')
 
-	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','VTRLSS98T11F839O',date'2021-12-26',90,'Feste Natalizie')
-	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','VTRLSS98T11F839O',date'2021-01-03',101,'Capodanno')
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','GLLLGU01M17F839G',date'2021-12-26',90,'Feste Natalizie')
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','GLLLGU01M17F839G',date'2021-01-03',101,'Capodanno')
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2022-01-07','GLLLGU01M17F839G',date'2022-01-18',212,'Covid-19')
 
-	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','DNNLCU01E15F839T',date'2021-12-26',140,'Feste Natalizie')
-	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','DNNLCU01E15F839T',date'2021-01-03',124,'Capodanno')
-	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2022-02-10','DNNLCU01E15F839T',date'2022-02-15',221,'Malattia')
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','VTRLSS98T11F839O',date'2021-12-26',90,'Feste Natalizie')
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','VTRLSS98T11F839O',date'2021-01-03',101,'Capodanno')
 
-	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','DOXSST85E28B869H',date'2021-12-26',110,'Feste Natalizie')
-	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','DOXSST85E28B869H',date'2021-01-03',90,'Capodanno')
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','DNNLCU01E15F839T',date'2021-12-26',140,'Feste Natalizie')
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','DNNLCU01E15F839T',date'2021-01-03',124,'Capodanno')
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2022-02-10','DNNLCU01E15F839T',date'2022-02-15',221,'Malattia')
 
-	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','RMNGDI92S47F048Q',date'2021-12-26',78,'Feste Natalizie')
-	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','RMNGDI92S47F048Q',date'2021-01-03',100,'Capodanno')
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','DOXSST85E28B869H',date'2021-12-26',110,'Feste Natalizie')
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','DOXSST85E28B869H',date'2021-01-03',90,'Capodanno')
 
-	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','RPSLNZ87E52I963W',date'2021-12-26',89,'Feste Natalizie')
-	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','RPSLNZ87E52I963W',date'2021-01-03',100,'Capodanno')
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','RMNGDI92S47F048Q',date'2021-12-26',78,'Feste Natalizie')
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','RMNGDI92S47F048Q',date'2021-01-03',100,'Capodanno')
 
-	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','SMCRLD67H20B617Z',date'2021-12-26',102,'Feste Natalizie')
-	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','SMCRLD67H20B617Z',date'2021-01-01',104,'Capodanno')
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','RPSLNZ87E52I963W',date'2021-12-26',89,'Feste Natalizie')
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','RPSLNZ87E52I963W',date'2021-01-03',100,'Capodanno')
 
-	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','NCRCRD70D14D315A',date'2021-12-26',90,'Feste Natalizie')
-	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','NCRCRD70D14D315A',date'2021-01-01',101,'Capodanno')
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','SMCRLD67H20B617Z',date'2021-12-26',102,'Feste Natalizie')
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','SMCRLD67H20B617Z',date'2021-01-01',104,'Capodanno')
 
-	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','DSSSSN84R30C649B',date'2021-12-26',90,'Feste Natalizie')
-	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','DSSSSN84R30C649B',date'2021-01-01',101,'Capodanno')
-	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2022-03-01','DSSSSN84R30C649B',date'2022-03-02',34,'Malattia')
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','NCRCRD70D14D315A',date'2021-12-26',90,'Feste Natalizie')
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','NCRCRD70D14D315A',date'2021-01-01',101,'Capodanno')
 
-	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','CNGRDT64S13E866D',date'2021-12-26',90,'Feste Natalizie')
-	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','CNGRDT64S13E866D',date'2021-01-03',101,'Capodanno')
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','DSSSSN84R30C649B',date'2021-12-26',90,'Feste Natalizie')
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','DSSSSN84R30C649B',date'2021-01-01',101,'Capodanno')
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2022-03-01','DSSSSN84R30C649B',date'2022-03-02',34,'Malattia')
 
-	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','GPPFNZ63A17G455X',date'2021-12-26',90,'Feste Natalizie')
-	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','GPPFNZ63A17G455X',date'2021-01-03',101,'Capodanno')
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','CNGRDT64S13E866D',date'2021-12-26',90,'Feste Natalizie')
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','CNGRDT64S13E866D',date'2021-01-03',101,'Capodanno')
 
-	select 1 from dual;
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','GPPFNZ63A17G455X',date'2021-12-26',90,'Feste Natalizie')
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','GPPFNZ63A17G455X',date'2021-01-03',101,'Capodanno')
 
 
 
 ---IMPIEGATO -> 15
 
-insert all
-	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('MRTPLN65L69G577R','10','01003','Analista')--OK
-	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('SRCLND77S27G601O','01','00120','Segretario')--ok
-	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('SPNRSR76H05F578I','01','00001','Segretario') --OK
-	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('LNNGST70B20D443N','02','01001','Legale')--OK
-	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('GLLLGU01M17F839G','02','01110','Manager') --OK
-	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('VTRLSS98T11F839O','02','90010','Analista') --ok
-	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('DNNLCU01E15F839T','10','01088','Direttore') --OK
-	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('DOXSST85E28B869H','10','34111','Legale') --ok
-	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('RMNGDI92S47F048Q','09','80093','Segretario') --OK
-	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('RPSLNZ87E52I963W','08','45211','Analista') --OK
-	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('SMCRLD67H20B617Z','07','35311','Manager') --OK
-	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('NCRCRD70D14D315A','08','41131','Manager') --OK
-	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('DSSSSN84R30C649B','08','01312','Manager') --OK
-	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('CNGRDT64S13E866D','06','41252','Analista') --OK
-	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('GPPFNZ63A17G455X','06','68576','Segretario') --ok
 
-	SELECT 1 FROM DUAL;
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('MRTPLN65L69G577R','10','01003','Analista')--OK
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('SRCLND77S27G601O','01','00120','Segretario')--ok
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('SPNRSR76H05F578I','01','00001','Segretario') --OK
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('LNNGST70B20D443N','02','01001','Legale')--OK
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('GLLLGU01M17F839G','02','01110','Manager') --OK
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('VTRLSS98T11F839O','02','90010','Analista') --ok
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('DNNLCU01E15F839T','10','01088','Direttore') --OK
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('DOXSST85E28B869H','10','34111','Legale') --ok
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('RMNGDI92S47F048Q','09','80093','Segretario') --OK
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('RPSLNZ87E52I963W','08','45211','Analista') --OK
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('SMCRLD67H20B617Z','07','35311','Manager') --OK
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('NCRCRD70D14D315A','08','41131','Manager') --OK
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('DSSSSN84R30C649B','08','01312','Manager') --OK
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('CNGRDT64S13E866D','06','41252','Analista') --OK
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('GPPFNZ63A17G455X','06','68576','Segretario') --ok
+
+
 
 
 -- CONTRATTO
 
-insert all
-    into contratto  values ('QRT1859037','MRTPLN65L69G577R',0.6,'Part-time',DATE'2004-09-01')
-    into contratto  values ('QRT1859038','MRTPLN65L69G577R',NULL,'Indeterminato',DATE'2005-04-01')
-    into contratto   values ('GTR9649901','SRCLND77S27G601O',0.6,'Apprendistato',DATE'2002-09-01')
-    into contratto   values('GTR9649902','SRCLND77S27G601O',7.0,'Determinato',DATE'2003-04-01')
-    into contratto values('GTR9649903','SRCLND77S27G601O',NULL,'Indeterminato',DATE'2010-04-01')
-    into contratto  values ('POI2161048','SPNRSR76H05F578I',NULL,'Indeterminato',DATE'2006-01-01')
-    into contratto  values ('LKD8273619','LNNGST70B20D443N',2.0,'Determinato',DATE'2005-09-01')
-    into contratto values ('LKD8273920','LNNGST70B20D443N',5.0,'Determinato',DATE'2007-09-01')
-    into contratto values ('LKD8283921','LNNGST70B20D443N',5.0,'Determinato',DATE'2012-09-01')
-    into contratto values ('LKD8283922','LNNGST70B20D443N',10.0,'Determinato',DATE'2017-09-01')
-    into contratto  values ('VMH7195739','GLLLGU01M17F839G',2.0,'Apprendistato',DATE'2021-01-01')
-    into contratto  values ('AFD6195637','VTRLSS98T11F839O',NULL,'Indeterminato',DATE'2021-01-01')
-    into contratto  values ('ASD7640625','DNNLCU01E15F839T',NULL,'Indeterminato',DATE'2021-01-01')
-    into contratto  values ('BDD0946503','DOXSST85E28B869H',5.0,'Determinato',DATE'2002-10-01')
-    into contratto values ('BDD0946504','DOXSST85E28B869H',6.0,'Determinato',DATE'2007-10-01')
-    into contratto values ('BDD0946505','DOXSST85E28B869H',10.0,'Determinato',DATE'2013-10-01')
-    into contratto  values ('ANA9018475','RMNGDI92S47F048Q',1.0,'Part-time',DATE'2013-01-01')
-    into contratto values ('ANA9018476','RMNGDI92S47F048Q',3.0,'Determinato',DATE'2014-01-01')
-    into contratto values ('ANA9018477','RMNGDI92S47F048Q',5.0,'Determinato',DATE'2019-01-01')
-    into contratto  values ('LQW5916239','RPSLNZ87E52I963W',1.6,'Determinato',DATE'2009-03-01')
-    into contratto values  ('LQW5916240','RPSLNZ87E52I963W',3.5,'Determinato',DATE'2010-09-01')
-    into contratto values ('LQW5916241','RPSLNZ87E52I963W',8.5,'Determinato',DATE'2014-01-01')
-    into contratto  values ('VHG6123654','SMCRLD67H20B617Z',5.0,'Determinato',DATE'2001-01-01')
-    into contratto values ('VHG6123655','SMCRLD67H20B617Z',5.0,'Determinato',DATE'2006-01-01')
-    into contratto values ('VHG6123656','SMCRLD67H20B617Z',8.0,'Determinato',DATE'2011-01-01')
-    into contratto values ('VHG6123657','SMCRLD67H20B617Z',NULL,'Indeterminato',DATE'2019-01-01')
-    into contratto  values ('ZXF3475436','NCRCRD70D14D315A',NULL,'Indeterminato',DATE'1997-03-01')
-    into contratto  values ('PMG4710457','DSSSSN84R30C649B',2.0,'Determinato',DATE'2004-09-01')
-    into contratto values ('PMG4710458','DSSSSN84R30C649B',5.0,'Determinato',DATE'2006-09-01')
-    into contratto values ('PMG4710459','DSSSSN84R30C649B',7.0,'Determinato',DATE'2011-09-01')
-    into contratto values ('PMG4710460','DSSSSN84R30C649B',8.0,'Determinato',DATE'2018-09-01')
-    into contratto  values ('DHG9240965','CNGRDT64S13E866D',NULL,'Indeterminato',DATE'2009-09-01')
-    into contratto  values ('SWW2346345','GPPFNZ63A17G455X',10.0,'Determinato',DATE'1994-10-01')
-    into contratto 	values ('SWW2346346','GPPFNZ63A17G455X',NULL,'Indeterminato',DATE'2004-10-01')
-    into contratto  values ('MMM8494933','CLMGLC85L02I926V',2.0,'Part-time',DATE'2004-01-01')
-    into contratto 	values ('MMM8494934','CLMGLC85L02I926V',5.0,'Part-time',DATE'2006-01-01')
-    into contratto 	values ('MMM8494935','CLMGLC85L02I926V',5.0,'Determinato',DATE'2011-01-01')
-    into contratto 	values ('MMM8494936','CLMGLC85L02I926V',5.0,'Determinato',DATE'2016-01-01')
-    into contratto 	values ('MMM8494937','CLMGLC85L02I926V',5.0,'Determinato',DATE'2021-01-01')
-    into contratto  values ('PQQ7595844','CHPPPN95H19F806J',0.5,'Part-time',DATE'2015-09-01')
-    into contratto 	values ('PQQ7595845','CHPPPN95H19F806J',2.0,'Part-time',DATE'2016-03-01')
-    into contratto 	values ('PQQ7595846','CHPPPN95H19F806J',5.0,'Determinato',DATE'2018-03-01')
-    into contratto  values ('JJH8403130','CRTNDR94P22A310N',3.0,'Determinato',DATE'2016-01-01')
-    into contratto 	values ('JJH8403131','CRTNDR94P22A310N',4.0,'Determinato',DATE'2019-01-01')
-    into contratto  values ('YUI8940357','SDNGTR73T41F025B',5.0,'Determinato',DATE'1998-01-01')
-    into contratto  values ('YUI8940358','SDNGTR73T41F025B',5.0,'Determinato',DATE'2003-01-01')
-    into contratto  values ('YUI8940359','SDNGTR73T41F025B',5.0,'Determinato',DATE'2008-01-01')
-    into contratto  values ('YUI8940360','SDNGTR73T41F025B',5.0,'Determinato',DATE'2013-01-01')
-    into contratto  values ('YUI8940361','SDNGTR73T41F025B',5.0,'Determinato',DATE'2018-01-01')
-    into contratto  values ('ZXC4789654','BSLCLL67C08L155K',NULL,'Indeterminato',DATE'2006-09-01')
-    into contratto  values ('IUT2345609','FVLPRN75R41A139W',NULL,'Indeterminato',DATE'2002-09-01')
-    into contratto  values ('LKJ5600865','VLLGPR97E08F089M',1.0,'Apprendistato',DATE'2020-01-01')
-    into contratto  values ('LKJ5600866','VLLGPR97E08F089M',2.0,'Part-time',DATE'2021-01-01')
-    into contratto  values ('XXX7009764','BTTPTR92P30E158C',1.0,'Part-time',DATE'2011-09-01')
-    into contratto  values ('XXX7009765','BTTPTR92P30E158C',3.0,'Part-time',DATE'2012-09-01')
-    into contratto  values ('XXX7009766','BTTPTR92P30E158C',5.0,'Determinato',DATE'2015-09-01')
-    into contratto  values ('XXX7009767','BTTPTR92P30E158C',5.0,'Determinato',DATE'2020-09-01')
-    into contratto  values ('QQQ7811146','PVNLNZ68S18L974V',NULL,'Indeterminato',DATE'2000-06-01')
-    into contratto  values ('LLF8909654','CRUVLR88C23E922X',4.0,'Determinato',DATE'2009-01-01')
-    into contratto  values ('LLF8909655','CRUVLR88C23E922X',5.0,'Determinato',DATE'2013-01-01')
-    into contratto  values ('LLF8909656','CRUVLR88C23E922X',4.0,'Determinato',DATE'2018-01-01')
-    into contratto  values ('LLF8909657','CRUVLR88C23E922X',4.0,'Determinato',DATE'2022-01-01')
-    into contratto  values ('YTR9006546','QRNRNN94E52I566X',5.0,'Determinato',DATE'2006-01-01')
-    into contratto  values ('YTR9006547','QRNRNN94E52I566X',5.0,'Determinato',DATE'2011-01-01')
-    into contratto  values ('YTR9006548','QRNRNN94E52I566X',5.0,'Determinato',DATE'2016-01-01')
-    into contratto  values ('YTR9006549','QRNRNN94E52I566X',5.0,'Determinato',DATE'2021-01-01')
-    into contratto  values ('IUI6895346','DFZSLA76E68L865H',NULL,'Indeterminato',DATE'1998-07-01')
-    into contratto  values ('VVV4711056','SRCSLV85E54D267Z',NULL,'Indeterminato',DATE'2012-11-01')
-    into contratto  values ('OOU8967948','CRLBGD75D59F678Q',2.0,'Part-time',DATE'2002-02-01')
-    into contratto  values ('OOU8967949','CRLBGD75D59F678Q',3.0,'Part-time',DATE'2004-02-01')
-    into contratto  values ('OOU8967950','CRLBGD75D59F678Q',5.0,'Determinato',DATE'2007-02-01')
-    into contratto  values ('OOU8967951','CRLBGD75D59F678Q',7.0,'Determinato',DATE'2012-02-01')
-    into contratto  values ('OOU8967952','CRLBGD75D59F678Q',5.0,'Determinato',DATE'2019-02-01')
-    into contratto  values ('GTR7975469','LPRBRN76R42F839H',NULL,'Indeterminato',DATE'2002-01-01')
+Insert into contratto  values ('QRT1859037','MRTPLN65L69G577R',0.6,'Part-time',DATE'2004-09-01')
+Insert    into contratto  values ('QRT1859038','MRTPLN65L69G577R',NULL,'Indeterminato',DATE'2005-04-01')
+Insert    into contratto   values ('GTR9649901','SRCLND77S27G601O',0.6,'Apprendistato',DATE'2002-09-01')
+Insert    into contratto   values('GTR9649902','SRCLND77S27G601O',7.0,'Determinato',DATE'2003-04-01')
+Insert    into contratto values('GTR9649903','SRCLND77S27G601O',NULL,'Indeterminato',DATE'2010-04-01')
+Insert   into contratto  values ('POI2161048','SPNRSR76H05F578I',NULL,'Indeterminato',DATE'2006-01-01')
+Insert    into contratto  values ('LKD8273619','LNNGST70B20D443N',2.0,'Determinato',DATE'2005-09-01')
+Insert    into contratto values ('LKD8273920','LNNGST70B20D443N',5.0,'Determinato',DATE'2007-09-01')
+Insert    into contratto values ('LKD8283921','LNNGST70B20D443N',5.0,'Determinato',DATE'2012-09-01')
+Insert    into contratto values ('LKD8283922','LNNGST70B20D443N',10.0,'Determinato',DATE'2017-09-01')
+Insert    into contratto  values ('VMH7195739','GLLLGU01M17F839G',2.0,'Apprendistato',DATE'2021-01-01')
+Insert    into contratto  values ('AFD6195637','VTRLSS98T11F839O',NULL,'Indeterminato',DATE'2021-01-01')
+Insert    into contratto  values ('ASD7640625','DNNLCU01E15F839T',NULL,'Indeterminato',DATE'2021-01-01')
+Insert  into contratto  values ('BDD0946503','DOXSST85E28B869H',5.0,'Determinato',DATE'2002-10-01')
+Insert   into contratto values ('BDD0946504','DOXSST85E28B869H',6.0,'Determinato',DATE'2007-10-01')
+Insert    into contratto values ('BDD0946505','DOXSST85E28B869H',10.0,'Determinato',DATE'2013-10-01')
+Insert    into contratto  values ('ANA9018475','RMNGDI92S47F048Q',1.0,'Part-time',DATE'2013-01-01')
+Insert    into contratto values ('ANA9018476','RMNGDI92S47F048Q',3.0,'Determinato',DATE'2014-01-01')
+Insert    into contratto values ('ANA9018477','RMNGDI92S47F048Q',5.0,'Determinato',DATE'2019-01-01')
+Insert    into contratto  values ('LQW5916239','RPSLNZ87E52I963W',1.6,'Determinato',DATE'2009-03-01')
+Insert    into contratto values  ('LQW5916240','RPSLNZ87E52I963W',3.5,'Determinato',DATE'2010-09-01')
+Insert    into contratto values ('LQW5916241','RPSLNZ87E52I963W',8.5,'Determinato',DATE'2014-01-01')
+Insert    into contratto  values ('VHG6123654','SMCRLD67H20B617Z',5.0,'Determinato',DATE'2001-01-01')
+Insert    into contratto values ('VHG6123655','SMCRLD67H20B617Z',5.0,'Determinato',DATE'2006-01-01')
+Insert    into contratto values ('VHG6123656','SMCRLD67H20B617Z',8.0,'Determinato',DATE'2011-01-01')
+Insert    into contratto values ('VHG6123657','SMCRLD67H20B617Z',NULL,'Indeterminato',DATE'2019-01-01')
+Insert    into contratto  values ('ZXF3475436','NCRCRD70D14D315A',NULL,'Indeterminato',DATE'1997-03-01')
+Insert    into contratto  values ('PMG4710457','DSSSSN84R30C649B',2.0,'Determinato',DATE'2004-09-01')
+Insert    into contratto values ('PMG4710458','DSSSSN84R30C649B',5.0,'Determinato',DATE'2006-09-01')
+Insert    into contratto values ('PMG4710459','DSSSSN84R30C649B',7.0,'Determinato',DATE'2011-09-01')
+Insert    into contratto values ('PMG4710460','DSSSSN84R30C649B',8.0,'Determinato',DATE'2018-09-01')
+Insert    into contratto  values ('DHG9240965','CNGRDT64S13E866D',NULL,'Indeterminato',DATE'2009-09-01')
+Insert    into contratto  values ('SWW2346345','GPPFNZ63A17G455X',10.0,'Determinato',DATE'1994-10-01')
+Insert    into contratto  values ('SWW2346346','GPPFNZ63A17G455X',NULL,'Indeterminato',DATE'2004-10-01')
+Insert    into contratto  values ('MMM8494933','CLMGLC85L02I926V',2.0,'Part-time',DATE'2004-01-01')
+Insert    into contratto  values ('MMM8494934','CLMGLC85L02I926V',5.0,'Part-time',DATE'2006-01-01')
+Insert    into contratto  values ('MMM8494935','CLMGLC85L02I926V',5.0,'Determinato',DATE'2011-01-01')
+Insert    into contratto  values ('MMM8494936','CLMGLC85L02I926V',5.0,'Determinato',DATE'2016-01-01')
+Insert    into contratto  values ('MMM8494937','CLMGLC85L02I926V',5.0,'Determinato',DATE'2021-01-01')
+Insert    into contratto  values ('PQQ7595844','CHPPPN95H19F806J',0.5,'Part-time',DATE'2015-09-01')
+Insert    into contratto  values ('PQQ7595845','CHPPPN95H19F806J',2.0,'Part-time',DATE'2016-03-01')
+Insert    into contratto  values ('PQQ7595846','CHPPPN95H19F806J',5.0,'Determinato',DATE'2018-03-01')
+Insert   into contratto  values ('JJH8403130','CRTNDR94P22A310N',3.0,'Determinato',DATE'2016-01-01')
+Insert    into contratto  values ('JJH8403131','CRTNDR94P22A310N',4.0,'Determinato',DATE'2019-01-01')
+Insert    into contratto  values ('YUI8940357','SDNGTR73T41F025B',5.0,'Determinato',DATE'1998-01-01')
+Insert    into contratto  values ('YUI8940358','SDNGTR73T41F025B',5.0,'Determinato',DATE'2003-01-01')
+Insert    into contratto  values ('YUI8940359','SDNGTR73T41F025B',5.0,'Determinato',DATE'2008-01-01')
+Insert    into contratto  values ('YUI8940360','SDNGTR73T41F025B',5.0,'Determinato',DATE'2013-01-01')
+Insert    into contratto  values ('YUI8940361','SDNGTR73T41F025B',5.0,'Determinato',DATE'2018-01-01')
+Insert    into contratto  values ('ZXC4789654','BSLCLL67C08L155K',NULL,'Indeterminato',DATE'2006-09-01')
+Insert    into contratto  values ('IUT2345609','FVLPRN75R41A139W',NULL,'Indeterminato',DATE'2002-09-01')
+Insert    into contratto  values ('LKJ5600865','VLLGPR97E08F089M',1.0,'Apprendistato',DATE'2020-01-01')
+Insert    into contratto  values ('LKJ5600866','VLLGPR97E08F089M',2.0,'Part-time',DATE'2021-01-01')
+Insert    into contratto  values ('XXX7009764','BTTPTR92P30E158C',1.0,'Part-time',DATE'2011-09-01')
+Insert    into contratto  values ('XXX7009765','BTTPTR92P30E158C',3.0,'Part-time',DATE'2012-09-01')
+Insert    into contratto  values ('XXX7009766','BTTPTR92P30E158C',5.0,'Determinato',DATE'2015-09-01')
+Insert    into contratto  values ('XXX7009767','BTTPTR92P30E158C',5.0,'Determinato',DATE'2020-09-01')
+Insert    into contratto  values ('QQQ7811146','PVNLNZ68S18L974V',NULL,'Indeterminato',DATE'2000-06-01')
+Insert    into contratto  values ('LLF8909654','CRUVLR88C23E922X',4.0,'Determinato',DATE'2009-01-01')
+Insert    into contratto  values ('LLF8909655','CRUVLR88C23E922X',5.0,'Determinato',DATE'2013-01-01')
+Insert    into contratto  values ('LLF8909656','CRUVLR88C23E922X',4.0,'Determinato',DATE'2018-01-01')
+Insert    into contratto  values ('LLF8909657','CRUVLR88C23E922X',4.0,'Determinato',DATE'2022-01-01')
+Insert    into contratto  values ('YTR9006546','QRNRNN94E52I566X',5.0,'Determinato',DATE'2006-01-01')
+Insert    into contratto  values ('YTR9006547','QRNRNN94E52I566X',5.0,'Determinato',DATE'2011-01-01')
+Insert    into contratto  values ('YTR9006548','QRNRNN94E52I566X',5.0,'Determinato',DATE'2016-01-01')
+Insert    into contratto  values ('YTR9006549','QRNRNN94E52I566X',5.0,'Determinato',DATE'2021-01-01')
+Insert    into contratto  values ('IUI6895346','DFZSLA76E68L865H',NULL,'Indeterminato',DATE'1998-07-01')
+Insert    into contratto  values ('VVV4711056','SRCSLV85E54D267Z',NULL,'Indeterminato',DATE'2012-11-01')
+Insert    into contratto  values ('OOU8967948','CRLBGD75D59F678Q',2.0,'Part-time',DATE'2002-02-01')
+Insert    into contratto  values ('OOU8967949','CRLBGD75D59F678Q',3.0,'Part-time',DATE'2004-02-01')
+Insert    into contratto  values ('OOU8967950','CRLBGD75D59F678Q',5.0,'Determinato',DATE'2007-02-01')
+Insert    into contratto  values ('OOU8967951','CRLBGD75D59F678Q',7.0,'Determinato',DATE'2012-02-01')
+Insert    into contratto  values ('OOU8967952','CRLBGD75D59F678Q',5.0,'Determinato',DATE'2019-02-01')
+Insert    into contratto  values ('GTR7975469','LPRBRN76R42F839H',NULL,'Indeterminato',DATE'2002-01-01')
 
-    select 1 from dual;
+
 
 
 
