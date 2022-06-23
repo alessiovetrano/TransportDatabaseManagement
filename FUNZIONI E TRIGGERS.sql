@@ -208,18 +208,14 @@ contatore_impiegati NUMBER;
 underImpiegati EXCEPTION;
 BEGIN
 
-select ufficio_impiegato into num_ufficio from ferie fer 
-join dipendente dip on fer.cod_fiscale_ferie = dip.cf 
-join impiegato im on dip.cf = im.cf_impiegato
-where cod_fiscale_ferie = :new.cod_fiscale_ferie
-group by ufficio_impiegato;
+select ufficio_impiegato into num_ufficio from impiegato im
+join dipendente dip on dip.cf = im.cf_impiegato
+where cf_impiegato = :new.cod_fiscale_ferie;
 
 select count(*) into contatore_impiegati from impiegato 
 join dipendente dip on cf_impiegato = dip.cf 
-join ferie fer on fer.cod_fiscale_ferie = dip.cf 
-where UFFICIO_IMPIEGATO = num_ufficio 
-and :new.DATA_INIZIO_FERIE between DATA_INIZIO_FERIE and DATA_FINE
-and :new.DATA_FINE between DATA_INIZIO_FERIE and DATA_FINE;
+where UFFICIO_IMPIEGATO = num_ufficio
+and cf_impiegato != :new.cod_fiscale_ferie;
 
 
 if (contatore_impiegati > 2) then
@@ -232,6 +228,7 @@ EXCEPTION
 when underImpiegati then
 raise_application_error(-20001,'Non è possibile assegnare queste ferie poichè l''ufficio di competenza rimarrebbe vuoto');
 END;
+
 
 --7. Non è possibile inserire una presenza se l'impiegato è in ferie
 CREATE OR REPLACE TRIGGER checkPresFerie
