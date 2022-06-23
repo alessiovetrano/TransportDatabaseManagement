@@ -122,15 +122,15 @@ group by cf_impiegato, mansione;
 
 
 
-if (:new.importo < 3200 and mansioneCheck = 'Direttore') then
+if (:new.importo < 3000 and mansioneCheck = 'Direttore') then
     raise stipendio_basso;
-elsif (:new.importo < 1400 and mansioneCheck = 'Segretario') then 
+elsif (:new.importo < 1200 and mansioneCheck = 'Segretario') then 
     raise stipendio_basso;
-elsif (:new.importo < 2000 and mansioneCheck = 'Manager') then 
+elsif (:new.importo < 1300 and mansioneCheck = 'Manager') then 
     raise stipendio_basso;
-elsif (:new.importo < 2550 and mansioneCheck = 'Legale' ) then 
+elsif (:new.importo < 2300 and mansioneCheck = 'Legale' ) then 
     raise stipendio_basso;
-elsif (:new.importo < 2200 and mansioneCheck = 'Analista') then 
+elsif (:new.importo < 1950 and mansioneCheck = 'Analista') then 
     raise stipendio_basso;
 end if;
 
