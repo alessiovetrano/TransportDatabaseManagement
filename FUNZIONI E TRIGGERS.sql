@@ -101,7 +101,7 @@ where s.num_tracciamento = :new.tracciamento_lotto;
 
 
 select SUM(Peso_lotto) into somma_lotti from lotto lt join spedizione sp on lt.tracciamento_lotto = sp.num_tracciamento;
-if (peso < :new.peso_lotto + somma_lotti) then
+if (peso <= :new.peso_lotto + somma_lotti) then
 raise overPeso;
 end if;
 EXCEPTION
