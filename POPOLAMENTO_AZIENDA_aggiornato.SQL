@@ -130,7 +130,7 @@ Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tip
 
 Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','SRCLND77S27G601O',date'2021-12-26',123,'Feste Natalizie');
 Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','SRCLND77S27G601O',date'2022-01-03',100,'Capodanno');
-;
+
 Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','SPNRSR76H05F578I',date'2021-12-26',90,'Feste Natalizie');
 Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','SPNRSR76H05F578I',date'2021-01-03',101,'Capodanno');
 Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2022-03-12','SPNRSR76H05F578I',date'2022-03-13',50,'Malattia');
@@ -180,21 +180,21 @@ Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tip
 ---IMPIEGATO -> 15
 
 
-Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('MRTPLN65L69G577R','10','01003','Analista');;--OK
-Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('SRCLND77S27G601O','01','00120','Segretario');;--ok
-Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('SPNRSR76H05F578I','01','00001','Segretario');; --OK
-Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('LNNGST70B20D443N','02','01001','Legale');;--OK
-Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('GLLLGU01M17F839G','02','01110','Manager');; --OK
-Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('VTRLSS98T11F839O','02','90010','Analista');; --ok
-Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('DNNLCU01E15F839T','10','01088','Direttore');; --OK
-Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('DOXSST85E28B869H','10','34111','Legale');; --ok
-Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('RMNGDI92S47F048Q','09','80093','Segretario');; --OK
-Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('RPSLNZ87E52I963W','08','45211','Analista');; --OK
-Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('SMCRLD67H20B617Z','07','35311','Manager');; --OK
-Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('NCRCRD70D14D315A','08','41131','Manager');; --OK
-Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('DSSSSN84R30C649B','08','01312','Manager');; --OK
-Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('CNGRDT64S13E866D','06','41252','Analista');; --OK
-Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('GPPFNZ63A17G455X','06','68576','Segretario');; --ok
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('MRTPLN65L69G577R','10','01003','Analista'); --OK
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('SRCLND77S27G601O','01','00120','Segretario'); --ok
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('SPNRSR76H05F578I','01','00001','Segretario'); --OK
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('LNNGST70B20D443N','02','01001','Legale'); --OK
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('GLLLGU01M17F839G','02','01110','Manager'); --OK
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('VTRLSS98T11F839O','02','90010','Analista'); --ok
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('DNNLCU01E15F839T','10','01088','Direttore'); --OK
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('DOXSST85E28B869H','10','34111','Legale'); --ok
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('RMNGDI92S47F048Q','09','80093','Segretario'); --OK
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('RPSLNZ87E52I963W','08','45211','Analista'); --OK
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('SMCRLD67H20B617Z','07','35311','Manager'); --OK
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('NCRCRD70D14D315A','08','41131','Manager'); --OK
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('DSSSSN84R30C649B','08','01312','Manager'); --OK
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('CNGRDT64S13E866D','06','41252','Analista'); --OK
+Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('GPPFNZ63A17G455X','06','68576','Segretario'); --ok
 
 
 
@@ -288,7 +288,7 @@ Insert    into contratto  values ('GTR7975469','LPRBRN76R42F839H',NULL,'Indeterm
 Insert into autista (cf_autista,tipo_patente,num_patente,targa_autista) values('CLMGLC85L02I926V','C1','NA2113212M','FS717BG');
 Insert into autista (cf_autista,tipo_patente,num_patente,targa_autista) values('CHPPPN95H19F806J','CE','NA1213241L','FD321AZ');
 Insert into autista (cf_autista,tipo_patente,num_patente,targa_autista) values('CRTNDR94P22A310N','CE','NA3211254S','DZ671AZ');
-Insert into autista (cf_autista,tipo_patente,num_patente,targa_autista) values('SDNGTR73T41F025B','B1','NA9876178L','BA767WF');--furgone
+Insert into autista (cf_autista,tipo_patente,num_patente,targa_autista) values('SDNGTR73T41F025B','B1','NA9876178L','BA767WF'); --furgone
 Insert into autista (cf_autista,tipo_patente,num_patente,targa_autista) values('BSLCLL67C08L155K','C','NA1234561S','CD121FR');
 Insert into autista (cf_autista,tipo_patente,num_patente,targa_autista) values('FVLPRN75R41A139W','C1','NA4545415A','DF678DF');
 Insert into autista (cf_autista,tipo_patente,num_patente,targa_autista) values('VLLGPR97E08F089M','B1','NA3213211A','FW123FC'); --furgone
@@ -321,18 +321,18 @@ Insert into autista (cf_autista,tipo_patente,num_patente,targa_autista) values('
 		insert into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-05','yyyy-mm-dd'),'MRTPLN65L69G577R',to_date('2022-04-05 08:12','yyyy-mm-dd hh24:mi'),to_date('2022-04-05 17:12','yyyy-mm-dd hh24:mi'));
 		insert into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-06','yyyy-mm-dd'),'MRTPLN65L69G577R',to_date('2022-04-06 08:07','yyyy-mm-dd hh24:mi'),to_date('2022-04-06 17:07','yyyy-mm-dd hh24:mi'));
 		insert into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-07','yyyy-mm-dd'),'MRTPLN65L69G577R',to_date('2022-04-07 08:00','yyyy-mm-dd hh24:mi'),to_date('2022-04-07 17:00','yyyy-mm-dd hh24:mi'));
-		insert into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-08','yyyy-mm-dd'),'MRTPLN65L69G577R',NULL,NULL);;
+		insert into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-08','yyyy-mm-dd'),'MRTPLN65L69G577R',NULL,NULL);
 
 		--IMPIEGATO 1 ORE DI PERMESSO --SRCLND77S27G601O
 		insert into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-04','yyyy-mm-dd'),'SRCLND77S27G601O',to_date('2022-04-04 08:22','yyyy-mm-dd hh24:mi'),to_date('2022-04-04 17:22','yyyy-mm-dd hh24:mi'));
-		insert into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-05','yyyy-mm-dd'),'SRCLND77S27G601O',to_date('2022-04-05 09:15','yyyy-mm-dd hh24:mi'),to_date('2022-04-05 17:15','yyyy-mm-dd hh24:mi'));--ORA PERMESSO
+		insert into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-05','yyyy-mm-dd'),'SRCLND77S27G601O',to_date('2022-04-05 09:15','yyyy-mm-dd hh24:mi'),to_date('2022-04-05 17:15','yyyy-mm-dd hh24:mi')); --ORA PERMESSO
 		insert into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-06','yyyy-mm-dd'),'SRCLND77S27G601O',to_date('2022-04-06 08:13','yyyy-mm-dd hh24:mi'),to_date('2022-04-06 17:13','yyyy-mm-dd hh24:mi'));
 		insert into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-07','yyyy-mm-dd'),'SRCLND77S27G601O',to_date('2022-04-07 08:00','yyyy-mm-dd hh24:mi'),to_date('2022-04-07 17:00','yyyy-mm-dd hh24:mi'));
 		insert into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-08','yyyy-mm-dd'),'SRCLND77S27G601O',to_date('2022-04-08 08:00','yyyy-mm-dd hh24:mi'),to_date('2022-04-08 17:00','yyyy-mm-dd hh24:mi'));
 		insert into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-04','yyyy-mm-dd'),'SPNRSR76H05F578I',to_date('2022-04-04 08:20','yyyy-mm-dd hh24:mi'),to_date('2022-04-04 17:20','yyyy-mm-dd hh24:mi'));
 		insert into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-05','yyyy-mm-dd'),'SPNRSR76H05F578I',to_date('2022-04-05 08:03','yyyy-mm-dd hh24:mi'),to_date('2022-04-05 17:10','yyyy-mm-dd hh24:mi'));
 		insert into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-06','yyyy-mm-dd'),'SPNRSR76H05F578I',to_date('2022-04-06 08:05','yyyy-mm-dd hh24:mi'),to_date('2022-04-06 17:03','yyyy-mm-dd hh24:mi'));
-		insert into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-07','yyyy-mm-dd'),'SPNRSR76H05F578I',to_date('2022-04-07 08:10','yyyy-mm-dd hh24:mi'),to_date('2022-04-07 16:14','yyyy-mm-dd hh24:mi'));--ORA PERMESSO
+		insert into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-07','yyyy-mm-dd'),'SPNRSR76H05F578I',to_date('2022-04-07 08:10','yyyy-mm-dd hh24:mi'),to_date('2022-04-07 16:14','yyyy-mm-dd hh24:mi')); --ORA PERMESSO
 		insert into presenza(Data_presenza,cf_presenza,ora_entrata,ora_uscita) values(to_date('2022-04-08','yyyy-mm-dd'),'SPNRSR76H05F578I',to_date('2022-04-08 08:09','yyyy-mm-dd hh24:mi'),to_date('2022-04-08 17:00','yyyy-mm-dd hh24:mi'));
 
 		--MANCA UN GIORNO
@@ -493,7 +493,7 @@ insert into viaggio(Data_viaggio,cf_viaggio,p_iva_forn,km_totali,num_soste,Durat
 		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','LKD8283922',2475,75);
 		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','LKD8283922',2492,58);
 		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','LKD8283922',2522,28);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','VMH7195739',1500,50);-- MANAGER
+		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','VMH7195739',1500,50); -- MANAGER
 		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','VMH7195739',1500,20);
 		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','VMH7195739',1500,73);
 		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','VMH7195739',1500,52);
@@ -501,39 +501,39 @@ insert into viaggio(Data_viaggio,cf_viaggio,p_iva_forn,km_totali,num_soste,Durat
 		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','AFD6195637',2097,103);
 		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','AFD6195637',2105,95);
 		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','AFD6195637',2122,78);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','ASD7640625',3173,27);--DIRETTORE
+		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','ASD7640625',3173,27); --DIRETTORE
 		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','ASD7640625',3123,77);
 		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','ASD7640625',3144,56);
 		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','ASD7640625',3102,98);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','BDD0946505',2477,73);--LEGALE
+		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','BDD0946505',2477,73); --LEGALE
 		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','BDD0946505',2492,58);
 		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','BDD0946505',2522,28);
 		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','BDD0946505',2517,33);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','ANA9018477',1300,73);--SEGRETARIO
+		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','ANA9018477',1300,73); --SEGRETARIO
 		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','ANA9018477',1310,73);
 		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','ANA9018477',1400,45);
 		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','ANA9018477',1520,56);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','LQW5916241',2083,117);--ANALISTA
+		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','LQW5916241',2083,117); --ANALISTA
 		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','LQW5916241',2112,88);
 		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','LQW5916241',2123,77);
 		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','LQW5916241',2113,87);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','VHG6123657',1927,73);--MANAGER
+		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','VHG6123657',1927,73); --MANAGER
 		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','VHG6123657',1933,67);
 		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','VHG6123657',1955,45);
 		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','VHG6123657',1931,69);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','ZXF3475436',1944,56);--MANAGER
+		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','ZXF3475436',1944,56); --MANAGER
 		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','ZXF3475436',1952,48);
 		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','ZXF3475436',1964,36);
 		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','ZXF3475436',1970,30);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','PMG4710460',1952,48);--MANAGER
+		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','PMG4710460',1952,48); --MANAGER
 		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','PMG4710460',1966,34);
 		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','PMG4710460',1972,28);
 		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','PMG4710460',1924,76);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','DHG9240965',2097,103);--ANALISTA
+		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','DHG9240965',2097,103); --ANALISTA
 		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','DHG9240965',2180,20);
 		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','DHG9240965',2113,87);
 		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','DHG9240965',2128,72);
-		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','SWW2346346',1220,80);--SEGRETARIO APPRENDISTATO
+		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','SWW2346346',1220,80); --SEGRETARIO APPRENDISTATO
 		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','SWW2346346',1227,74);
 		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','SWW2346346',1275,25);
 		insert into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','SWW2346346',1233,67);
