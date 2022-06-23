@@ -6,7 +6,6 @@ cf VARCHAR2(16) NOT NULL PRIMARY KEY,
 nome VARCHAR2(20) NOT NULL,
 cognome VARCHAR2(20) NOT NULL,
 data_nascita DATE NOT NULL,
-data_assunzione DATE NOT NULL,
 	
 CONSTRAINT check_cf CHECK(
 	REGEXP_LIKE(cf,'[A-Z]{6}[0-9]{2}[A-Z][0-9]{2}[A-Z][0-9]{3}[A-Z]')),
@@ -108,10 +107,15 @@ codice_contratto VARCHAR2(10) NOT NULL PRIMARY KEY,
 cf_contratto VARCHAR2(16) NOT NULL,
 durata_contratto NUMBER,
 tipo_contratto VARCHAR2(25) NOT NULL,
+data_inizio_contratto DATE NOT NULL,
 FOREIGN KEY(cf_contratto) REFERENCES dipendente(cf)
 ON DELETE CASCADE,
 
-CONSTRAINT durata_contatto CHECK(
+CONSTRAINT data_inizio_contratto_check CHECK(
+
+	TO_CHAR(data_assunzione,'YYYY-MM-DD') between '1990-01-01' AND '2022-01-01'),
+
+	CONSTRAINT durata_contatto CHECK(
 	(LOWER(tipo_contratto) = 'indeterminato' and durata_contratto is null)
 	OR
 	(LOWER(tipo_contratto) = 'determinato' and durata_contratto is not null)
@@ -238,6 +242,7 @@ CREATE TABLE spedizione (
 num_tracciamento VARCHAR2(10) PRIMARY KEY,
 data_spedizione DATE NOT NULL,
 cf_spedizione VARCHAR(16) NOT NULL,
+orario_consegna DATE NOT NULL,
 p_iva_aziendaArrivo VARCHAR2(11) NOT NULL,
 FOREIGN KEY(data_spedizione,cf_spedizione) REFERENCES viaggio(data_viaggio,cf_viaggio)
 ON DELETE CASCADE,
