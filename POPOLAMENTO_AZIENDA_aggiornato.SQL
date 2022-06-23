@@ -243,17 +243,17 @@ insert all
     into contratto values ('PMG4710460','DSSSSN84R30C649B',8.0,'Determinato',DATE'2018-09-01')
     into contratto  values ('DHG9240965','CNGRDT64S13E866D',NULL,'Indeterminato',DATE'2009-09-01')
     into contratto  values ('SWW2346345','GPPFNZ63A17G455X',10.0,'Determinato',DATE'1994-10-01')
-    into contratto values ('SWW2346346','GPPFNZ63A17G455X',NULL,'Indeterminato',DATE'2004-10-01')
+    into contratto 	values ('SWW2346346','GPPFNZ63A17G455X',NULL,'Indeterminato',DATE'2004-10-01')
     into contratto  values ('MMM8494933','CLMGLC85L02I926V',2.0,'Part-time',DATE'2004-01-01')
-    into contratto values ('MMM8494934','CLMGLC85L02I926V',5.0,'Part-time',DATE'2006-01-01')
-    into contratto values ('MMM8494935','CLMGLC85L02I926V',5.0,'Determinato',DATE'2011-01-01')
-    into contratto values ('MMM8494936','CLMGLC85L02I926V',5.0,'Determinato',DATE'2016-01-01')
-    into contratto values ('MMM8494937','CLMGLC85L02I926V',5.0,'Determinato',DATE'2021-01-01')
+    into contratto 	values ('MMM8494934','CLMGLC85L02I926V',5.0,'Part-time',DATE'2006-01-01')
+    into contratto 	values ('MMM8494935','CLMGLC85L02I926V',5.0,'Determinato',DATE'2011-01-01')
+    into contratto 	values ('MMM8494936','CLMGLC85L02I926V',5.0,'Determinato',DATE'2016-01-01')
+    into contratto 	values ('MMM8494937','CLMGLC85L02I926V',5.0,'Determinato',DATE'2021-01-01')
     into contratto  values ('PQQ7595844','CHPPPN95H19F806J',0.5,'Part-time',DATE'2015-09-01')
-    into contratto values ('PQQ7595845','CHPPPN95H19F806J',2.0,'Part-time',DATE'2016-03-01')
-    into contratto values ('PQQ7595846','CHPPPN95H19F806J',5.0,'Determinato',DATE'2018-03-01')
+    into contratto 	values ('PQQ7595845','CHPPPN95H19F806J',2.0,'Part-time',DATE'2016-03-01')
+    into contratto 	values ('PQQ7595846','CHPPPN95H19F806J',5.0,'Determinato',DATE'2018-03-01')
     into contratto  values ('JJH8403130','CRTNDR94P22A310N',3.0,'Determinato',DATE'2016-01-01')
-    into contratto values ('JJH8403131','CRTNDR94P22A310N',4.0,'Determinato',DATE'2019-01-01')
+    into contratto 	values ('JJH8403131','CRTNDR94P22A310N',4.0,'Determinato',DATE'2019-01-01')
     into contratto  values ('YUI8940357','SDNGTR73T41F025B',5.0,'Determinato',DATE'1998-01-01')
     into contratto  values ('YUI8940358','SDNGTR73T41F025B',5.0,'Determinato',DATE'2003-01-01')
     into contratto  values ('YUI8940359','SDNGTR73T41F025B',5.0,'Determinato',DATE'2008-01-01')
@@ -499,10 +499,10 @@ insert all
 		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','POI2161048',1345,55)
 		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','POI2161048',1377,23)
 		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','POI2161048',1380,20)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','LKD8273622',2537,13) --LEGALE
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','LKD8273622',2475,75)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','LKD8273622',2492,58)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','LKD8273622',2522,28)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','LKD8283922',2537,13) --LEGALE
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','LKD8283922',2475,75)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','LKD8283922',2492,58)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','LKD8283922',2522,28)
 		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','VMH7195739',1500,50)-- MANAGER
 		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','VMH7195739',1500,20)
 		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','VMH7195739',1500,73)
@@ -519,7 +519,7 @@ insert all
 		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','BDD0946505',2492,58)
 		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','BDD0946505',2522,28)
 		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','BDD0946505',2517,33)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','ANA9018477',1300,73)--SEGRETARIO 
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','ANA9018477',1300,73)--SEGRETARIO
 		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','ANA9018477',1310,73)
 		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','ANA9018477',1400,45)
 		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','ANA9018477',1520,56)
@@ -547,7 +547,7 @@ insert all
 		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','SWW2346346',1227,74)
 		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','SWW2346346',1275,25)
 		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','SWW2346346',1233,67)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','MMM8494937',1300,67) AUTISTI
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','MMM8494937',1300,67) --AUTISTI
 		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','MMM8494937',1310,80)
 		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','MMM8494937',1400,72)
 		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','MMM8494937',1410,67)
@@ -563,7 +563,7 @@ insert all
 		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','YUI8940361',1712,88)
 		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','YUI8940361',1722,78)
 		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','YUI8940361',1744,56)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','ZXC4789654',1733,67) -- 
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','ZXC4789654',1733,67) --
 		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','ZXC4789654',1781,19)
 		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','ZXC4789654',1711,89)
 		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','ZXC4789654',1688,112)
@@ -599,14 +599,14 @@ insert all
 		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','VVV4711056',1783,17)
 		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','VVV4711056',1723,77)
 		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','VVV4711056',1712,88)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','OOU8967952',1388,112) -- DETERMINATO
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','OOU8967952',1424,76)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','OOU8967952',1432,68)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','OOU8967952',1447,53)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','GTR7975449',1753,47) -- INDETERMINATO
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','GTR7975449',1783,17)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','GTR7975449',1744,56)
-		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','GTR7975449',1722,78)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','OOU8967951',1388,112) -- DETERMINATO
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','OOU8967951',1424,76)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','OOU8967951',1432,68)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','OOU8967951',1447,53)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-01-27','GTR7975469',1753,47) -- INDETERMINATO
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-02-27','GTR7975469',1783,17)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-03-27','GTR7975469',1744,56)
+		into stipendio (data_stipendio,contratto_stipendio,importo,trattenute) values (date'2022-04-27','GTR7975469',1722,78)
 
 
 
@@ -637,54 +637,54 @@ insert all
 
 	--SPEDIZIONE
 insert all
-	into spedizione values ('1945690239',to_date('2022-04-04','yyyy-mm-dd'),'CLMGLC85L02I926V','56363534242')
-	into spedizione values ('7849216401',to_date('2022-04-07','yyyy-mm-dd'),'CLMGLC85L02I926V','13145424211')
-	into spedizione values ('4825702161',to_date('2022-04-07','yyyy-mm-dd'),'CLMGLC85L02I926V','46433524545')
-	into spedizione values ('3424816704',to_date('2022-04-04','yyyy-mm-dd'),'CHPPPN95H19F806J','56363534242')
-	into spedizione values ('5638495720',to_date('2022-04-04','yyyy-mm-dd'),'CHPPPN95H19F806J','26680280919')
-	into spedizione values ('3449186234',to_date('2022-04-06','yyyy-mm-dd'),'CHPPPN95H19F806J','25375100150')
-	into spedizione values ('4923651034',to_date('2022-04-04','yyyy-mm-dd'),'CRTNDR94P22A310N','29263440975')
-	into spedizione values ('1293465403',to_date('2022-04-04','yyyy-mm-dd'),'CRTNDR94P22A310N','13145424211')
-	into spedizione values ('4329650123',to_date('2022-04-07','yyyy-mm-dd'),'CRTNDR94P22A310N','56363534242')
-	into spedizione values ('1293764321',to_date('2022-04-04','yyyy-mm-dd'),'SDNGTR73T41F025B','13145424211')
-	into spedizione values ('5497203559',to_date('2022-04-07','yyyy-mm-dd'),'SDNGTR73T41F025B','64635253636')
-	into spedizione values ('2914375430',to_date('2022-04-07','yyyy-mm-dd'),'SDNGTR73T41F025B','49862681001')
-	into spedizione values ('3245986503',to_date('2022-04-04','yyyy-mm-dd'),'BSLCLL67C08L155K','26680280919')
-	into spedizione values ('3219458654',to_date('2022-04-04','yyyy-mm-dd'),'BSLCLL67C08L155K','35462500436')
-	into spedizione values ('3249869123',to_date('2022-04-07','yyyy-mm-dd'),'BSLCLL67C08L155K','29130410664')
-	into spedizione values ('4595364329',to_date('2022-04-04','yyyy-mm-dd'),'FVLPRN75R41A139W','64635253636')
-	into spedizione values ('5649825548',to_date('2022-04-04','yyyy-mm-dd'),'FVLPRN75R41A139W','26680280919')
-	into spedizione values ('9584549828',to_date('2022-04-06','yyyy-mm-dd'),'FVLPRN75R41A139W','49862681001')
-	into spedizione values ('9458284582',to_date('2022-04-04','yyyy-mm-dd'),'VLLGPR97E08F089M','26680280919')
-	into spedizione values ('5598598987',to_date('2022-04-04','yyyy-mm-dd'),'VLLGPR97E08F089M','64635253636')
-	into spedizione values ('6894549848',to_date('2022-04-07','yyyy-mm-dd'),'VLLGPR97E08F089M','13145424211')
-	into spedizione values ('8947549451',to_date('2022-04-04','yyyy-mm-dd'),'BTTPTR92P30E158C','26680280919')
-	into spedizione values ('9874984858',to_date('2022-04-06','yyyy-mm-dd'),'BTTPTR92P30E158C','26195380519')
-	into spedizione values ('9854898456',to_date('2022-04-06','yyyy-mm-dd'),'BTTPTR92P30E158C','13145424211')
-	into spedizione values ('8744984494',to_date('2022-04-04','yyyy-mm-dd'),'PVNLNZ68S18L974V','25375100150')
-	into spedizione values ('9842894859',to_date('2022-04-07','yyyy-mm-dd'),'PVNLNZ68S18L974V','13145424211')
-	into spedizione values ('9847848484',to_date('2022-04-07','yyyy-mm-dd'),'PVNLNZ68S18L974V','25375100150')
-	into spedizione values ('9498449844',to_date('2022-04-04','yyyy-mm-dd'),'CRUVLR88C23E922X','25375100150')
-	into spedizione values ('9789498475',to_date('2022-04-04','yyyy-mm-dd'),'CRUVLR88C23E922X','29263440975')
-	into spedizione values ('9888795498',to_date('2022-04-06','yyyy-mm-dd'),'CRUVLR88C23E922X','26195380519')
-	into spedizione values ('4586239875',to_date('2022-04-04','yyyy-mm-dd'),'QRNRNN94E52I566X','53980110695')
-	into spedizione values ('9451749546',to_date('2022-04-04','yyyy-mm-dd'),'QRNRNN94E52I566X','53980110695')
-	into spedizione values ('2654987215',to_date('2022-04-07','yyyy-mm-dd'),'QRNRNN94E52I566X','28392680808')
-	into spedizione values ('8894651545',to_date('2022-04-04','yyyy-mm-dd'),'DFZSLA76E68L865H','49862681001')
-	into spedizione values ('6521548914',to_date('2022-04-04','yyyy-mm-dd'),'DFZSLA76E68L865H','49862681001')
-	into spedizione values ('4519845654',to_date('2022-04-07','yyyy-mm-dd'),'DFZSLA76E68L865H','77267030599')
-	into spedizione values ('5498719455',to_date('2022-04-04','yyyy-mm-dd'),'SRCSLV85E54D267Z','28392680808')
-	into spedizione values ('4123546789',to_date('2022-04-04','yyyy-mm-dd'),'SRCSLV85E54D267Z','49862681001')
-	into spedizione values ('8948941289',to_date('2022-04-07','yyyy-mm-dd'),'SRCSLV85E54D267Z','87435362313')
-	into spedizione values ('9847598417',to_date('2022-04-04','yyyy-mm-dd'),'CRLBGD75D59F678Q','49862681001')
-	into spedizione values ('1549129428',to_date('2022-04-04','yyyy-mm-dd'),'CRLBGD75D59F678Q','28392680808')
-	into spedizione values ('3546892798',to_date('2022-04-07','yyyy-mm-dd'),'CRLBGD75D59F678Q','87435362313')
-	into spedizione values ('1489746515',to_date('2022-04-04','yyyy-mm-dd'),'LPRBRN76R42F839H','64635253636')
-	into spedizione values ('1745845187',to_date('2022-04-04','yyyy-mm-dd'),'LPRBRN76R42F839H','26680280919')
-	into spedizione values ('4569871589',to_date('2022-04-06','yyyy-mm-dd'),'LPRBRN76R42F839H','49862681001')
-	
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('1945690239',to_date('2022-04-04','yyyy-mm-dd'),'CLMGLC85L02I926V','56363534242')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('7849216401',to_date('2022-04-07','yyyy-mm-dd'),'CLMGLC85L02I926V','13145424211')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('4825702161',to_date('2022-04-07','yyyy-mm-dd'),'CLMGLC85L02I926V','46433524545')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('3424816704',to_date('2022-04-04','yyyy-mm-dd'),'CHPPPN95H19F806J','56363534242')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('5638495720',to_date('2022-04-04','yyyy-mm-dd'),'CHPPPN95H19F806J','26680280919')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('3449186234',to_date('2022-04-06','yyyy-mm-dd'),'CHPPPN95H19F806J','25375100150')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('4923651034',to_date('2022-04-04','yyyy-mm-dd'),'CRTNDR94P22A310N','29263440975')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('1293465403',to_date('2022-04-04','yyyy-mm-dd'),'CRTNDR94P22A310N','13145424211')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('4329650123',to_date('2022-04-07','yyyy-mm-dd'),'CRTNDR94P22A310N','56363534242')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('1293764321',to_date('2022-04-04','yyyy-mm-dd'),'SDNGTR73T41F025B','13145424211')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('5497203559',to_date('2022-04-07','yyyy-mm-dd'),'SDNGTR73T41F025B','64635253636')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('2914375430',to_date('2022-04-07','yyyy-mm-dd'),'SDNGTR73T41F025B','49862681001')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('3245986503',to_date('2022-04-04','yyyy-mm-dd'),'BSLCLL67C08L155K','26680280919')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('3219458654',to_date('2022-04-04','yyyy-mm-dd'),'BSLCLL67C08L155K','35462500436')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('3249869123',to_date('2022-04-07','yyyy-mm-dd'),'BSLCLL67C08L155K','29130410664')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('4595364329',to_date('2022-04-04','yyyy-mm-dd'),'FVLPRN75R41A139W','64635253636')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('5649825548',to_date('2022-04-04','yyyy-mm-dd'),'FVLPRN75R41A139W','26680280919')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('9584549828',to_date('2022-04-06','yyyy-mm-dd'),'FVLPRN75R41A139W','49862681001')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('9458284582',to_date('2022-04-04','yyyy-mm-dd'),'VLLGPR97E08F089M','26680280919')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('5598598987',to_date('2022-04-04','yyyy-mm-dd'),'VLLGPR97E08F089M','64635253636')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('6894549848',to_date('2022-04-07','yyyy-mm-dd'),'VLLGPR97E08F089M','13145424211')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('8947549451',to_date('2022-04-04','yyyy-mm-dd'),'BTTPTR92P30E158C','26680280919')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('9874984858',to_date('2022-04-06','yyyy-mm-dd'),'BTTPTR92P30E158C','26195380519')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('9854898456',to_date('2022-04-06','yyyy-mm-dd'),'BTTPTR92P30E158C','13145424211')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('8744984494',to_date('2022-04-04','yyyy-mm-dd'),'PVNLNZ68S18L974V','25375100150')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('9842894859',to_date('2022-04-07','yyyy-mm-dd'),'PVNLNZ68S18L974V','13145424211')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('9847848484',to_date('2022-04-07','yyyy-mm-dd'),'PVNLNZ68S18L974V','25375100150')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('9498449844',to_date('2022-04-04','yyyy-mm-dd'),'CRUVLR88C23E922X','25375100150')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('9789498475',to_date('2022-04-04','yyyy-mm-dd'),'CRUVLR88C23E922X','29263440975')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('9888795498',to_date('2022-04-06','yyyy-mm-dd'),'CRUVLR88C23E922X','26195380519')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('4586239875',to_date('2022-04-04','yyyy-mm-dd'),'QRNRNN94E52I566X','53980110695')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('9451749546',to_date('2022-04-04','yyyy-mm-dd'),'QRNRNN94E52I566X','53980110695')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('2654987215',to_date('2022-04-07','yyyy-mm-dd'),'QRNRNN94E52I566X','28392680808')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('8894651545',to_date('2022-04-04','yyyy-mm-dd'),'DFZSLA76E68L865H','49862681001')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('6521548914',to_date('2022-04-04','yyyy-mm-dd'),'DFZSLA76E68L865H','49862681001')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('4519845654',to_date('2022-04-07','yyyy-mm-dd'),'DFZSLA76E68L865H','77267030599')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('5498719455',to_date('2022-04-04','yyyy-mm-dd'),'SRCSLV85E54D267Z','28392680808')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('4123546789',to_date('2022-04-04','yyyy-mm-dd'),'SRCSLV85E54D267Z','49862681001')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('8948941289',to_date('2022-04-07','yyyy-mm-dd'),'SRCSLV85E54D267Z','87435362313')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('9847598417',to_date('2022-04-04','yyyy-mm-dd'),'CRLBGD75D59F678Q','49862681001')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('1549129428',to_date('2022-04-04','yyyy-mm-dd'),'CRLBGD75D59F678Q','28392680808')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('3546892798',to_date('2022-04-07','yyyy-mm-dd'),'CRLBGD75D59F678Q','87435362313')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('1489746515',to_date('2022-04-04','yyyy-mm-dd'),'LPRBRN76R42F839H','64635253636')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('1745845187',to_date('2022-04-04','yyyy-mm-dd'),'LPRBRN76R42F839H','26680280919')
+	into spedizione(num_tracciamento,data_spedizione,cf_spedizione,p_iva_aziendaArrivo) values ('4569871589',to_date('2022-04-06','yyyy-mm-dd'),'LPRBRN76R42F839H','49862681001')
+
 	select 1 from dual;
-	
+
 	--LOTTO
 
 insert all
@@ -733,7 +733,7 @@ insert all
 	into lotto(bolla_trasporto,tracciamento_lotto,peso_lotto,tipo_prodotto) values ('IENM128556','1489746515','50','mobili')
 	into lotto(bolla_trasporto,tracciamento_lotto,peso_lotto,tipo_prodotto) values ('YZMN654982','1745845187','40','mobili')
 	into lotto(bolla_trasporto,tracciamento_lotto,peso_lotto,tipo_prodotto) values ('JHFD987421','4569871589','30','elettrodomestici')
-	
+
 	select 1 from dual;
 	
 	
