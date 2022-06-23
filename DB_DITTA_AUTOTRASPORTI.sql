@@ -10,10 +10,6 @@ data_nascita DATE NOT NULL,
 CONSTRAINT check_cf CHECK(
 	REGEXP_LIKE(cf,'[A-Z]{6}[0-9]{2}[A-Z][0-9]{2}[A-Z][0-9]{3}[A-Z]')),
 	
-CONSTRAINT data_assunzione_check CHECK(
-
-	TO_CHAR(data_assunzione,'YYYY-MM-DD') between '1990-01-01' AND '2022-01-01')
-
 );
 
 --OK
