@@ -118,58 +118,6 @@ Insert	into fornitore(p_iva_fornitore, nome, via, citta, cap, tipo_prodotto) val
 Insert	into fornitore(p_iva_fornitore, nome, via, citta, cap, tipo_prodotto) values ('76896748487','Mobilingrosso','Via Falcone, 101','Afragola','80021','Mobilio');
 
 
-Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2022-04-08','MRTPLN65L69G577R',date'2022-04-08',NULL,'Impegni Familiari');
-Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','MRTPLN65L69G577R',date'2021-12-26',102,'Feste Natalizie');
-Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','MRTPLN65L69G577R',date'2022-01-03',110,'Capodanno');
-
-Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','SRCLND77S27G601O',date'2021-12-26',123,'Feste Natalizie');
-Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','SRCLND77S27G601O',date'2022-01-03',100,'Capodanno');
-
-Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','SPNRSR76H05F578I',date'2021-12-26',90,'Feste Natalizie');
-Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','SPNRSR76H05F578I',date'2021-01-03',101,'Capodanno');
-Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2022-03-12','SPNRSR76H05F578I',date'2022-03-13',50,'Malattia');
-
-Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2022-04-05','LNNGST70B20D443N',date'2022-04-05',NULL,'Matrimonio');
-Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','LNNGST70B20D443N',date'2021-12-26',90,'Feste Natalizie');
-Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','LNNGST70B20D443N',date'2021-01-03',101,'Capodanno');
-
-Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','GLLLGU01M17F839G',date'2021-12-26',90,'Feste Natalizie');
-Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','GLLLGU01M17F839G',date'2021-01-03',101,'Capodanno');
-Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2022-01-07','GLLLGU01M17F839G',date'2022-01-18',212,'Covid-19');
-
-Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','VTRLSS98T11F839O',date'2021-12-26',90,'Feste Natalizie');
-Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','VTRLSS98T11F839O',date'2021-01-03',101,'Capodanno');
-
-Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','DNNLCU01E15F839T',date'2021-12-26',140,'Feste Natalizie');
-Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','DNNLCU01E15F839T',date'2021-01-03',124,'Capodanno');
-Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2022-02-10','DNNLCU01E15F839T',date'2022-02-15',221,'Malattia');
-
-Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','DOXSST85E28B869H',date'2021-12-26',110,'Feste Natalizie');
-Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','DOXSST85E28B869H',date'2021-01-03',90,'Capodanno');
-
-Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','RMNGDI92S47F048Q',date'2021-12-26',78,'Feste Natalizie');
-Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','RMNGDI92S47F048Q',date'2021-01-03',100,'Capodanno');
-
-Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','RPSLNZ87E52I963W',date'2021-12-26',89,'Feste Natalizie');
-Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','RPSLNZ87E52I963W',date'2021-01-03',100,'Capodanno');
-
-Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','SMCRLD67H20B617Z',date'2021-12-26',102,'Feste Natalizie');
-Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','SMCRLD67H20B617Z',date'2021-01-01',104,'Capodanno');
-
-Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','NCRCRD70D14D315A',date'2021-12-26',90,'Feste Natalizie');
-Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','NCRCRD70D14D315A',date'2021-01-01',101,'Capodanno');
-
-Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','DSSSSN84R30C649B',date'2021-12-26',90,'Feste Natalizie');
-Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','DSSSSN84R30C649B',date'2021-01-01',101,'Capodanno');
-Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2022-03-01','DSSSSN84R30C649B',date'2022-03-02',34,'Malattia');
-
-Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','CNGRDT64S13E866D',date'2021-12-26',90,'Feste Natalizie');
-Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','CNGRDT64S13E866D',date'2021-01-03',101,'Capodanno');
-
-Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','GPPFNZ63A17G455X',date'2021-12-26',90,'Feste Natalizie');
-Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','GPPFNZ63A17G455X',date'2021-01-03',101,'Capodanno');
-
-
 
 
 
@@ -189,6 +137,48 @@ Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) valu
 Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('DSSSSN84R30C649B','08','01312','Manager'); 
 Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('CNGRDT64S13E866D','06','41252','Analista'); 
 Insert	into impiegato(cf_impiegato,ufficio_impiegato,codice_badge,mansione) values ('GPPFNZ63A17G455X','06','68576','Segretario'); 
+
+
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2022-04-08','MRTPLN65L69G577R',date'2022-04-08',NULL,'Impegni Familiari');
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','MRTPLN65L69G577R',date'2021-12-26',102,'Feste Natalizie');
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','MRTPLN65L69G577R',date'2022-01-03',110,'Capodanno');
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','SRCLND77S27G601O',date'2021-12-26',123,'Feste Natalizie');
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','SRCLND77S27G601O',date'2022-01-03',100,'Capodanno');
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','SPNRSR76H05F578I',date'2021-12-26',90,'Feste Natalizie');
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','SPNRSR76H05F578I',date'2021-01-03',101,'Capodanno');
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2022-03-12','SPNRSR76H05F578I',date'2022-03-13',50,'Malattia');
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2022-04-05','LNNGST70B20D443N',date'2022-04-05',NULL,'Matrimonio');
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','LNNGST70B20D443N',date'2021-12-26',90,'Feste Natalizie');
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','LNNGST70B20D443N',date'2021-01-03',101,'Capodanno');
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','GLLLGU01M17F839G',date'2021-12-26',90,'Feste Natalizie');
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','GLLLGU01M17F839G',date'2021-01-03',101,'Capodanno');
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2022-01-07','GLLLGU01M17F839G',date'2022-01-18',212,'Covid-19');
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','VTRLSS98T11F839O',date'2021-12-26',90,'Feste Natalizie');
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','VTRLSS98T11F839O',date'2021-01-03',101,'Capodanno');
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','DNNLCU01E15F839T',date'2021-12-26',140,'Feste Natalizie');
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','DNNLCU01E15F839T',date'2021-01-03',124,'Capodanno');
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2022-02-10','DNNLCU01E15F839T',date'2022-02-15',221,'Malattia');
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','DOXSST85E28B869H',date'2021-12-26',110,'Feste Natalizie');
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','DOXSST85E28B869H',date'2021-01-03',90,'Capodanno');
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','RMNGDI92S47F048Q',date'2021-12-26',78,'Feste Natalizie');
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','RMNGDI92S47F048Q',date'2021-01-03',100,'Capodanno');
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','RPSLNZ87E52I963W',date'2021-12-26',89,'Feste Natalizie');
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','RPSLNZ87E52I963W',date'2021-01-03',100,'Capodanno');
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','SMCRLD67H20B617Z',date'2021-12-26',102,'Feste Natalizie');
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','SMCRLD67H20B617Z',date'2021-01-01',104,'Capodanno');
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','NCRCRD70D14D315A',date'2021-12-26',90,'Feste Natalizie');
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','NCRCRD70D14D315A',date'2021-01-01',101,'Capodanno');
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','DSSSSN84R30C649B',date'2021-12-26',90,'Feste Natalizie');
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','DSSSSN84R30C649B',date'2021-01-01',101,'Capodanno');
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2022-03-01','DSSSSN84R30C649B',date'2022-03-02',34,'Malattia');
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','CNGRDT64S13E866D',date'2021-12-26',90,'Feste Natalizie');
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','CNGRDT64S13E866D',date'2021-01-03',101,'Capodanno');
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-24','GPPFNZ63A17G455X',date'2021-12-26',90,'Feste Natalizie');
+Insert	into ferie(data_inizio_ferie,Cod_fiscale_ferie,data_fine,Retribuzione,tipo_ferie) values (date'2021-12-31','GPPFNZ63A17G455X',date'2021-01-03',101,'Capodanno');
+
+
+
+
 
 
 
