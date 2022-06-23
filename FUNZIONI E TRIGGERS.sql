@@ -433,3 +433,29 @@ when NO_DATA_FOUND then
 DBMS_OUTPUT.PUT_LINE('L''impiegato' || (nomeSt) ||' ' || (cognomeSt) ||' non ha ancora percepito lo stipendio'); 
 END; 
 
+---
+CREATE OR REPLACE PROCEDURE rinnova_contratto(cf_in varchar, tipo_contratto_in varchar, importo_in number, durata_in number)
+
+IS
+data_contratto date;
+random_value integer := dbms_random.value(1000000,9999999);
+tp_contratto contratto.tipo_contratto%type;
+codice_contratto_nuovo varchar2(10) := 'AZD' || (random_value);
+err1 EXCEPTION;
+BEGIN
+
+
+select tipo_contratto,sysdate into tp_contratto, data_contratto from dipendente join contratto on cf = cf_contratto where cf = cf_in
+order by data_inizio_contratto desc
+fetch first 1 row only;
+
+if tp_contratto = 'Indeterminato' and tipo_contratto_in = 'Indeterminato' then
+    raise err1;
+elsif tp_contratto != 'Indeterminato' then
+    insert into contratto  values (codice_contratto_nuovo,cf_in,durata_in,tipo_contratto_in,data_contratto);
+end if;
+
+EXCEPTION
+when err1 then
+DBMS_OUTPUT.PUT_LINE('Rinnovo non avvenuto');
+END;
