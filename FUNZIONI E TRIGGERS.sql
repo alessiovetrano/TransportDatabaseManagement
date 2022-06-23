@@ -39,13 +39,14 @@ where mansione = 'Direttore';
 
 select count(*) into contatoreUff
 from impiegato im join ufficio uff on im.ufficio_impiegato = uff.num_ufficio
-where :new.ufficio_impiegato = uff.num_ufficio;
+where uff.num_ufficio = :new.ufficio_impiegato;
 
 
 select  NUM_IMPIEGATI,  num_ufficio into num_max, numero_ufficio
 from impiegato im join ufficio uff on im.ufficio_impiegato = uff.num_ufficio
 where :new.ufficio_impiegato = uff.num_ufficio group by NUM_IMPIEGATI, num_ufficio;
 --CONTROLLO SULL'ESISTENZA DI UN SINGOLO DIRETTORE IN AZIENDA
+
 if contatore = 1 then
 raise overNum;
 end if;
@@ -115,7 +116,7 @@ stipendio_basso EXCEPTION;
 BEGIN
 
 select mansione into mansioneCheck from impiegato im join dipendente dip on im.cf_impiegato = dip.cf 
-join contratto contr on dip.cf = contr.cf_contratto join stipendio stip on stip.contratto_stipendio = contr.codice_contratto
+join contratto contr on dip.cf = contr.cf_contratto 
 where contr.codice_contratto = :new.contratto_stipendio
 group by cf_impiegato, mansione;
 
