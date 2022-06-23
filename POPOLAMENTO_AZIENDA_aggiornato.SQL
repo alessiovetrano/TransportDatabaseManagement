@@ -243,7 +243,7 @@ insert all
     into contratto values ('PMG4710460','DSSSSN84R30C649B',8.0,'Determinato',DATE'2018-09-01')
     into contratto  values ('DHG9240965','CNGRDT64S13E866D',NULL,'Indeterminato',DATE'2009-09-01')
     into contratto  values ('SWW2346345','GPPFNZ63A17G455X',10.0,'Determinato',DATE'1994-10-01')
-    into contratto values ('SWW2346346','GPPFNZ63A17G455X',NULL,'Indeterminato'DATE'2004-10-01')
+    into contratto values ('SWW2346346','GPPFNZ63A17G455X',NULL,'Indeterminato',DATE'2004-10-01')
     into contratto  values ('MMM8494933','CLMGLC85L02I926V',2.0,'Part-time',DATE'2004-01-01')
     into contratto values ('MMM8494934','CLMGLC85L02I926V',5.0,'Part-time',DATE'2006-01-01')
     into contratto values ('MMM8494935','CLMGLC85L02I926V',5.0,'Determinato',DATE'2011-01-01')
