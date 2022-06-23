@@ -283,7 +283,7 @@ insert all
     into contratto  values ('OOU8967950','CRLBGD75D59F678Q',5.0,'Determinato',DATE'2007-02-01')
     into contratto  values ('OOU8967951','CRLBGD75D59F678Q',7.0,'Determinato',DATE'2012-02-01')
     into contratto  values ('OOU8967951','CRLBGD75D59F678Q',5.0,'Determinato',DATE'2019-02-01')
-    into contratto  values ('GTR7975469','LPRBRN76R42F839H',5.5,'Indeterminato',DATE'2002-01-01')
+    into contratto  values ('GTR7975469','LPRBRN76R42F839H',NULL,'Indeterminato',DATE'2002-01-01')
 
     select 1 from dual;
 
