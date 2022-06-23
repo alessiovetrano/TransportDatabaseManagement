@@ -3,39 +3,39 @@
 
 
 ----DIPENDENTI POPOLAZIONE -- 30 DIPENDENTI
-Insert all
-	into dipendente (cf,nome,cognome,data_nascita) values('CLMGLC85L02I926V','Gianluca','Colombarini',DATE '1985-07-02')
-	into dipendente (cf,nome,cognome,data_nascita) values('MRTPLN65L69G577R','Apollonia','Mortari',DATE '1965-07-29')
-	into dipendente (cf,nome,cognome,data_nascita) values('SPNRSR76H05F578I','Rosario','Spina',DATE '1976-06-05')
-	into dipendente (cf,nome,cognome,data_nascita) values('SRCLND77S27G601O','Olindo','Sarci',DATE '1977-11-27')
-	into dipendente (cf,nome,cognome,data_nascita) values('CHPPPN95H19F806J','Pomponio','Chiappa',DATE '1995-06-19')
-	into dipendente (cf,nome,cognome,data_nascita) values('CRTNDR94P22A310N','Andrea','Carta',DATE '1994-09-22')
-	into dipendente (cf,nome,cognome,data_nascita) values('SDNGTR73T41F025B','Geltrude','Sodano',DATE '1973-12-01')
-	into dipendente (cf,nome,cognome,data_nascita) values('BSLCLL67C08L155K','Camillo','Bosello',DATE '1967-3-08')
-	into dipendente (cf,nome,cognome,data_nascita) values('FVLPRN75R41A139W','Petronilla','Favalli',DATE '1975-10-01')
-	into dipendente (cf,nome,cognome,data_nascita) values('LNNGST70B20D443N','Augusto','Alunno',DATE '1970-02-20')
-	into dipendente (cf,nome,cognome,data_nascita) values('VLLGPR97E08F089M','Gaspare','Valle',DATE '1997-05-08')
-	into dipendente (cf,nome,cognome,data_nascita) values('DOXSST85E28B869H','Sisto','Do',DATE '1985-5-28')
-	into dipendente (cf,nome,cognome,data_nascita) values('BTTPTR92P30E158C','Pietro','Bettega',DATE '1992-11-30')
-	into dipendente (cf,nome,cognome,data_nascita) values('PVNLNZ68S18L974V','Lorenzo','Pavoncelli',DATE '1968-11-18')
-	into dipendente (cf,nome,cognome,data_nascita) values('NCRCRD70D14D315A','Corrado','Incerti',DATE '1970-04-14')
-	into dipendente (cf,nome,cognome,data_nascita) values('SMCRLD67H20B617Z','Arialdo','Osmici',DATE '1967-06-20')
-	into dipendente (cf,nome,cognome,data_nascita) values('RPSLNZ87E52I963W','Lorenza','Repossi',DATE'1987-05-12')
-	into dipendente (cf,nome,cognome,data_nascita) values('VTRLSS98T11F839O','Alessio','Vetrano',DATE '1998-12-11')
-	into dipendente (cf,nome,cognome,data_nascita) values('GLLLGU01M17F839G','Luigi','Galluccio',DATE '2001-08-17')
-	into dipendente (cf,nome,cognome,data_nascita) values('DNNLCU01E15F839T','Luca','Danna',DATE '2001-05-15')
-	into dipendente (cf,nome,cognome,data_nascita) values('CRUVLR88C23E922X','Valerio','Curi',DATE '1988-03-23')
-	into dipendente (cf,nome,cognome,data_nascita) values('QRNRNN94E52I566X','Rosanna','Quirino',DATE '1984-05-12')
-	into dipendente (cf,nome,cognome,data_nascita) values('GPPFNZ63A17G455X','Fiorenzo','Giupponi',DATE '1963-01-17')
-	into dipendente (cf,nome,cognome,data_nascita) values('RMNGDI92S47F048Q','Giada','Iurman',DATE '1992-11-07')
-	into dipendente (cf,nome,cognome,data_nascita) values('DSSSSN84R30C649B','Sansone','Adessi',DATE '1984-10-30')
-	into dipendente (cf,nome,cognome,data_nascita) values('DFZSLA76E68L865H','Ausilia','De Fazi',DATE '1976-05-28')
-	into dipendente (cf,nome,cognome,data_nascita) values('CNGRDT64S13E866D','Ardito','Coniglione',DATE '1964-11-13')
-	into dipendente (cf,nome,cognome,data_nascita) values('SRCSLV85E54D267Z','Silvia','Sarcone',DATE '1985-05-14')
-	into dipendente (cf,nome,cognome,data_nascita) values('CRLBGD75D59F678Q','Brigida','Carlesso',DATE '1975-04-19')
-	into dipendente (cf,nome,cognome,data_nascita) values('LPRBRN76R42F839H','Bruna','Lepora',DATE '1976-10-02')
+Insert into dipendente (cf,nome,cognome,data_nascita) values('CLMGLC85L02I926V','Gianluca','Colombarini',DATE '1985-07-02');
+Insert	into dipendente (cf,nome,cognome,data_nascita) values('MRTPLN65L69G577R','Apollonia','Mortari',DATE '1965-07-29');
+Insert	into dipendente (cf,nome,cognome,data_nascita) values('SPNRSR76H05F578I','Rosario','Spina',DATE '1976-06-05');
+Insert	into dipendente (cf,nome,cognome,data_nascita) values('SRCLND77S27G601O','Olindo','Sarci',DATE '1977-11-27');
+Insert	into dipendente (cf,nome,cognome,data_nascita) values('CHPPPN95H19F806J','Pomponio','Chiappa',DATE '1995-06-19');
+Insert	into dipendente (cf,nome,cognome,data_nascita) values('CRTNDR94P22A310N','Andrea','Carta',DATE '1994-09-22');
+Insert	into dipendente (cf,nome,cognome,data_nascita) values('SDNGTR73T41F025B','Geltrude','Sodano',DATE '1973-12-01');
+Insert	into dipendente (cf,nome,cognome,data_nascita) values('BSLCLL67C08L155K','Camillo','Bosello',DATE '1967-3-08');
+Insert	into dipendente (cf,nome,cognome,data_nascita) values('FVLPRN75R41A139W','Petronilla','Favalli',DATE '1975-10-01');
+Insert	into dipendente (cf,nome,cognome,data_nascita) values('LNNGST70B20D443N','Augusto','Alunno',DATE '1970-02-20');
+Insert	into dipendente (cf,nome,cognome,data_nascita) values('VLLGPR97E08F089M','Gaspare','Valle',DATE '1997-05-08');
+Insert	into dipendente (cf,nome,cognome,data_nascita) values('DOXSST85E28B869H','Sisto','Do',DATE '1985-5-28');
+Insert	into dipendente (cf,nome,cognome,data_nascita) values('BTTPTR92P30E158C','Pietro','Bettega',DATE '1992-11-30');
+Insert	into dipendente (cf,nome,cognome,data_nascita) values('PVNLNZ68S18L974V','Lorenzo','Pavoncelli',DATE '1968-11-18');
+Insert	into dipendente (cf,nome,cognome,data_nascita) values('NCRCRD70D14D315A','Corrado','Incerti',DATE '1970-04-14');
+Insert	into dipendente (cf,nome,cognome,data_nascita) values('SMCRLD67H20B617Z','Arialdo','Osmici',DATE '1967-06-20');
+Insert	into dipendente (cf,nome,cognome,data_nascita) values('RPSLNZ87E52I963W','Lorenza','Repossi',DATE'1987-05-12');
+Insert	into dipendente (cf,nome,cognome,data_nascita) values('VTRLSS98T11F839O','Alessio','Vetrano',DATE '1998-12-11');
+Insert	into dipendente (cf,nome,cognome,data_nascita) values('GLLLGU01M17F839G','Luigi','Galluccio',DATE '2001-08-17');
+Insert	into dipendente (cf,nome,cognome,data_nascita) values('DNNLCU01E15F839T','Luca','Danna',DATE '2001-05-15');
+Insert	into dipendente (cf,nome,cognome,data_nascita) values('CRUVLR88C23E922X','Valerio','Curi',DATE '1988-03-23');
+Insert	into dipendente (cf,nome,cognome,data_nascita) values('QRNRNN94E52I566X','Rosanna','Quirino',DATE '1984-05-12');
+Insert	into dipendente (cf,nome,cognome,data_nascita) values('GPPFNZ63A17G455X','Fiorenzo','Giupponi',DATE '1963-01-17');
+Insert	into dipendente (cf,nome,cognome,data_nascita) values('RMNGDI92S47F048Q','Giada','Iurman',DATE '1992-11-07');
+Insert	into dipendente (cf,nome,cognome,data_nascita) values('DSSSSN84R30C649B','Sansone','Adessi',DATE '1984-10-30');
+Insert	into dipendente (cf,nome,cognome,data_nascita) values('DFZSLA76E68L865H','Ausilia','De Fazi',DATE '1976-05-28');
+Insert	into dipendente (cf,nome,cognome,data_nascita) values('CNGRDT64S13E866D','Ardito','Coniglione',DATE '1964-11-13');
+Insert	into dipendente (cf,nome,cognome,data_nascita) values('SRCSLV85E54D267Z','Silvia','Sarcone',DATE '1985-05-14');
+Insert	into dipendente (cf,nome,cognome,data_nascita) values('CRLBGD75D59F678Q','Brigida','Carlesso',DATE '1975-04-19');
+Insert	into dipendente (cf,nome,cognome,data_nascita) values('LPRBRN76R42F839H','Bruna','Lepora',DATE '1976-10-02');
 
-	SELECT 1 FROM DUAL;
+
+
 
 
 --VEICOLO -- 20 VEICOLI
