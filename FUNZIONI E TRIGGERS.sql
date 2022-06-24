@@ -366,34 +366,78 @@ END;
 --3. PROCEDURA SULLA SCHEDULAZIONE DI UN NUOVO VIAGGIO---FARE ALTRI TEST
 -- AGGIUNGENO IL LOTTO(CHECK SULA BOLLA TRASPORTO) RAGGIUNGIAMO TRE TABELLE
 
-CREATE OR REPLACE PROCEDURE ScheduleViaggio(dataViaggio date, kilometri number,pivaforn varchar, pivaesterna varchar)
+CREATE OR REPLACE PROCEDURE ScheduleViaggio(dataViaggio date, kilometri number,pivaforn varchar, pivaesterna varchar, orario_cons date, peso_in int, tipo_In varchar2)
 IS
-AutistaCandidato varchar2(16);
+AutistaCandidato autista.cf_autista%type;
 error1 exception;
-numSoste number := floor(kilometri/300);
+error2 exception;
+numSoste viaggio.num_soste%type := floor(kilometri/300);
 DurataViaggio int := floor(Kilometri/90);
-numTracc int := dbms_random.value(100000000,999999999);
+DurataIn viaggio.durata%type;
+viaggioIn viaggio.data_viaggio%type;
+numTracc integer := dbms_random.value(1000000000,9999999999);
+contatore number := 0;
+dataAssegnata viaggio.data_viaggio%type;
+dataAssegnataFinale viaggio.data_viaggio%type;
+--NUMERO RANDOM BOLLA CON 4 LETTERE E 6 NUMERI
+random_value integer := dbms_random.value(100000,999999); 
+random_value_string varchar2(4) := dbms_random.string('X',4); 
+num_bolla_nuovo varchar2(10) := random_value_string || (random_value); 
+
 BEGIN
+    while(AutistaCandidato IS NULL)
+    loop
+    BEGIN
+    
+    select cf_autista, (data_viaggio) into AutistaCandidato, dataAssegnata  from viaggio join autista on cf_viaggio = cf_autista
+    where data_viaggio <= (dataViaggio+contatore)
+    and not
+    (dataViaggio+contatore) between data_viaggio and (data_viaggio+(durata/24)+8/24) and
+    not ((dataViaggio+contatore)+(durataViaggio/24)+8/24) between data_viaggio and (data_viaggio+(durata/24)+8/24)
+    group by cf_autista,data_viaggio
+    order by data_viaggio
+    fetch first 1 row only;
+    
 
-select cf_autista into AutistaCandidato from (autista join viaggio on cf_autista = cf_viaggio) 
-where 
-not dataViaggio between data_viaggio and (data_viaggio+(durata/24)+8/24) and 
-not (dataViaggio+(DurataViaggio/24)+8/24) between data_viaggio and (data_viaggio+(durata/24)+8/24)
-and data_viaggio < ( dataViaggio+(DurataViaggio/24)+8/24)
-
-order by dbms_random.value()
-fetch first 1 row only;
+    if (dataViaggio != dataAssegnata) then
+        raise error1;
+    elsif (dataViaggio = dataAssegnata) then 
+        raise error2;
+    end if;
 
 
-    insert into viaggio (data_viaggio,cf_viaggio,p_iva_forn,km_totali,num_soste,durata) values(dataViaggio,AutistaCandidato,pivaforn,kilometri,numSoste,durataViaggio);
-    insert into spedizione values(NumTracc,dataViaggio,AutistaCandidato,pivaesterna);
-
- 
 
 EXCEPTION
-WHEN NO_DATA_FOUND THEN
-DBMS_OUTPUT.PUT_LINE('Il viaggio non puo essere schedulato nella seguente data: '|| (dataViaggio));
-END;
+    when error1 then
+    select durata, data_viaggio into durataIN, viaggioIn from viaggio where cf_viaggio = AutistaCandidato 
+    and data_viaggio <= dataViaggio order by data_viaggio
+    fetch first 1 row only;
+    
+    dataAssegnataFinale := viaggioIn + durataIn/24 + 8/24;
+
+    if (dataAssegnataFinale < dataViaggio) then
+        select durata, data_viaggio into durataIN, viaggioIn from viaggio where cf_viaggio = AutistaCandidato 
+        and data_viaggio > dataViaggio order by data_viaggio
+        fetch first 1 row only;
+        dataAssegnataFinale := dataViaggio;
+    end if;
+    
+    when error2 then
+    DBMS_OUTPUT.PUT_LINE('Error 2: dataAssegnata ' || (dataAssegnata));
+    select durata, data_viaggio into durataIN, viaggioIn from viaggio where cf_viaggio = AutistaCandidato
+    and data_viaggio = dataViaggio;
+    dataAssegnataFinale := dataAssegnata + durataIn/24 + 8/24;
+    
+    when NO_DATA_FOUND then
+    contatore := +1;
+    end;
+    end loop;
+    DBMS_OUTPUT.PUT_LINE('End : Il viaggio puo essere schedulato nella seguente data: '|| to_char(dataAssegnataFinale,'yyyy-mm-dd hh24:mi') || ' Autista: '|| (AutistaCandidato)) ;
+
+    insert into viaggio values (dataAssegnataFinale,AutistaCandidato,pivaforn,kilometri,numSoste,DurataViaggio);
+    insert into spedizione values (numTracc,dataAssegnataFinale,AutistaCandidato,orario_cons,pivaesterna);
+	insert into lotto values (num_bolla_nuovo,numTracc,peso_in,tipo_in);
+end;
 
 
 --4. PROCEDURA DI UNA PROMOZIONE DI UN SEGRETARIO A MANAGER
