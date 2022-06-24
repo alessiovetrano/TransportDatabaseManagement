@@ -488,31 +488,32 @@ END;
 
 --PROCEDURA TREDICESIMA, QUATTORDICESIMA
 
-CREATE OR REPLACE PROCEDURE check_bonus(nomeIn varchar2, cognomeIn varchar2)
-
-IS
-importo_stip stipendio.importo%type;
-nomeSt dipendente.nome%type;
-cognomeSt dipendente.cognome%type;
-codice_stipendio stipendio.contratto_stipendio%type;
-BEGIN
-
-select nome, cognome , importo, contratto_stipendio into nomeSt, cognomeSt, importo_stip, codice_stipendio from dipendente dip join contratto cont
-on dip.cf = cont.cf_contratto join stipendio st on cont.codice_contratto  = st.contratto_stipendio
-where nome = nomeIn and cognome = CognomeIn  
-and data_stipendio between date'2022-06-01' and date'2022-06-30' 
-or data_stipendio between date'2022-12-01' and date'2022-12-31';
-
-UPDATE stipendio set importo = importo_stip*1.3 where contratto_stipendio = codice_stipendio; --30% in piu
-
-DBMS_OUTPUT.PUT_LINE('L''impiegato' || (nomeSt) ||' ' || (cognomeSt) ||'ha ricevuto l''aumento'); 
-
-
-EXCEPTION
-when NO_DATA_FOUND then
-DBMS_OUTPUT.PUT_LINE('L''impiegato' || (nomeSt) ||' ' || (cognomeSt) ||' non ha ancora percepito lo stipendio'); 
-END; 
-
+CREATE OR REPLACE PROCEDURE check_bonus(nomeIn varchar2, cognomeIn varchar2) 
+ 
+IS 
+importo_stip stipendio.importo%type; 
+nomeSt dipendente.nome%type; 
+cognomeSt dipendente.cognome%type; 
+codice_stipendio stipendio.contratto_stipendio%type; 
+data_s stipendio.data_stipendio%type; 
+BEGIN 
+ 
+select nome, cognome , importo, contratto_stipendio, data_stipendio into nomeSt, cognomeSt, importo_stip, codice_stipendio, data_s from dipendente dip join contratto cont 
+on dip.cf = cont.cf_contratto join stipendio st on cont.codice_contratto  = st.contratto_stipendio 
+where nome = nomeIn and cognome = CognomeIn   
+and data_stipendio between date'2022-06-01' and date'2022-06-30'  
+or data_stipendio between date'2022-12-01' and date'2022-12-31'; 
+ 
+UPDATE stipendio set importo = importo_stip*1.3 where contratto_stipendio = codice_stipendio and data_s = data_stipendio ; --30% in piu 
+ 
+DBMS_OUTPUT.PUT_LINE('L''impiegato' || (nomeSt) ||' ' || (cognomeSt) ||'ha ricevuto l''aumento');  
+ 
+ 
+EXCEPTION 
+when NO_DATA_FOUND then 
+DBMS_OUTPUT.PUT_LINE('L''impiegato' || (nomeSt) ||' ' || (cognomeSt) ||' non ha ancora percepito lo stipendio');  
+END;  
+ 
 ---
 CREATE OR REPLACE PROCEDURE rinnova_contratto(cf_in varchar, tipo_contratto_in varchar, durata_in number) 
  
@@ -524,11 +525,6 @@ tp_contratto contratto.tipo_contratto%type;
 codice_contratto_nuovo varchar2(10) := random_value_string || (random_value); 
 err1 EXCEPTION; 
 BEGIN 
-
-
-
-
-
 
 
 select tipo_contratto,sysdate into tp_contratto, data_contratto from dipendente join contratto on cf = cf_contratto where cf = cf_in 
