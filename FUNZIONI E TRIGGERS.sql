@@ -101,9 +101,9 @@ join veicolo v on v.targa = aux.targa_autista
 where s.num_tracciamento = :new.tracciamento_lotto;
 
 
-select sum(peso_lotto) from lotto lt join spedizione sp on lt.tracciamento_lotto = sp.num_tracciamento
+select sum(peso_lotto) into somma_lotti from lotto lt join spedizione sp on lt.tracciamento_lotto = sp.num_tracciamento
 where cf_spedizione = (select cf_spedizione from spedizione where num_tracciamento = :new.tracciamento_lotto)
-and data_spedizione = (select data_spedizione from spedizione where num_tracciamento = :new.tracciamento_lotto)
+and data_spedizione = (select data_spedizione from spedizione where num_tracciamento = :new.tracciamento_lotto);
 
 if (peso <= :new.peso_lotto + somma_lotti) then
 raise overPeso;
