@@ -29,14 +29,18 @@ for each row
 DECLARE
 overNum EXCEPTION;
 overNumUfficio EXCEPTION;
-contatore NUMBER;
+contatore int;
 contatoreUff NUMBER;
 num_max INT;
 numero_ufficio varchar(30);
 BEGIN
 
-select count(*) into contatore from IMPIEGATO
+select count(*) into contatore from impiegato
 where mansione = 'Direttore';
+
+if :new.mansione = 'Direttore' and contatore = 1 then
+raise overNum;
+end if;
 
 select count(*) into contatoreUff
 from impiegato im join ufficio uff on im.ufficio_impiegato = uff.num_ufficio
@@ -46,13 +50,8 @@ where uff.num_ufficio = :new.ufficio_impiegato;
 select num_impiegati into numero_ufficio
 from ufficio
 where :new.ufficio_impiegato = num_ufficio;
---CONTROLLO SULL'ESISTENZA DI UN SINGOLO DIRETTORE IN AZIENDA
 
-if contatore = 1 then
-raise overNum;
-end if;
 
---CONTROLLO SUL NUM_MAX IN UFFICIO
 if ((contatoreUff + 1) > numero_ufficio) then
 raise overNumUfficio;
 end if;
