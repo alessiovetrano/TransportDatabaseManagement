@@ -24,7 +24,7 @@ end;
 
 --1.CHECK SINGOLO DIRETTORE AZIENDALE + CHECK CAPIENZA UFFICIO
 CREATE OR REPLACE TRIGGER checkMansione
-before insert or update on impiegato
+before insert on impiegato
 for each row
 DECLARE
 overNum EXCEPTION;
