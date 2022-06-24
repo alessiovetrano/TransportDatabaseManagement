@@ -4,8 +4,7 @@ select cf_impiegato,ufficio_impiegato,num_impiegati from impiegato join ufficio 
 CREATE OR REPLACE VIEW SchemaVeicoliAssociati AS 
 select cf_autista,num_patente,targa as targa_veicolo_associato from autista join veicolo on targa=targa_autista
 
-CREATE OR REPLACE VIEW
-Veicoli_disponibili
+CREATE OR REPLACE VIEW Veicoli_disponibili
 AS
 select targa,tipo_veicolo,casa_produttrice from veicolo 
 minus 
