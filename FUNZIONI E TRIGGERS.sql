@@ -333,6 +333,7 @@ and tipo_contratto = 'Indeterminato';
 
 update impiegato set mansione = 'Manager' where mansione = 'Direttore';
 update impiegato set mansione = 'Direttore' where cf_impiegato = CodFiscale;
+COMMIT;
 DBMS_OUTPUT.PUT_LINE('L''impiegato ' || (nomeDir) ||' ' || (cognomeDir) ||' è ufficialmente il nuovo direttore');
 
 EXCEPTION
@@ -437,6 +438,7 @@ EXCEPTION
     insert into viaggio values (dataAssegnataFinale,AutistaCandidato,pivaforn,kilometri,numSoste,DurataViaggio);
     insert into spedizione values (numTracc,dataAssegnataFinale,AutistaCandidato,orario_cons,pivaesterna);
 	insert into lotto values (num_bolla_nuovo,numTracc,peso_in,tipo_in);
+	COMMIT;
 end;
 
 
@@ -457,9 +459,11 @@ where nomep = nome and cognomep = cognome;
 
 if lower(mansione_im) = 'segretario' then
     UPDATE IMPIEGATO set mansione = 'manager' where cf_impiegato = cfprom;
+    COMMIT;
     DBMS_OUTPUT.PUT_LINE('Il dipendente '|| (nomep) ||' ' ||(cognomep)||' è stato promosso correttamente');
 else
     DBMS_OUTPUT.PUT_LINE('Il dipendente '|| (nomep) ||' ' ||(cognomep)|| ' non è un segretario');
+    ROLLBACK;
     end if;
 EXCEPTION
 WHEN NO_DATA_FOUND THEN
@@ -478,6 +482,7 @@ if cfDir = codFiscale then
     raise error1;
 else
     delete from dipendente where cf = codFiscale;
+    COMMIT;
 end if;
 DBMS_OUTPUT.PUT_LINE('ELIMINAZIONE DAL DATA-BASE ANDATA A BUON FINE');
 
@@ -505,7 +510,7 @@ and data_stipendio between date'2022-06-01' and date'2022-06-30'
 or data_stipendio between date'2022-12-01' and date'2022-12-31'; 
  
 UPDATE stipendio set importo = importo_stip*1.3 where contratto_stipendio = codice_stipendio and data_s = data_stipendio ; --30% in piu 
- 
+COMMIT;
 DBMS_OUTPUT.PUT_LINE('L''impiegato' || (nomeSt) ||' ' || (cognomeSt) ||'ha ricevuto l''aumento');  
  
  
@@ -539,6 +544,7 @@ if tp_contratto = 'Indeterminato' and tipo_contratto_in = 'Indeterminato' then
     raise err1; 
 elsif tp_contratto != 'Indeterminato' then 
     insert into contratto  values (codice_contratto_nuovo,cf_in,durata_in,tipo_contratto_in,data_contratto); 
+    COMMIT;
     DBMS_OUTPUT.PUT_LINE('Rinnovo del contratto avvenuto con successo. Ora il suo contratto è di tipo: ' || (tp_contratto) ||', con la mansione di: ' || (mansioneIN)); 
 
 end if; 
