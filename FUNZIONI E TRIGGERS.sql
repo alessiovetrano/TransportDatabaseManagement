@@ -34,6 +34,7 @@ contatoreUff NUMBER;
 num_max INT;
 numero_ufficio varchar(30);
 BEGIN
+
 select count(*) into contatore from IMPIEGATO
 where mansione = 'Direttore';
 
@@ -42,16 +43,17 @@ from impiegato im join ufficio uff on im.ufficio_impiegato = uff.num_ufficio
 where uff.num_ufficio = :new.ufficio_impiegato;
 
 
-select  NUM_IMPIEGATI,  num_ufficio into num_max, numero_ufficio
-from impiegato im join ufficio uff on im.ufficio_impiegato = uff.num_ufficio
-where :new.ufficio_impiegato = uff.num_ufficio group by NUM_IMPIEGATI, num_ufficio;
+select num_impiegati into numero_ufficio
+from ufficio
+where :new.ufficio_impiegato = num_ufficio;
 --CONTROLLO SULL'ESISTENZA DI UN SINGOLO DIRETTORE IN AZIENDA
 
 if contatore = 1 then
 raise overNum;
 end if;
+
 --CONTROLLO SUL NUM_MAX IN UFFICIO
-if ((contatoreUff + 1) > num_max) then
+if ((contatoreUff + 1) > numero_ufficio) then
 raise overNumUfficio;
 end if;
 
