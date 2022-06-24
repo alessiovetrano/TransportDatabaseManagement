@@ -524,10 +524,14 @@ random_value_string varchar(3) := dbms_random.string('X',3);
 tp_contratto contratto.tipo_contratto%type; 
 codice_contratto_nuovo varchar2(10) := random_value_string || (random_value); 
 err1 EXCEPTION; 
+mansioneIN impiegato.mansione%type;
 BEGIN 
 
 
-select tipo_contratto,sysdate into tp_contratto, data_contratto from dipendente join contratto on cf = cf_contratto where cf = cf_in 
+select tipo_contratto,sysdate, mansione into tp_contratto, data_contratto, mansioneIN
+from dipendente join contratto on cf = cf_contratto 
+join impiegato on cf_impiegato = cf
+where cf = cf_in 
 order by data_inizio_contratto desc 
 fetch first 1 row only; 
  
@@ -535,9 +539,11 @@ if tp_contratto = 'Indeterminato' and tipo_contratto_in = 'Indeterminato' then
     raise err1; 
 elsif tp_contratto != 'Indeterminato' then 
     insert into contratto  values (codice_contratto_nuovo,cf_in,durata_in,tipo_contratto_in,data_contratto); 
+    DBMS_OUTPUT.PUT_LINE('Rinnovo del contratto avvenuto con successo. Ora il suo contratto è di tipo: ' || (tp_contratto) ||', con la mansione di: ' || (mansioneIN)); 
+
 end if; 
  
 EXCEPTION 
 when err1 then 
 DBMS_OUTPUT.PUT_LINE('Rinnovo del contratto non avvenuto poichè il dipendente ha gia un contratto a tempo indeterminato'); 
-END; 
+END;
