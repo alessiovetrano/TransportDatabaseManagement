@@ -1,0 +1,1 @@
+GRANT ALL PRIVILEGES TO utenteDirettore;
