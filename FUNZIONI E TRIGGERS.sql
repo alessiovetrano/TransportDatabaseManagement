@@ -381,7 +381,7 @@ dataAssegnata viaggio.data_viaggio%type;
 dataAssegnataFinale viaggio.data_viaggio%type;
 --NUMERO RANDOM BOLLA CON 4 LETTERE E 6 NUMERI
 random_value integer := dbms_random.value(100000,999999); 
-random_value_string varchar2(4) := dbms_random.string('X',4); 
+random_value_string varchar2(4) := dbms_random.string('U',4); 
 num_bolla_nuovo varchar2(10) := random_value_string || (random_value); 
 
 BEGIN
@@ -520,7 +520,7 @@ CREATE OR REPLACE PROCEDURE rinnova_contratto(cf_in varchar, tipo_contratto_in v
 IS 
 data_contratto date; 
 random_value integer := dbms_random.value(1000000,9999999); 
-random_value_string varchar(3) := dbms_random.string('X',3); 
+random_value_string varchar(3) := dbms_random.string('U',3); 
 tp_contratto contratto.tipo_contratto%type; 
 codice_contratto_nuovo varchar2(10) := random_value_string || (random_value); 
 err1 EXCEPTION; 
