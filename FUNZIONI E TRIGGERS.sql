@@ -280,6 +280,30 @@ when overNumImp then
 raise_application_error(-20001,'Non è possibile eliminare l''ufficio poichè esistono degli impiegati assegnati ad esso');
 end;
 
+
+--CHECK NUMERO MASSIMO DI SPEDIZIONI PER OGNI VIAGGIO
+
+CREATE OR REPLACE TRIGGER checkNumSped
+Before insert on spedizione
+FOR EACH ROW
+DECLARE
+NumTotSpedizione int;
+err1 exception;
+
+BEGIN
+select count(*) into NumTotSpedizione from viaggio join spedizione on cf_viaggio = cf_spedizione and data_spedizione = data_viaggio
+where data_viaggio = :new.data_spedizione
+and cf_viaggio = :new.cf_spedizione;
+
+if (NumTotSpedizione + 1 > 3) then 
+raise err1;
+end if;
+
+EXCEPTION
+when err1 then
+DBMS_OUTPUT.PUT_LINE('Hai raggiunto il numero massimo di spedizioni');
+END;
+
 ----------------------------------PROCEDURE----------------------------------
 
 --1.  ELEZIONE NUOVO DIRETTORE
