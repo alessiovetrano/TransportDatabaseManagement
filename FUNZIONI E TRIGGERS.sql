@@ -7,7 +7,7 @@
 -----------------------TRIGGERS------------------------------
 
 --CHECK DIPENDENTE MAGGIORENNE O TROPPO ANZIANO
-CREATE OR REPLACE TRIGGER maggiorenne
+CREATE OR REPLACE TRIGGER check_eta
 before insert on dipendente
 for each row
 DECLARE
