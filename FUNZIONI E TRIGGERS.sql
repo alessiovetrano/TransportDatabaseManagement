@@ -277,6 +277,7 @@ raise overNumImp;
 end if;
 
 EXCEPTION
+
 when overNumImp then
 raise_application_error(-20001,'Non è possibile eliminare l''ufficio poichè esistono degli impiegati assegnati ad esso');
 end;
@@ -349,7 +350,6 @@ END;
 --UTLIZZO TRE TABELLE DIVERSE
 CREATE OR REPLACE PROCEDURE contaOre (nomeP varchar, cognomeP varchar)
 IS
-error1 EXCEPTION;
 numOre NUMBER;
 nomeDir VARCHAR2(30);
 cognomeDir VARCHAR2(30);
@@ -361,6 +361,11 @@ select nome, cognome, sum(floor(((ora_uscita - ora_entrata)*24 - 1))) into nomeD
     where nomeP = dip.nome and cognomeP = dip.cognome
 group by nome, cognome;
 DBMS_OUTPUT.PUT_LINE('L''impiegato ' || (nomeDir) ||' ' || (cognomeDir) ||' ha effettuato '||(numOre) || ' ore di presenze'); 
+
+exception
+
+when no_data_found then
+DBMS_OUTPUT.PUT_LINE('Non esiste il dipendente nel database'); 
 END; 
 
 --3. PROCEDURA SULLA SCHEDULAZIONE DI UN NUOVO VIAGGIO---FARE ALTRI TEST
@@ -488,6 +493,9 @@ DBMS_OUTPUT.PUT_LINE('ELIMINAZIONE DAL DATA-BASE ANDATA A BUON FINE');
 EXCEPTION
 when error1 then 
 raise_application_error(-20001,'NON PUOI LICENZIARE UN DIRETTORE SENZA AVERNE ELETTO UN ALTRO');
+when no_data_found then
+DBMS_OUTPUT.PUT_LINE('Non esiste il dipendente nel database'); 
+
 END;
 
 --PROCEDURA TREDICESIMA, QUATTORDICESIMA
