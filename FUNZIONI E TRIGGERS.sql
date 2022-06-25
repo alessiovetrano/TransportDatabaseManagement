@@ -7,7 +7,7 @@
 -----------------------TRIGGERS------------------------------
 
 --CHECK DIPENDENTE MAGGIORENNE O TROPPO ANZIANO
-CREATE OR REPLACE TRIGGER check_eta
+CREATE OR REPLACE TRIGGER checkEta
 before insert on dipendente
 for each row
 DECLARE
@@ -232,7 +232,7 @@ END;
 
 
 --7. Non è possibile inserire una presenza se l'impiegato è in ferie
-CREATE OR REPLACE TRIGGER checkPresFerie
+CREATE OR REPLACE TRIGGER checkPres
 before insert on presenza
 for each row
 DECLARE
