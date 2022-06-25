@@ -450,30 +450,31 @@ end;
 
 CREATE OR REPLACE PROCEDURE promozione(nomep varchar2, cognomep varchar2) -- PROMOZIONE DA SEGRETARIO A MANAGER
 IS
-Cod_contr VARCHAR2(10); 
-mansione_im VARCHAR2(30);
-nomeProm varchar(30);
-cognomeProm varchar(30);
-cfprom varchar(16);
+mansione_im impiegato.mansione%type;
+nomeProm dipendente.nome%type;
+cognomeProm dipendente.cognome%type;
+cfprom dipendente.cf%type;
+tp_contratto contratto.tipo_contratto%type;
 BEGIN
-select nome, cognome , codice_contratto, cf_impiegato, mansione into nomeProm, cognomeProm, Cod_contr, cfprom, mansione_im from impiegato im
+select nome, cognome, cf_impiegato, mansione, tipo_contratto into nomeProm, cognomeProm, cfprom, mansione_im, tp_contratto from impiegato im
 join dipendente dip on dip.cf = im.cf_impiegato  
 join contratto contr on dip.cf = contr.cf_contratto 
-where nomep = nome and cognomep = cognome;
+where nomep = nome and cognomep = cognome
+order by data_inizio_contratto desc
+fetch first 1 row only;
 
-if lower(mansione_im) = 'segretario' then
+if lower(mansione_im) = 'segretario' and (tp_contratto = 'Indeterminato' or tp_contratto = 'Determinato') then
     UPDATE IMPIEGATO set mansione = 'manager' where cf_impiegato = cfprom;
     COMMIT;
     DBMS_OUTPUT.PUT_LINE('Il dipendente '|| (nomep) ||' ' ||(cognomep)||' è stato promosso correttamente');
 else
-    DBMS_OUTPUT.PUT_LINE('Il dipendente '|| (nomep) ||' ' ||(cognomep)|| ' non è un segretario');
+    DBMS_OUTPUT.PUT_LINE('Il dipendente '|| (nomep) ||' ' ||(cognomep)|| ' non è un segretario a tempo determinato o indeterminato');
     ROLLBACK;
     end if;
 EXCEPTION
 WHEN NO_DATA_FOUND THEN
-DBMS_OUTPUT.PUT_LINE('Il dipendente '|| (nomep) || (cognomep)|| ' non fa parte del database');
-END; 
-
+DBMS_OUTPUT.PUT_LINE('Il dipendente non esiste nel data_base');
+end;
 --LICENZIAMENTO DIPENDENTE (IMPIEGATO/AUTISTA)
 CREATE OR REPLACE PROCEDURE licenziamento(codFiscale varchar)
 IS
