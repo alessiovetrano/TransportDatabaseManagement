@@ -551,4 +551,6 @@ end if;
 EXCEPTION 
 when err1 then 
 DBMS_OUTPUT.PUT_LINE('Rinnovo del contratto non avvenuto poichè il dipendente ha gia un contratto a tempo indeterminato');
+when no_data_found then
+DBMS_OUTPUT.PUT_LINE('Il dipendente non esiste nel database');
 END;
