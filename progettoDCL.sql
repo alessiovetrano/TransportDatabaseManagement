@@ -7,7 +7,6 @@ GRANT SELECT ON SchemaUffici TO ManagerAziendale;
 GRANT SELECT ON SchemaVeicoliAssociati TO ManagerAziendale;
 GRANT SELECT ON VeicoliDisponibili TO ManagerAziendale;
 GRANT SELECT ON ImpiegatiInUfficio_attuale TO ManagerAziendale;
-GRANT EXECUTE ON nuovoDirettore TO ManagerAziendale;
 GRANT EXECUTE ON ScheduleViaggio TO ManagerAziendale;
 GRANT EXECUTE ON contaOre TO ManagerAziendale;
 
