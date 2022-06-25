@@ -342,7 +342,6 @@ DBMS_OUTPUT.PUT_LINE('L''impiegato ' || (nomeDir) ||' ' || (cognomeDir) ||' non 
 
 when giaDirettore then
 DBMS_OUTPUT.PUT_LINE('L''impiegato ' || (nomeDir) ||' ' || (cognomeDir) ||' è gia Direttore');
-COMMIT;
 END; 
 
 --
@@ -437,8 +436,9 @@ EXCEPTION
   
     insert into viaggio values (dataAssegnataFinale,AutistaCandidato,pivaforn,kilometri,numSoste,DurataViaggio);  
     insert into spedizione values (numTracc,dataAssegnataFinale,AutistaCandidato,orario_cons,pivaesterna);  
-	DBMS_OUTPUT.PUT_LINE('bolla: ' || (num_bolla_nuovo)) ;  
-	insert into lotto values (num_bolla_nuovo,numTracc,peso_in,tipo_in);  
+    insert into lotto values (num_bolla_nuovo,numTracc,peso_in,tipo_in);
+    COMMIT;
+	
 end; 
 
 --4. PROCEDURA DI UNA PROMOZIONE DI UN SEGRETARIO A MANAGER
@@ -550,5 +550,5 @@ end if;
  
 EXCEPTION 
 when err1 then 
-DBMS_OUTPUT.PUT_LINE('Rinnovo del contratto non avvenuto poichè il dipendente ha gia un contratto a tempo indeterminato'); 
+DBMS_OUTPUT.PUT_LINE('Rinnovo del contratto non avvenuto poichè il dipendente ha gia un contratto a tempo indeterminato');
 END;
