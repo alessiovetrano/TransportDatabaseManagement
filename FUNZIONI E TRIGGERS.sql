@@ -13,7 +13,7 @@ for each row
 DECLARE
 check_eta EXCEPTION;
 BEGIN
-if (floor((sysdate-:new.data_nascita)/365) < 17 OR (floor((sysdate-:new.data_nascita)/365)) > 60 ) then
+if (floor((sysdate-:new.data_nascita)/365) < 18 OR (floor((sysdate-:new.data_nascita)/365)) > 60 ) then
 raise check_eta;
 end if;
 EXCEPTION
