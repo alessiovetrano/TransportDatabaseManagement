@@ -9,6 +9,7 @@ GRANT SELECT ON VeicoliDisponibili TO ManagerAziendale;
 GRANT SELECT ON ImpiegatiInUfficio_attuale TO ManagerAziendale;
 GRANT EXECUTE ON ScheduleViaggio TO ManagerAziendale;
 GRANT EXECUTE ON contaOre TO ManagerAziendale;
+GRANT EXECUTE ON StoricoViaggi to ManagerAziendale;
 
 --PRIVILEGI AUTISTA
 GRANT SELECT ON SchemaVeicoliAssociati to AutistaAziendale;
