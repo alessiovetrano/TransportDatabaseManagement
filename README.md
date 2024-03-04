@@ -10,4 +10,4 @@ The project was entirely developed using the following technologies:
 * PL/SQL
 
 ## Entity Relationship Diagram
-![alt text](./tabelle_relazionali.png)
+![alt text](./ERD.png)
