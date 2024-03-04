@@ -8,3 +8,6 @@ The project was entirely developed using the following technologies:
 * Relational database
 * Structured Query Language (SQL)
 * PL/SQL
+
+## Entity Relationship Diagram
+![alt text](http://url/to/img.png)
